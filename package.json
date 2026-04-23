@@ -1,0 +1,8 @@
+{
+  "name": "shibumi-site",
+  "private": true,
+  "description": "Static site lives in /site — copied to dist for Vercel root deploy",
+  "scripts": {
+    "build": "node scripts/vercel-build.js"
+  }
+}

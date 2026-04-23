@@ -13,3 +13,6 @@ Desktop.ini
 *.log
 .env
 .env.local
+
+# Vercel build output (generated from site/)
+dist/
