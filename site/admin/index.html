@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>כניסה · שיבומי נדל״ן</title>
-<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="/admin/css/admin.css">
 </head>
 <body>
 
@@ -51,7 +51,7 @@
 
     <div class="auth-footer">
       <a href="forgot.html">שכחתי סיסמה</a>
-      <a href="../index.html">חזרה לאתר</a>
+      <a href="/index.html">חזרה לאתר</a>
     </div>
   </div>
 </main>
@@ -78,10 +78,10 @@
   }
 </style>
 
-<script src="js/admin.js"></script>
+<script src="/admin/js/admin.js"></script>
 <script>
 (async function () {
-  if (ShibumiAdmin.hasSession()) { location.replace("dashboard.html"); return; }
+  if (ShibumiAdmin.hasSession()) { location.replace("/admin/dashboard.html"); return; }
 
   const hadCreds = !!localStorage.getItem("shibumi:admin:credentials");
   await ShibumiAdmin.initCredentials();
@@ -136,7 +136,7 @@
 
     if (ok) {
       ShibumiAdmin.createSession();
-      location.replace("dashboard.html");
+      location.replace("/admin/dashboard.html");
     } else {
       attempts++;
       if (attempts >= 5) {

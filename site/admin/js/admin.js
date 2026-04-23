@@ -99,7 +99,7 @@ function hasSession() {
   } catch { return false; }
 }
 function requireSession() {
-  if (!hasSession()) location.replace("index.html");
+  if (!hasSession()) location.replace("/admin/index.html");
 }
 
 /* ---- Password strength ---- */
@@ -160,7 +160,7 @@ function escapeHtml(s) {
 
 function logout() {
   clearSession();
-  location.replace("index.html");
+  location.replace("/admin/index.html");
 }
 
 window.ShibumiAdmin = {

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>ניהול נכסים · שיבומי</title>
-<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="/admin/css/admin.css">
 </head>
 <body>
 
@@ -160,10 +160,10 @@
   </div>
 </div>
 
-<script src="../js/config.js"></script>
-<script src="../js/properties-data.js"></script>
-<script src="../js/data.js"></script>
-<script src="js/admin.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/properties-data.js"></script>
+<script src="/js/data.js"></script>
+<script src="/admin/js/admin.js"></script>
 <script>
 (async function () {
   ShibumiAdmin.requireSession();
@@ -264,7 +264,7 @@
         <td class="num">${v}</td>
         <td>
           <div class="row-actions">
-            <a class="btn-a btn-a--ghost btn-a--sm" href="../property.html?id=${encodeURIComponent(p.id)}" target="_blank">צפה</a>
+            <a class="btn-a btn-a--ghost btn-a--sm" href="/property.html?id=${encodeURIComponent(p.id)}" target="_blank">צפה</a>
             <button class="btn-a btn-a--primary btn-a--sm" data-edit="${p.id}">עריכה</button>
           </div>
         </td>

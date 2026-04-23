@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>לוח בקרה · שיבומי</title>
-<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="/admin/css/admin.css">
 </head>
 <body>
 
@@ -47,7 +47,7 @@
         <div class="page-head-a__sub">סקירה של הפעילות באתר — צפיות, פניות ומלאי פעיל.</div>
       </div>
       <div class="page-head-actions">
-        <a href="../index.html" target="_blank" rel="noopener" class="btn-a btn-a--ghost">לאתר הציבורי</a>
+        <a href="/index.html" target="_blank" rel="noopener" class="btn-a btn-a--ghost">לאתר הציבורי</a>
         <a href="properties.html" class="btn-a btn-a--primary">נכסים</a>
       </div>
     </header>
@@ -101,10 +101,10 @@
   </main>
 </div>
 
-<script src="../js/config.js"></script>
-<script src="../js/properties-data.js"></script>
-<script src="../js/data.js"></script>
-<script src="js/admin.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/properties-data.js"></script>
+<script src="/js/data.js"></script>
+<script src="/admin/js/admin.js"></script>
 <script>
 (async function () {
   ShibumiAdmin.requireSession();
@@ -187,7 +187,7 @@
       const li = document.createElement("li");
       li.innerHTML = `
         <span class="rank">0${i+1}</span>
-        <a href="../property.html?id=${encodeURIComponent(x.id)}" target="_blank" class="title">${ShibumiAdmin.escapeHtml(x.prop.title)}</a>
+        <a href="/property.html?id=${encodeURIComponent(x.id)}" target="_blank" class="title">${ShibumiAdmin.escapeHtml(x.prop.title)}</a>
         <span class="count">${x.v}</span>
       `;
       topList.appendChild(li);
