@@ -1,0 +1,220 @@
+/* =========================================================
+   SHIBUMI · Design Tokens · v17
+   Pure Monochrome + Hunter Green.
+   Research base: Christie's Real Estate · The Agency · Knight Frank ·
+   Compass · Sotheby's International · Douglas Elliman.
+   Principle: pure white, deep ink, ONE accent (muted hunter green),
+   photography is the hero — color is the frame.
+   ========================================================= */
+
+:root {
+  /* ---- Surfaces — PURE, not warm, not off ---- */
+  --bg-primary:    #FFFFFF;       /* pure white — the editorial default */
+  --bg-secondary:  #F5F5F3;       /* 2% darker neutral gray for alt sections */
+  --bg-elevated:   #FFFFFF;
+  --bg-glass:      rgba(255, 255, 255, 0.92);
+  --bg-dark:       #0E1A14;       /* hero/footer — near-black with green undertone */
+
+  /* ---- Text — deep ink with faint green undertone ---- */
+  --text-primary:   #0E1A14;      /* near-black — distinctive from pure black, reads premium */
+  --text-secondary: #4A4E4B;      /* neutral dark gray */
+  --text-muted:     #8A8D87;
+
+  /* ---- Primary accent: Hunter Green (the Christie's signal) ----
+     Variable name kept as --accent-gold for backwards compat.
+     Used sparingly — primary CTA, active nav, logo, key links. */
+  --accent-gold:       #1F3D2E;   /* muted hunter green */
+  --accent-gold-hover: #2D5440;
+  --accent-gold-deep:  #14281E;
+  --accent-bronze:     #1F3D2E;   /* alias */
+
+  /* ---- Secondary accent kept for compat but equal to primary ---- */
+  --accent-clay:       #1F3D2E;
+  --accent-clay-soft:  #2D5440;
+
+  /* ---- Borders — pure ink at low opacity ---- */
+  --border-subtle: rgba(14, 26, 20, 0.09);
+  --border-medium: rgba(14, 26, 20, 0.18);
+  --border-gold:   rgba(31, 61, 46, 0.28);
+  --border-gold-strong: rgba(31, 61, 46, 0.55);
+
+  /* ---- Washes ---- */
+  --gold-wash-subtle: rgba(31, 61, 46, 0.04);
+  --gold-wash:        rgba(31, 61, 46, 0.08);
+  --gold-wash-strong: rgba(31, 61, 46, 0.14);
+  --clay-wash:        rgba(31, 61, 46, 0.08);
+
+  /* ---- Shadows — neutral, crisp ---- */
+  --shadow-sm:      0 1px 2px rgba(14, 26, 20, 0.05), 0 2px 6px rgba(14, 26, 20, 0.04);
+  --shadow-premium: 0 20px 48px rgba(14, 26, 20, 0.12), 0 4px 12px rgba(14, 26, 20, 0.06);
+  --shadow-glass:   0 6px 20px rgba(14, 26, 20, 0.06);
+  --shadow-gold-glow: 0 10px 32px rgba(31, 61, 46, 0.14);
+
+  /* ---- Status colors ---- */
+  --status-success: #1F3D2E;
+  --status-warning: #A8591F;
+  --status-danger:  #A8281F;
+
+  /* ---- Typography ----
+     Inter (Latin) + Noto Sans Hebrew — single neo-grotesque family,
+     decisively different from any prior serif system. */
+  --font-heading: "Inter", "Noto Sans Hebrew", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --font-body:    "Inter", "Noto Sans Hebrew", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --font-serif:   "Inter", "Noto Sans Hebrew", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --font-display: "Inter", "Noto Sans Hebrew", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+
+  /* ---- Radii ---- */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
+
+  /* ---- Motion ---- */
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-smooth: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ---- Layout ---- */
+  --container: 1360px;
+  --section-py: 96px;
+
+  /* ---- User-adjustable font size base (accessibility) ---- */
+  --font-size-base: 16px;
+}
+
+/* Font-size accessibility scales (set via data attr on <html>) */
+html[data-font-size="lg"]  { --font-size-base: 18px; }
+html[data-font-size="xl"]  { --font-size-base: 20px; }
+html[data-font-size="xxl"] { --font-size-base: 23px; }
+html { font-size: var(--font-size-base); }
+
+/* ---- Backwards-compat aliases for admin pages ---- */
+:root {
+  --ivory-50:  #FFFFFF;
+  --ivory-100: #F5F5F3;
+  --ivory-200: #E8E8E5;
+  --ivory-300: #4A4E4B;
+  --ivory-400: #8A8D87;
+
+  --ink-1000: #0E1A14;
+  --ink-900:  #1A2620;
+  --ink-800:  #2A332D;
+  --ink-700:  #3A433D;
+  --ink-600:  #4A4E4B;
+  --ink-500:  #6A6E6B;
+  --ink-400:  #8A8D87;
+  --ink-300:  #BEBEB9;
+
+  --wine-900: #14281E;
+  --wine-800: #1F3D2E;
+  --wine-700: #2D5440;
+  --wine-600: #406F56;
+
+  --r-sm: var(--radius-sm);
+  --r-md: var(--radius-md);
+  --r-lg: var(--radius-lg);
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.18em;
+}
+
+/* =========================================================
+   ACCESSIBILITY MODES (activated by body/html classes)
+   ========================================================= */
+
+/* High contrast mode — WCAG AAA-level */
+body.a11y-contrast {
+  --bg-primary:    #000000;
+  --bg-secondary:  #000000;
+  --bg-elevated:   #000000;
+  --bg-glass:      #000000;
+  --text-primary:  #FFFF00;
+  --text-secondary:#FFFF00;
+  --text-muted:    #FFFF00;
+  --accent-gold:   #FFFF00;
+  --accent-gold-hover: #FFFFFF;
+  --border-subtle: rgba(255, 255, 0, 0.5);
+  --border-medium: rgba(255, 255, 0, 0.7);
+  --border-gold:   #FFFF00;
+  --gold-wash:     rgba(255, 255, 0, 0.15);
+}
+body.a11y-contrast * {
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+body.a11y-contrast img,
+body.a11y-contrast video {
+  filter: grayscale(100%) contrast(1.2);
+}
+
+/* Light-contrast mode (black text on white) — for those who prefer it */
+body.a11y-light {
+  --bg-primary:    #FFFFFF;
+  --bg-secondary:  #F5F5F2;
+  --bg-elevated:   #EDECE5;
+  --bg-glass:      rgba(255, 255, 255, 0.9);
+  --text-primary:  #000000;
+  --text-secondary:#333333;
+  --text-muted:    #555555;
+  --accent-gold:   #1F3D2E;
+  --accent-gold-hover: #2D5440;
+  --accent-gold-deep: #14281E;
+  --border-subtle: rgba(0, 0, 0, 0.12);
+  --border-medium: rgba(0, 0, 0, 0.25);
+  --border-gold:   rgba(31, 61, 46, 0.4);
+  --gold-wash:     rgba(31, 61, 46, 0.08);
+}
+
+/* Grayscale / monochrome */
+body.a11y-grayscale {
+  filter: grayscale(100%);
+}
+
+/* Underline all links */
+body.a11y-underline a,
+body.a11y-underline button {
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+/* Large / cursor */
+body.a11y-big-cursor,
+body.a11y-big-cursor * {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><path d='M4 2l24 22-10 2 8 16-6 3-8-16-7 7z' fill='%23ffffff' stroke='%23000000' stroke-width='2' stroke-linejoin='round'/></svg>") 4 2, auto !important;
+}
+body.a11y-big-cursor a,
+body.a11y-big-cursor button,
+body.a11y-big-cursor input,
+body.a11y-big-cursor select,
+body.a11y-big-cursor textarea,
+body.a11y-big-cursor [role="button"] {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><path d='M4 2l24 22-10 2 8 16-6 3-8-16-7 7z' fill='%23FFFF00' stroke='%23000000' stroke-width='2' stroke-linejoin='round'/></svg>") 4 2, pointer !important;
+}
+
+/* Reduce / stop animations */
+body.a11y-no-motion *,
+body.a11y-no-motion *::before,
+body.a11y-no-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+body.a11y-no-motion [data-reveal] { opacity: 1 !important; transform: none !important; }
+
+/* Readable (dyslexia-friendly) font option */
+body.a11y-readable {
+  --font-body:    "Verdana", "Arial", sans-serif;
+  --font-heading: "Verdana", "Arial", sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+}
+
+/* Respect OS-level reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

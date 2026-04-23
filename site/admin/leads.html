@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>פניות · שיבומי</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="shell">
+  <aside class="side">
+    <div class="side__brand">
+      <div class="side__mark">שיבומי</div>
+      <div class="side__role">ניהול אתר</div>
+    </div>
+    <nav class="side__nav">
+      <a href="dashboard.html">לוח בקרה</a>
+      <a href="properties.html">ניהול נכסים</a>
+      <a href="leads.html" aria-current="page">פניות</a>
+      <a href="change-password.html">שינוי סיסמה</a>
+    </nav>
+    <div class="side__foot">
+      <div class="side__user">מחובר: <strong id="sideUser">—</strong></div>
+      <a href="#" id="logoutBtn">יציאה</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="page-head-a">
+      <div>
+        <h1>פניות</h1>
+        <div class="page-head-a__sub" id="leadsSub">פניות שהתקבלו דרך טופס יצירת הקשר באתר.</div>
+      </div>
+      <div class="page-head-actions">
+        <button type="button" class="btn-a btn-a--ghost" id="refreshBtn">רענון</button>
+        <button type="button" class="btn-a btn-a--ghost" id="clearAllBtn">ניקוי מטמון מקומי</button>
+      </div>
+    </header>
+
+    <div class="table-wrap">
+      <table class="data">
+        <thead>
+          <tr>
+            <th>תאריך</th>
+            <th>שם</th>
+            <th>טלפון</th>
+            <th>דוא"ל</th>
+            <th>עניין</th>
+            <th>הודעה</th>
+            <th style="width:160px">פעולות</th>
+          </tr>
+        </thead>
+        <tbody id="rows">
+          <tr><td colspan="7" class="table-empty">אין פניות להצגה.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script src="../js/config.js"></script>
+<script src="../js/data.js"></script>
+<script src="js/admin.js"></script>
+<script>
+(async function () {
+  ShibumiAdmin.requireSession();
+
+  const creds = await ShibumiAdmin.getCredentials();
+  document.getElementById("sideUser").textContent = creds.username;
+  document.getElementById("logoutBtn").addEventListener("click", (e) => { e.preventDefault(); ShibumiAdmin.logout(); });
+
+  const subEl = document.getElementById("leadsSub");
+  const tbody = document.getElementById("rows");
+
+  function setStatus(isOnline, count) {
+    const cfg = window.SHIBUMI_CONFIG || {};
+    subEl.className = "page-head-a__sub leads-status";
+    if (isOnline) {
+      subEl.classList.add("leads-status--online");
+      subEl.innerHTML = "<strong>מחובר לשרת</strong> · " + count + " פניות · נשמר ב-Google Sheet.";
+    } else if (cfg.BACKEND_URL) {
+      subEl.classList.add("leads-status--offline");
+      subEl.innerHTML = "<strong>השרת לא זמין</strong> · מוצג מטמון מקומי (" + count + " פניות). בדקו את Apps Script.";
+    } else {
+      subEl.classList.add("leads-status--local");
+      subEl.innerHTML = "<strong>מצב מקומי</strong> · פניות רק בדפדפן הזה. להפעלת שרת — ראו BACKEND_SETUP.md.";
+    }
+  }
+
+  async function render() {
+    tbody.innerHTML = `<tr><td colspan="7" class="table-loading">טוען…</td></tr>`;
+
+    const cfg = window.SHIBUMI_CONFIG || {};
+    let leads = [];
+    let isOnline = false;
+
+    if (cfg.BACKEND_URL && cfg.ADMIN_TOKEN) {
+      try {
+        const url = cfg.BACKEND_URL + "?action=leads&token=" + encodeURIComponent(cfg.ADMIN_TOKEN);
+        const res = await fetch(url);
+        const data = await res.json();
+        if (data && data.ok) {
+          leads = data.leads;
+          isOnline = true;
+        }
+      } catch (_) { /* falls to local */ }
+    }
+    if (!isOnline) {
+      try { leads = JSON.parse(localStorage.getItem("shibumi:leads") || "[]"); } catch { leads = []; }
+    }
+
+    setStatus(isOnline, leads.length);
+
+    if (!leads.length) {
+      tbody.innerHTML = `<tr><td colspan="7" class="table-empty">אין פניות להצגה.</td></tr>`;
+      return;
+    }
+    tbody.innerHTML = "";
+    leads.forEach(l => {
+      const d = new Date(l.ts || 0);
+      const dateStr = l.dateIl || (d.toLocaleDateString("he-IL") + " " + d.toLocaleTimeString("he-IL", { hour:'2-digit', minute:'2-digit' }));
+      const tr = document.createElement("tr");
+      const waNum = (l.phone || "").replace(/\D/g, "").replace(/^0/, "972");
+      tr.innerHTML = `
+        <td>${ShibumiAdmin.escapeHtml(dateStr)}</td>
+        <td><strong>${ShibumiAdmin.escapeHtml(l.name)}</strong></td>
+        <td><a href="tel:${ShibumiAdmin.escapeHtml(l.phone)}">${ShibumiAdmin.escapeHtml(l.phone)}</a></td>
+        <td>${l.email ? `<a href="mailto:${ShibumiAdmin.escapeHtml(l.email)}">${ShibumiAdmin.escapeHtml(l.email)}</a>` : '<span class="table-muted">—</span>'}</td>
+        <td>${ShibumiAdmin.escapeHtml(l.interest || "—")}</td>
+        <td class="table-msg">${ShibumiAdmin.escapeHtml(l.message || "")}</td>
+        <td>
+          <div class="row-actions">
+            <a class="btn-a btn-a--ghost btn-a--sm" href="https://wa.me/${ShibumiAdmin.escapeHtml(waNum)}" target="_blank">WhatsApp</a>
+            <button class="btn-a btn-a--danger btn-a--sm" data-del="${ShibumiAdmin.escapeHtml(l.id || l.ts)}">מחק</button>
+          </div>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+
+    tbody.querySelectorAll("[data-del]").forEach(btn => {
+      btn.addEventListener("click", async () => {
+        if (!confirm("למחוק את הפנייה?")) return;
+        btn.disabled = true;
+        btn.textContent = "מוחק...";
+        await Shibumi.deleteLead(btn.dataset.del);
+        ShibumiAdmin.toast("הפנייה נמחקה");
+        await render();
+      });
+    });
+  }
+
+  document.getElementById("refreshBtn").addEventListener("click", render);
+
+  document.getElementById("clearAllBtn").addEventListener("click", () => {
+    if (!confirm("למחוק את המטמון המקומי של הפניות? הפניות שבגיליון Google לא יושפעו.")) return;
+    localStorage.removeItem("shibumi:leads");
+    ShibumiAdmin.toast("המטמון המקומי נוקה");
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

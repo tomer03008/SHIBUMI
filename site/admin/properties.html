@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ניהול נכסים · שיבומי</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="shell">
+  <aside class="side">
+    <div class="side__brand">
+      <div class="side__mark">שיבומי</div>
+      <div class="side__role">ניהול אתר</div>
+    </div>
+    <nav class="side__nav">
+      <a href="dashboard.html">לוח בקרה</a>
+      <a href="properties.html" aria-current="page">ניהול נכסים</a>
+      <a href="leads.html">פניות</a>
+      <a href="change-password.html">שינוי סיסמה</a>
+    </nav>
+    <div class="side__foot">
+      <div class="side__user">מחובר: <strong id="sideUser">—</strong></div>
+      <a href="#" id="logoutBtn">יציאה</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="page-head-a">
+      <div>
+        <h1>ניהול נכסים</h1>
+        <div class="page-head-a__sub">רשימת כל הנכסים כמו בקטלוג — עריכה, הסתרה מהאתר, או הוספת נכס חדש (נשמר בדפדפן עד ייצוא / העתקה לקוד).</div>
+      </div>
+      <div class="page-head-actions">
+        <button type="button" class="btn-a btn-a--primary" id="addBtn">+ נכס חדש</button>
+        <button type="button" class="btn-a btn-a--ghost" id="resetBtn">איפוס עריכות</button>
+        <button type="button" class="btn-a btn-a--ghost" id="purgeCustomBtn">מחיקת נכסים שנוספו כאן</button>
+        <button type="button" class="btn-a btn-a--primary" id="exportBtn">ייצוא גיבוי</button>
+      </div>
+    </header>
+
+    <div class="filter-bar">
+      <input type="search" class="filter-bar__search" id="search" placeholder="חיפוש לפי כותרת…">
+      <select class="filter-bar__select" id="fStatus">
+        <option value="all">כל הסטטוסים</option>
+        <option value="active">פעילים</option>
+        <option value="sold">נמכרו</option>
+        <option value="rented">הושכרו</option>
+        <option value="inactive">לא רלוונטי</option>
+      </select>
+      <select class="filter-bar__select" id="fRegion">
+        <option value="all">כל האזורים</option>
+        <option value="coast">חוף הים</option>
+        <option value="sharon-hefer">השרון · עמק חפר</option>
+        <option value="herzliya-ta">הרצליה · ת״א</option>
+        <option value="north">צפון · עמק יזרעאל</option>
+        <option value="other">נוספים</option>
+      </select>
+      <span id="resultsCount" class="results-count"></span>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data">
+        <thead>
+          <tr>
+            <th style="width:80px">תמונה</th>
+            <th>כותרת</th>
+            <th>סטטוס</th>
+            <th>אזור</th>
+            <th>סוג</th>
+            <th>מחיר</th>
+            <th class="num">צפיות</th>
+            <th style="width:220px">פעולות</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<!-- Edit modal -->
+<div class="modal" id="editModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+  <div class="modal__card modal__card--wide">
+    <h3 id="modalTitle" class="modal__title">עריכת נכס</h3>
+    <p class="modal__sub" id="modalSub">שינויים נשמרים בדפדפן ומשפיעים על תצוגת האתר באותו מחשב.</p>
+
+    <form id="editForm">
+      <input type="hidden" name="id" id="formPropId">
+      <input type="hidden" name="mode" id="formMode" value="edit">
+
+      <label class="field">
+        <span class="field__label">כותרת הנכס</span>
+        <input class="field__input" name="title" required placeholder="לדוגמה: וילה למכירה בהרצליה">
+      </label>
+
+      <div class="modal-grid-2">
+        <label class="field">
+          <span class="field__label">אזור</span>
+          <select class="field__select" name="regionKey" id="fieldRegion" required></select>
+        </label>
+        <label class="field">
+          <span class="field__label">סוג נכס</span>
+          <select class="field__select" name="typeKey" id="fieldType" required></select>
+        </label>
+      </div>
+
+      <div class="modal-grid-2">
+        <label class="field">
+          <span class="field__label">סטטוס באתר</span>
+          <select class="field__select" name="status">
+            <option value="active">פעיל · מוצג באתר</option>
+            <option value="sold">נמכר</option>
+            <option value="rented">הושכר</option>
+            <option value="inactive">לא רלוונטי</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span class="field__label">מחיר</span>
+          <input class="field__input" name="price" placeholder='לדוגמה: 12,000,000 ש"ח או P.O.R'>
+        </label>
+      </div>
+
+      <label class="field">
+        <span class="field__label">תיאור</span>
+        <textarea class="field__textarea" name="description" rows="6" placeholder="תיאור מלא לעמוד הנכס…"></textarea>
+      </label>
+
+      <fieldset class="gallery-editor">
+        <legend class="gallery-editor__legend">תמונות</legend>
+        <p class="gallery-editor__hint">
+          הוסיפו כתובות ישירות לתמונה (<code>https://…jpg</code>) או העלו קבצים מהמחשב (עד 2MB לתמונה).
+          <strong>התמונה הראשונה ברשימה = שער</strong> בכרטיס ובעמוד הנכס. אפשר לשנות סדר עם למעלה / למטה או למחוק.
+        </p>
+        <ul class="gallery-editor__list" id="galleryList" aria-label="רשימת תמונות"></ul>
+        <div class="gallery-editor__row-add">
+          <input type="url" class="field__input" id="newImgUrl" placeholder="https://…" autocomplete="off">
+          <button type="button" class="btn-a btn-a--primary" id="addImgUrlBtn">הוספת כתובת</button>
+        </div>
+        <label class="gallery-editor__file-wrap">
+          <span class="field__label">העלאת תמונות מהמחשב</span>
+          <input type="file" id="galleryFiles" class="field__input" accept="image/*" multiple>
+        </label>
+        <button type="button" class="btn-a btn-a--ghost gallery-editor__reset" id="resetGalleryBtn" style="display:none">
+          חזרה לתמונות המקוריות מהקטלוג
+        </button>
+      </fieldset>
+
+      <div class="modal__actions">
+        <button type="button" class="btn-a btn-a--danger" id="deleteBtn">הסתרה מהאתר הציבורי</button>
+        <button type="button" class="btn-a btn-a--danger" id="purgeBtn" style="display:none">מחיקה לצמיתות</button>
+        <span class="modal__actions-spacer" aria-hidden="true"></span>
+        <button type="button" class="btn-a btn-a--ghost" id="cancelBtn">ביטול</button>
+        <button type="submit" class="btn-a btn-a--primary" id="saveBtn">שמירה</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="../js/config.js"></script>
+<script src="../js/properties-data.js"></script>
+<script src="../js/data.js"></script>
+<script src="js/admin.js"></script>
+<script>
+(async function () {
+  ShibumiAdmin.requireSession();
+
+  const creds = await ShibumiAdmin.getCredentials();
+  document.getElementById("sideUser").textContent = creds.username;
+  document.getElementById("logoutBtn").addEventListener("click", (e) => { e.preventDefault(); ShibumiAdmin.logout(); });
+
+  const OVERRIDES_KEY = "shibumi:overrides";
+  let overrides = {};
+  try { overrides = JSON.parse(localStorage.getItem(OVERRIDES_KEY) || "{}"); } catch {}
+
+  const fieldRegion = document.getElementById("fieldRegion");
+  const fieldType   = document.getElementById("fieldType");
+  Shibumi.REGIONS.forEach(r => {
+    const o = document.createElement("option");
+    o.value = r.key;
+    o.textContent = r.label;
+    fieldRegion.appendChild(o);
+  });
+  Shibumi.TYPES.forEach(t => {
+    const o = document.createElement("option");
+    o.value = t.key;
+    o.textContent = t.label;
+    fieldType.appendChild(o);
+  });
+
+  let base = [];
+  async function reloadBase() {
+    Shibumi.invalidatePropertiesCache();
+    try {
+      base = await Shibumi.loadProperties();
+    } catch (e) {
+      ShibumiAdmin.toast("שגיאה בטעינת נתונים", "err");
+      base = [];
+    }
+    if (!base.length && !Array.isArray(window.SHIBUMI_DATA)) {
+      ShibumiAdmin.toast("לא נטען קטלוג נכסים — ודאו שקובץ properties-data.js מקושר לעמוד", "err");
+    }
+  }
+  await reloadBase();
+
+  const views = Shibumi.getViews();
+
+  function current() {
+    return base.map(p => {
+      const o = overrides[p.id];
+      if (!o) return p;
+      if (o._deleted) return { ...Shibumi.mergeListingFields(p, o), status: "inactive", _hidden: true };
+      return Shibumi.mergeListingFields(p, o);
+    });
+  }
+
+  const tbody = document.getElementById("rows");
+  const searchEl = document.getElementById("search");
+  const fStatus = document.getElementById("fStatus");
+  const fRegion = document.getElementById("fRegion");
+  const countEl = document.getElementById("resultsCount");
+
+  function render() {
+    const q = (searchEl.value || "").trim();
+    const st = fStatus.value;
+    const rg = fRegion.value;
+
+    const filtered = current().filter(p => {
+      if (q && !p.title.includes(q)) return false;
+      if (st !== "all" && p.status !== st) return false;
+      if (rg !== "all" && p.region.key !== rg) return false;
+      return true;
+    });
+
+    countEl.textContent = filtered.length + " נכסים";
+    tbody.innerHTML = "";
+
+    if (!filtered.length) {
+      tbody.innerHTML = `<tr><td colspan="8" class="table-empty">אין נכסים שתואמים את הסינון.</td></tr>`;
+      return;
+    }
+
+    filtered.forEach(p => {
+      const tr = document.createElement("tr");
+      const v = views[p.id] || 0;
+      const statusLabel = {
+        active: "פעיל", sold: "נמכר", rented: "הושכר", inactive: "לא רלוונטי"
+      }[p.status] || p.status;
+      const chipMod = "status-chip--" + p.status;
+
+      tr.innerHTML = `
+        <td>${p.cover ? `<img class="thumb" src="${p.cover}" alt="" loading="lazy">` : `<div class="thumb"></div>`}</td>
+        <td>
+          <div class="prop-title">${ShibumiAdmin.escapeHtml(p.title)}</div>
+          <div class="prop-meta">${p.imageCount} תמונות${p._hidden ? " · מוסתר" : ""}${Shibumi.isAdminCreatedId(p.id) ? " · נוסף מהמערכת" : ""}</div>
+        </td>
+        <td><span class="status-chip ${chipMod}">${statusLabel}</span></td>
+        <td>${ShibumiAdmin.escapeHtml(p.region.label)}</td>
+        <td>${ShibumiAdmin.escapeHtml(p.type.label)}</td>
+        <td class="prop-price">${ShibumiAdmin.escapeHtml(p.price)}</td>
+        <td class="num">${v}</td>
+        <td>
+          <div class="row-actions">
+            <a class="btn-a btn-a--ghost btn-a--sm" href="../property.html?id=${encodeURIComponent(p.id)}" target="_blank">צפה</a>
+            <button class="btn-a btn-a--primary btn-a--sm" data-edit="${p.id}">עריכה</button>
+          </div>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  searchEl.addEventListener("input", render);
+  fStatus.addEventListener("change", render);
+  fRegion.addEventListener("change", render);
+
+  /* ---- Modal ---- */
+  const modal    = document.getElementById("editModal");
+  const form     = document.getElementById("editForm");
+  const deleteBtn = document.getElementById("deleteBtn");
+  const purgeBtn  = document.getElementById("purgeBtn");
+  const saveBtn   = document.getElementById("saveBtn");
+
+  const galleryList = document.getElementById("galleryList");
+  const newImgUrl   = document.getElementById("newImgUrl");
+  const addImgUrlBtn = document.getElementById("addImgUrlBtn");
+  const galleryFiles = document.getElementById("galleryFiles");
+  const resetGalleryBtn = document.getElementById("resetGalleryBtn");
+  let modalGalleryUrls = [];
+
+  const MAX_IMG_FILE = 2 * 1024 * 1024;
+  const MAX_FILES_BATCH = 8;
+
+  function sameUrlArrays(a, b) {
+    if (!a || !b || a.length !== b.length) return false;
+    for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return false;
+    return true;
+  }
+
+  function isAllowedImageUrl(s) {
+    const u = String(s).trim();
+    if (!u) return false;
+    const low = u.toLowerCase();
+    return low.startsWith("https://") || low.startsWith("http://") || low.startsWith("data:image/");
+  }
+
+  function renderGalleryList() {
+    galleryList.innerHTML = "";
+    if (!modalGalleryUrls.length) {
+      const li = document.createElement("li");
+      li.className = "gallery-editor__empty";
+      li.textContent = "אין תמונות — הוסיפו כתובת או קובץ מהמחשב.";
+      galleryList.appendChild(li);
+      return;
+    }
+    modalGalleryUrls.forEach((url, idx) => {
+      const li = document.createElement("li");
+      li.className = "gallery-editor__row";
+      const short = url.length > 72 ? url.slice(0, 72) + "…" : url;
+      li.innerHTML = `
+        <span class="gallery-editor__num">${idx === 0 ? "שער" : idx + 1}</span>
+        <img class="gallery-editor__thumb" src="${ShibumiAdmin.escapeHtml(url)}" alt="" loading="lazy" decoding="async" width="56" height="42">
+        <span class="gallery-editor__url" title="${ShibumiAdmin.escapeHtml(url)}">${ShibumiAdmin.escapeHtml(short)}</span>
+        <span class="gallery-editor__btns">
+          <button type="button" class="btn-a btn-a--sm btn-a--ghost" data-gal-up="${idx}" ${idx === 0 ? "disabled" : ""} aria-label="הזז למעלה">▲</button>
+          <button type="button" class="btn-a btn-a--sm btn-a--ghost" data-gal-down="${idx}" ${idx === modalGalleryUrls.length - 1 ? "disabled" : ""} aria-label="הזז למטה">▼</button>
+          <button type="button" class="btn-a btn-a--sm btn-a--danger" data-gal-del="${idx}" aria-label="מחק תמונה">מחק</button>
+        </span>`;
+      galleryList.appendChild(li);
+    });
+  }
+
+  galleryList.addEventListener("click", (e) => {
+    const up = e.target.closest("[data-gal-up]");
+    const dn = e.target.closest("[data-gal-down]");
+    const del = e.target.closest("[data-gal-del]");
+    if (up && !up.disabled) {
+      const i = +up.dataset.galUp;
+      if (i > 0) {
+        const t = modalGalleryUrls[i - 1];
+        modalGalleryUrls[i - 1] = modalGalleryUrls[i];
+        modalGalleryUrls[i] = t;
+        renderGalleryList();
+      }
+    } else if (dn && !dn.disabled) {
+      const i = +dn.dataset.galDown;
+      if (i < modalGalleryUrls.length - 1) {
+        const t = modalGalleryUrls[i + 1];
+        modalGalleryUrls[i + 1] = modalGalleryUrls[i];
+        modalGalleryUrls[i] = t;
+        renderGalleryList();
+      }
+    } else if (del) {
+      modalGalleryUrls.splice(+del.dataset.galDel, 1);
+      renderGalleryList();
+    }
+  });
+
+  addImgUrlBtn.addEventListener("click", () => {
+    const u = newImgUrl.value.trim();
+    if (!isAllowedImageUrl(u)) {
+      ShibumiAdmin.toast("הזינו כתובת תקינה (https או http)", "err");
+      return;
+    }
+    modalGalleryUrls.push(u);
+    newImgUrl.value = "";
+    renderGalleryList();
+  });
+
+  galleryFiles.addEventListener("change", async () => {
+    const files = Array.from(galleryFiles.files || []).slice(0, MAX_FILES_BATCH);
+    galleryFiles.value = "";
+    for (const f of files) {
+      if (f.size > MAX_IMG_FILE) {
+        ShibumiAdmin.toast("הקובץ " + f.name + " גדול מדי (מקס׳ 2MB)", "err");
+        continue;
+      }
+      try {
+        const dataUrl = await new Promise((resolve, reject) => {
+          const r = new FileReader();
+          r.onload = () => resolve(r.result);
+          r.onerror = reject;
+          r.readAsDataURL(f);
+        });
+        if (typeof dataUrl === "string" && dataUrl.startsWith("data:image/")) modalGalleryUrls.push(dataUrl);
+      } catch {
+        ShibumiAdmin.toast("לא ניתן לקרוא קובץ", "err");
+      }
+    }
+    renderGalleryList();
+  });
+
+  resetGalleryBtn.addEventListener("click", () => {
+    const id = document.getElementById("formPropId").value;
+    if (!id || Shibumi.isAdminCreatedId(id)) return;
+    const raw = base.find(x => x.id === id);
+    if (!raw || !raw.images || !raw.images.length) return;
+    modalGalleryUrls = raw.images.slice();
+    renderGalleryList();
+    ShibumiAdmin.toast("הוגדרו תמונות מהקטלוג — לחצו שמירה כדי להחיל");
+  });
+
+  function setModalMode(mode) {
+    document.getElementById("formMode").value = mode;
+    const isAdd = mode === "add";
+    deleteBtn.style.display = isAdd ? "none" : "inline-flex";
+    purgeBtn.style.display  = "none";
+    resetGalleryBtn.style.display = "none";
+    saveBtn.textContent     = isAdd ? "שמירת נכס חדש" : "שמירת שינויים";
+    document.getElementById("modalSub").textContent = isAdd
+      ? "נכס חדש יישמר ברשימה המקומית ויופיע באתר (במחשב זה) מיד אחרי השמירה."
+      : "שינויים נשמרים בדפדפן ומשפיעים על תצוגת האתר באותו מחשב.";
+  }
+
+  function openAdd() {
+    form.reset();
+    document.getElementById("formPropId").value = "";
+    setModalMode("add");
+    fieldRegion.value = "coast";
+    fieldType.value   = "villa";
+    form.status.value = "active";
+    document.getElementById("modalTitle").textContent = "נכס חדש";
+    modalGalleryUrls = [];
+    renderGalleryList();
+    modal.dataset.open = "true";
+    form.title.focus();
+  }
+
+  function openEdit(id) {
+    const p = current().find(x => x.id === id);
+    if (!p) return;
+    setModalMode("edit");
+    document.getElementById("formPropId").value = p.id;
+    form.title.value = p.title;
+    form.status.value = p.status;
+    form.price.value = p.price;
+    form.description.value = p.description || "";
+    fieldRegion.value = p.region?.key || "other";
+    fieldType.value   = p.type?.key   || "other";
+    document.getElementById("modalTitle").textContent = "עריכה · " + p.title;
+    modalGalleryUrls = (p.images && p.images.length) ? p.images.slice() : [];
+    renderGalleryList();
+    const rawBase = base.find(x => x.id === p.id);
+    resetGalleryBtn.style.display =
+      (!Shibumi.isAdminCreatedId(p.id) && rawBase && rawBase.images && rawBase.images.length)
+        ? "inline-flex"
+        : "none";
+    if (Shibumi.isAdminCreatedId(p.id)) {
+      purgeBtn.style.display = "inline-flex";
+    }
+    modal.dataset.open = "true";
+  }
+
+  function closeEdit() {
+    modal.dataset.open = "false";
+    purgeBtn.style.display = "none";
+    resetGalleryBtn.style.display = "none";
+  }
+
+  document.getElementById("addBtn").addEventListener("click", openAdd);
+
+  tbody.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-edit]");
+    if (btn) openEdit(btn.dataset.edit);
+  });
+
+  document.getElementById("cancelBtn").addEventListener("click", closeEdit);
+  modal.addEventListener("click", e => { if (e.target === modal) closeEdit(); });
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const mode = document.getElementById("formMode").value;
+    const title = form.title.value.trim();
+    if (!title) {
+      ShibumiAdmin.toast("נא למלא כותרת", "err");
+      return;
+    }
+
+    if (mode === "add") {
+      let uuid = "";
+      try { uuid = crypto.randomUUID(); } catch (_) { uuid = String(Date.now()); }
+      const raw = {
+        id: "admin-" + uuid,
+        title,
+        price: form.price.value.trim() || "מחיר בפנייה",
+        description: form.description.value.trim(),
+        url: "",
+        local_images: [],
+        details: {},
+        features: [],
+        regionKey: fieldRegion.value,
+        typeKey:   fieldType.value,
+        status:    form.status.value,
+        galleryUrls: modalGalleryUrls.length ? modalGalleryUrls.slice() : [],
+      };
+      const list = Shibumi.getCustomRawList();
+      list.push(raw);
+      Shibumi.setCustomRawList(list);
+      await reloadBase();
+      ShibumiAdmin.toast("הנכס נוסף");
+      closeEdit();
+      render();
+      return;
+    }
+
+    const id = document.getElementById("formPropId").value;
+    if (!id) return;
+
+    if (Shibumi.isAdminCreatedId(id)) {
+      const list = Shibumi.getCustomRawList();
+      const idx = list.findIndex(x => x.id === id);
+      if (idx >= 0) {
+        list[idx] = {
+          ...list[idx],
+          title,
+          price: form.price.value.trim() || list[idx].price,
+          description: form.description.value.trim(),
+          regionKey: fieldRegion.value,
+          typeKey:   fieldType.value,
+          status:    form.status.value,
+          galleryUrls: modalGalleryUrls.slice(),
+        };
+        Shibumi.setCustomRawList(list);
+        delete overrides[id];
+        localStorage.setItem(OVERRIDES_KEY, JSON.stringify(overrides));
+      }
+    } else {
+      overrides[id] = overrides[id] || {};
+      overrides[id].title        = title;
+      overrides[id].status       = form.status.value;
+      overrides[id].price        = form.price.value.trim();
+      overrides[id].description  = form.description.value.trim();
+      overrides[id].regionKey    = fieldRegion.value;
+      overrides[id].typeKey      = fieldType.value;
+      delete overrides[id]._deleted;
+      const orig = base.find(x => x.id === id);
+      const origUrls = orig && orig.images ? orig.images.slice() : [];
+      if (sameUrlArrays(modalGalleryUrls, origUrls)) delete overrides[id].galleryUrls;
+      else overrides[id].galleryUrls = modalGalleryUrls.slice();
+      localStorage.setItem(OVERRIDES_KEY, JSON.stringify(overrides));
+    }
+    await reloadBase();
+    ShibumiAdmin.toast("נשמר");
+    closeEdit();
+    render();
+  });
+
+  document.getElementById("deleteBtn").addEventListener("click", async () => {
+    const id = document.getElementById("formPropId").value;
+    if (!id || document.getElementById("formMode").value === "add") return;
+    if (!confirm("להסתיר את הנכס מהאתר הציבורי?")) return;
+    overrides[id] = overrides[id] || {};
+    overrides[id]._deleted = true;
+    localStorage.setItem(OVERRIDES_KEY, JSON.stringify(overrides));
+    await reloadBase();
+    ShibumiAdmin.toast("הוסתר מהאתר");
+    closeEdit();
+    render();
+  });
+
+  purgeBtn.addEventListener("click", async () => {
+    const id = document.getElementById("formPropId").value;
+    if (!Shibumi.isAdminCreatedId(id)) return;
+    if (!confirm("למחוק לצמיתות את הנכס שנוסף מהמערכת? לא ניתן לשחזר.")) return;
+    const list = Shibumi.getCustomRawList().filter(x => x.id !== id);
+    Shibumi.setCustomRawList(list);
+    delete overrides[id];
+    localStorage.setItem(OVERRIDES_KEY, JSON.stringify(overrides));
+    await reloadBase();
+    ShibumiAdmin.toast("נמחק");
+    closeEdit();
+    render();
+  });
+
+  document.getElementById("resetBtn").addEventListener("click", async () => {
+    if (!confirm("לאפס עריכות והסתרות לכל הנכסים מהמקור? (נכסים שנוספו עם «נכס חדש» לא יימחקו)")) return;
+    overrides = {};
+    localStorage.removeItem(OVERRIDES_KEY);
+    await reloadBase();
+    ShibumiAdmin.toast("אופס");
+    render();
+  });
+
+  document.getElementById("purgeCustomBtn").addEventListener("click", async () => {
+    if (!confirm("למחוק את כל הנכסים שנוספו דרך «נכס חדש»? פעולה זו לא הפיכה.")) return;
+    Shibumi.setCustomRawList([]);
+    await reloadBase();
+    ShibumiAdmin.toast("נמחקו נכסים שהוספו ידנית");
+    render();
+  });
+
+  document.getElementById("exportBtn").addEventListener("click", () => {
+    const payload = {
+      overrides,
+      customProperties: Shibumi.getCustomRawList(),
+      exportedAt: new Date().toISOString(),
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "shibumi-admin-backup.json";
+    a.click();
+    URL.revokeObjectURL(url);
+    ShibumiAdmin.toast("הקובץ הורד");
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

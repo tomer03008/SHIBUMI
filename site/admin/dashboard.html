@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>לוח בקרה · שיבומי</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="shell">
+  <aside class="side">
+    <div class="side__brand">
+      <div class="side__mark">שיבומי</div>
+      <div class="side__role">ניהול אתר</div>
+    </div>
+    <nav class="side__nav">
+      <a href="dashboard.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 13h6V4H4zM14 20h6V11h-6zM4 20h6v-5H4zM14 9h6V4h-6z"/></svg>
+        לוח בקרה
+      </a>
+      <a href="properties.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"/></svg>
+        ניהול נכסים
+      </a>
+      <a href="leads.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5"/></svg>
+        פניות
+      </a>
+      <a href="change-password.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        שינוי סיסמה
+      </a>
+    </nav>
+    <div class="side__foot">
+      <div class="side__user">מחובר: <strong id="sideUser">—</strong></div>
+      <a href="#" id="logoutBtn">יציאה</a>
+      <div class="side__version">גרסה 1.0</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="page-head-a">
+      <div>
+        <h1>לוח בקרה</h1>
+        <div class="page-head-a__sub">סקירה של הפעילות באתר — צפיות, פניות ומלאי פעיל.</div>
+      </div>
+      <div class="page-head-actions">
+        <a href="../index.html" target="_blank" rel="noopener" class="btn-a btn-a--ghost">לאתר הציבורי</a>
+        <a href="properties.html" class="btn-a btn-a--primary">נכסים</a>
+      </div>
+    </header>
+
+    <section class="stats" id="stats">
+      <div class="stat"><span class="stat__label">נכסים פעילים</span><span class="stat__value" id="stActive">—</span><span class="stat__delta" id="stActiveSub">—</span></div>
+      <div class="stat"><span class="stat__label">נמכרו / הושכרו</span><span class="stat__value" id="stDone">—</span><span class="stat__delta">סה״כ בהיסטוריה</span></div>
+      <div class="stat"><span class="stat__label">צפיות השבוע</span><span class="stat__value" id="stViews">—</span><span class="stat__delta" id="stViewsSub">—</span></div>
+      <div class="stat"><span class="stat__label">פניות חדשות</span><span class="stat__value" id="stLeads">—</span><span class="stat__delta" id="stLeadsSub">—</span></div>
+    </section>
+
+    <section class="panel-grid">
+      <div class="panel">
+        <div class="panel__head">
+          <h3 class="panel__title">צפיות לפי יום</h3>
+          <span class="panel__hint">14 ימים אחרונים</span>
+        </div>
+        <div class="bars" id="bars"></div>
+        <div class="bars-axis" id="barsAxis"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel__head">
+          <h3 class="panel__title">הנכסים הנצפים ביותר</h3>
+          <span class="panel__hint">Top 5</span>
+        </div>
+        <ol class="list-ranked" id="topList"></ol>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel__head">
+        <h3 class="panel__title">פעילות אחרונה</h3>
+        <a href="leads.html" class="btn-a btn-a--sm btn-a--ghost">לכל הפניות</a>
+      </div>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th>תאריך</th><th>שם</th><th>טלפון</th><th>עניין</th><th>הודעה</th></tr>
+          </thead>
+          <tbody id="recentLeads">
+            <tr><td colspan="5" class="table-empty">אין פניות להצגה.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <p class="main-footnote">
+      צפיות ונכסים: נתונים מהדפדפן שלך או מהאתר. פניות: אם הוגדר Backend — מוצגות מ-Google Sheet (ראו BACKEND_SETUP.md).
+    </p>
+  </main>
+</div>
+
+<script src="../js/config.js"></script>
+<script src="../js/properties-data.js"></script>
+<script src="../js/data.js"></script>
+<script src="js/admin.js"></script>
+<script>
+(async function () {
+  ShibumiAdmin.requireSession();
+
+  const creds = await ShibumiAdmin.getCredentials();
+  document.getElementById("sideUser").textContent = creds.username;
+  document.getElementById("logoutBtn").addEventListener("click", (e) => { e.preventDefault(); ShibumiAdmin.logout(); });
+
+  /* ---- Data ---- */
+  let all = [];
+  try { all = await Shibumi.loadAllProperties(); }
+  catch (e) { console.error(e); }
+
+  const active = all.filter(p => p.status === "active");
+  const sold = all.filter(p => p.status === "sold");
+  const rented = all.filter(p => p.status === "rented");
+
+  document.getElementById("stActive").textContent = active.length;
+  document.getElementById("stActiveSub").textContent = "מתוך " + all.length + " סה״כ במערכת";
+  document.getElementById("stDone").textContent = sold.length + rented.length;
+
+  /* Views */
+  const views = Shibumi.getViews();
+  const timeline = Shibumi.getViewsTimeline();
+  const now = new Date();
+  const weekAgo = now.getTime() - 7 * 86400 * 1000;
+  const weekViews = timeline.filter(e => e.ts > weekAgo).length;
+  document.getElementById("stViews").textContent = weekViews;
+  const totalViews = Object.values(views).reduce((a,b) => a+b, 0);
+  document.getElementById("stViewsSub").textContent = "סה״כ " + totalViews + " צפיות";
+
+  /* Leads */
+  const leads = await Shibumi.getLeads();
+  const newLeads = leads.filter(l => (l.ts || 0) > weekAgo).length;
+  document.getElementById("stLeads").textContent = newLeads;
+  document.getElementById("stLeadsSub").textContent = leads.length + " פניות סה״כ";
+
+  /* Bars — last 14 days */
+  const days = 14;
+  const counts = new Array(days).fill(0);
+  const labels = [];
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(now); d.setHours(0,0,0,0); d.setDate(d.getDate() - i);
+    labels.push(d);
+  }
+  timeline.forEach(e => {
+    const d = new Date(e.ts); d.setHours(0,0,0,0);
+    const idx = labels.findIndex(l => l.getTime() === d.getTime());
+    if (idx >= 0) counts[idx]++;
+  });
+  const max = Math.max(1, ...counts);
+
+  const bars = document.getElementById("bars");
+  const axis = document.getElementById("barsAxis");
+  counts.forEach((c) => {
+    const bar = document.createElement("div");
+    bar.className = "bars__bar";
+    bar.style.height = ((c / max) * 100) + "%";
+    bar.dataset.v = c;
+    bars.appendChild(bar);
+  });
+  labels.forEach((d, i) => {
+    const sp = document.createElement("span");
+    sp.textContent = (i % 2 === 0) ? (d.getDate() + "/" + (d.getMonth() + 1)) : "·";
+    axis.appendChild(sp);
+  });
+
+  /* Top list */
+  const top = Object.entries(views)
+    .map(([id, v]) => ({ id, v, prop: all.find(p => p.id === id) }))
+    .filter(x => x.prop)
+    .sort((a, b) => b.v - a.v)
+    .slice(0, 5);
+
+  const topList = document.getElementById("topList");
+  if (!top.length) {
+    topList.innerHTML = "<li class='list-ranked__empty'>אין עדיין נתוני צפייה.</li>";
+  } else {
+    top.forEach((x, i) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <span class="rank">0${i+1}</span>
+        <a href="../property.html?id=${encodeURIComponent(x.id)}" target="_blank" class="title">${ShibumiAdmin.escapeHtml(x.prop.title)}</a>
+        <span class="count">${x.v}</span>
+      `;
+      topList.appendChild(li);
+    });
+  }
+
+  /* Recent leads */
+  const tbody = document.getElementById("recentLeads");
+  if (leads.length) {
+    tbody.innerHTML = "";
+    leads.slice(0, 6).forEach(l => {
+      const tr = document.createElement("tr");
+      const date = new Date(l.ts || 0);
+      const dateStr = l.dateIl || (date.toLocaleDateString("he-IL") + " " + date.toLocaleTimeString("he-IL", { hour:'2-digit', minute:'2-digit' }));
+      tr.innerHTML = `
+        <td>${ShibumiAdmin.escapeHtml(dateStr)}</td>
+        <td><strong>${ShibumiAdmin.escapeHtml(l.name)}</strong></td>
+        <td><a href="tel:${ShibumiAdmin.escapeHtml(l.phone)}">${ShibumiAdmin.escapeHtml(l.phone)}</a></td>
+        <td>${ShibumiAdmin.escapeHtml(l.interest || "—")}</td>
+        <td class="dashboard-msg-preview">${ShibumiAdmin.escapeHtml((l.message || "").slice(0, 110))}${(l.message || "").length > 110 ? "…" : ""}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+})();
+</script>
+</body>
+</html>

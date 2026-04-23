@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>כניסה · שיבומי נדל״ן</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<a href="#login-main" class="skip-link">דלג לטופס הכניסה</a>
+
+<main class="auth-page" id="login-main">
+  <div class="auth-page__logo">
+    <div class="auth-page__logo-mark">שיבומי</div>
+    <div class="auth-page__logo-sub">מערכת ניהול אתר</div>
+  </div>
+
+  <div class="auth-card">
+    <h1>כניסה</h1>
+    <p class="auth-card__intro">
+      הזינו שם משתמש וסיסמה. אם זו הכניסה הראשונה — יופיעו הוראות קצרות למטה.
+    </p>
+
+    <div class="banner banner--info" id="firstRunBanner" style="display:none" role="status">
+      <strong>כניסה ראשונה:</strong>
+      השתמשו בפרטים שקיבלתם, ואז החליפו סיסמה תחת «שינוי סיסמה» בתפריט.
+    </div>
+
+    <div class="banner banner--err" id="errorBanner" style="display:none" role="alert"></div>
+
+    <form id="loginForm" novalidate>
+      <label class="field" id="fUser">
+        <span class="field__label">שם משתמש</span>
+        <input class="field__input" name="username" type="text" autocomplete="username" autocapitalize="off" autocorrect="off" spellcheck="false" required inputmode="text">
+        <span class="field__error">נא להזין שם משתמש.</span>
+      </label>
+
+      <label class="field" id="fPass">
+        <span class="field__label">סיסמה</span>
+        <div class="password-wrap">
+          <input class="field__input" type="password" name="password" autocomplete="current-password" required id="passInput">
+          <button type="button" class="password-toggle" id="togglePass" aria-label="הצג או הסתר סיסמה">הצג</button>
+        </div>
+        <span class="field__error">נא להזין סיסמה.</span>
+      </label>
+
+      <button type="submit" class="btn-a btn-a--primary btn-a--lg btn-a--block" id="submitBtn">כניסה</button>
+    </form>
+
+    <div class="auth-footer">
+      <a href="forgot.html">שכחתי סיסמה</a>
+      <a href="../index.html">חזרה לאתר</a>
+    </div>
+  </div>
+</main>
+
+<style>
+  .skip-link {
+    position: absolute;
+    inset-inline-start: 8px;
+    top: 8px;
+    padding: 8px 12px;
+    background: #0e1a14;
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    border-radius: 6px;
+    z-index: 9999;
+    transform: translateY(-120%);
+    transition: transform 0.2s;
+  }
+  .skip-link:focus {
+    transform: translateY(0);
+    outline: 2px solid #1f3d2e;
+    outline-offset: 2px;
+  }
+</style>
+
+<script src="js/admin.js"></script>
+<script>
+(async function () {
+  if (ShibumiAdmin.hasSession()) { location.replace("dashboard.html"); return; }
+
+  const hadCreds = !!localStorage.getItem("shibumi:admin:credentials");
+  await ShibumiAdmin.initCredentials();
+  if (!hadCreds) {
+    document.getElementById("firstRunBanner").style.display = "block";
+  }
+
+  const form    = document.getElementById("loginForm");
+  const errEl   = document.getElementById("errorBanner");
+  const passInp = document.getElementById("passInput");
+  const toggle  = document.getElementById("togglePass");
+
+  toggle.addEventListener("click", () => {
+    const is = passInp.type === "password";
+    passInp.type = is ? "text" : "password";
+    toggle.textContent = is ? "הסתר" : "הצג";
+  });
+
+  let attempts = 0;
+  let lockedUntil = 0;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    errEl.style.display = "none";
+    document.getElementById("fUser").dataset.error = "false";
+    document.getElementById("fPass").dataset.error = "false";
+
+    const fd = new FormData(form);
+    const u = (fd.get("username") || "").toString().trim();
+    const p = (fd.get("password") || "").toString();
+
+    let bad = false;
+    if (!u) { document.getElementById("fUser").dataset.error = "true"; bad = true; }
+    if (!p) { document.getElementById("fPass").dataset.error = "true"; bad = true; }
+    if (bad) return;
+
+    if (Date.now() < lockedUntil) {
+      const secs = Math.ceil((lockedUntil - Date.now()) / 1000);
+      errEl.textContent = "נסו שוב בעוד " + secs + " שניות.";
+      errEl.style.display = "block";
+      return;
+    }
+
+    const btn = document.getElementById("submitBtn");
+    btn.disabled = true;
+    btn.textContent = "בודק…";
+
+    const ok = await ShibumiAdmin.verifyLogin(u, p);
+
+    btn.disabled = false;
+    btn.textContent = "כניסה";
+
+    if (ok) {
+      ShibumiAdmin.createSession();
+      location.replace("dashboard.html");
+    } else {
+      attempts++;
+      if (attempts >= 5) {
+        lockedUntil = Date.now() + 60_000;
+        attempts = 0;
+        errEl.textContent = "ננעל לדקה אחרי ניסיונות כושלים. לשחזור — 050-733-0090.";
+      } else {
+        errEl.textContent = "שם משתמש או סיסמה לא נכונים. נותרו " + (5 - attempts) + " ניסיונות.";
+      }
+      errEl.style.display = "block";
+      document.getElementById("fPass").dataset.error = "true";
+    }
+  });
+})();
+</script>
+</body>
+</html>

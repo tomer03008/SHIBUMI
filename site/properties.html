@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>נכסים · שיבומי נדל״ן</title>
+  <meta name="description" content="כל הנכסים של שיבומי נדל״ן — נחלות, וילות, דירות ופנטהאוזים. סינון לפי אזור וסוג." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="./css/base.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+
+<!-- NAV -->
+<header class="navbar scrolled" role="banner">
+  <div class="container navbar-container">
+    <a class="logo" href="./index.html" aria-label="שיבומי נדל״ן · עמוד הבית">
+      <span class="logo-text">SHIBUMI</span>
+      <span class="logo-subtext">נדל״ן · מאז 1997</span>
+    </a>
+    <nav class="nav-links" aria-label="תפריט ראשי">
+      <a href="./index.html">ראשי</a>
+      <a href="./properties.html" class="active">נכסים</a>
+      <a href="./about.html">אודות</a>
+      <a href="./contact.html">יצירת קשר</a>
+      <a class="nav__fav" href="./favorites.html" aria-label="המועדפים שלי" style="display:inline-flex;align-items:center;gap:6px;color:var(--text-primary);padding:8px 4px;position:relative">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span data-fav-count hidden style="min-width:18px;height:18px;padding:0 5px;background:var(--accent-clay);color:#fff;border-radius:9px;font-size:.7rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;line-height:1"></span>
+      </a>
+      <a class="btn btn-gold-ghost" href="tel:972507330090">050-733-0090</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="פתח תפריט" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+      </svg>
+    </button>
+  </div>
+</header>
+<div class="nav-backdrop" aria-hidden="true"></div>
+
+<main id="main" style="padding-top:100px">
+
+  <!-- PAGE HEADER -->
+  <section class="section" style="padding-bottom:32px">
+    <div class="container">
+      <div data-reveal>
+        <span class="section-eyebrow">האוסף המלא</span>
+        <h1 class="h2-title" style="margin-bottom:12px">נכסים</h1>
+        <p class="body-large" style="max-width:620px">
+          אוסף הנכסים של שיבומי. הקלק לסינון לפי אזור, סוג, או גלישה חופשית.
+          <span id="count" style="color:var(--accent-gold);font-weight:600"></span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <div class="filters-bar">
+    <div class="container">
+      <div class="filters">
+        <div class="filters__group" id="regionChips">
+          <span class="filters__label">אזור</span>
+        </div>
+        <span class="filters__divider" aria-hidden="true"></span>
+        <div class="filters__group" id="typeChips">
+          <span class="filters__label">סוג</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GRID -->
+  <section class="section" style="padding-top:48px">
+    <div class="container">
+      <div class="properties-grid" id="grid" aria-live="polite"></div>
+      <div id="empty" hidden style="text-align:center;padding:72px 0;color:var(--text-secondary)">
+        <h3 style="margin-bottom:10px">אין נכסים בצירוף הזה</h3>
+        <p>נסו לבחור קטגוריה אחרת או חזרו ל<a href="./properties.html" style="color:var(--accent-gold)">כל הנכסים</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENTLY VIEWED -->
+  <section class="recent-strip" id="recentStrip" aria-label="נצפו לאחרונה" hidden>
+    <div class="container">
+      <div class="recent-strip__title">נצפו לאחרונה</div>
+      <div class="recent-strip__row"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER (minimal) -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer-container">
+    <div>
+      <a class="logo" href="./index.html">
+        <span class="logo-text">SHIBUMI</span>
+        <span class="logo-subtext">נדל״ן · מאז 1997</span>
+      </a>
+      <p class="footer-desc">חברת בוטיק לייעוץ ושיווק נכסי יוקרה בישראל.</p>
+    </div>
+    <div>
+      <h4 class="footer-heading">ניווט</h4>
+      <ul class="footer-links">
+        <li><a href="./index.html">עמוד הבית</a></li>
+        <li><a href="./properties.html">נכסים</a></li>
+        <li><a href="./about.html">אודות</a></li>
+        <li><a href="./contact.html">יצירת קשר</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">יצירת קשר</h4>
+      <ul class="contact-info">
+        <li>טלפון: <a href="tel:972507330090" style="color:inherit">050-733-0090</a></li>
+        <li>WhatsApp: <a href="https://wa.me/972507330090" target="_blank" rel="noopener" style="color:inherit">50-733-0090</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© <span id="year">2026</span> שיבומי נדל״ן. כל הזכויות שמורות.</div>
+    <div class="footer-bottom-links">
+      <a href="./accessibility.html">הצהרת נגישות</a>
+      <a href="./admin/index.html">כניסת מנהל</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/config.js"></script>
+<script src="./js/properties-data.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/site.js"></script>
+<script>
+(async function () {
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const grid       = document.getElementById("grid");
+  const countEl    = document.getElementById("count");
+  const empty      = document.getElementById("empty");
+  const regionChips = document.getElementById("regionChips");
+  const typeChips   = document.getElementById("typeChips");
+
+  const all = await Shibumi.loadPublicProperties();
+
+  const qs = new URLSearchParams(location.search);
+  let qRegion = qs.get("region") || "all";
+  let qType   = qs.get("type")   || "all";
+  if (Shibumi.REGION_ALIASES?.[qRegion]) qRegion = Shibumi.REGION_ALIASES[qRegion];
+
+  function buildChips(container, DEFS, prop, activeKey, onPick) {
+    const allChip = document.createElement("button");
+    allChip.type = "button";
+    allChip.className = "chip" + (activeKey === "all" ? " is-active" : "");
+    allChip.innerHTML = `הכל <span class="chip__count">${all.length}</span>`;
+    allChip.addEventListener("click", () => onPick("all"));
+    container.appendChild(allChip);
+
+    DEFS.forEach(def => {
+      const count = all.filter(p => p[prop]?.key === def.key).length;
+      if (!count) return;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip" + (activeKey === def.key ? " is-active" : "");
+      btn.innerHTML = `${def.label} <span class="chip__count">${count}</span>`;
+      btn.addEventListener("click", () => onPick(def.key));
+      container.appendChild(btn);
+    });
+  }
+
+  function syncURL() {
+    const nq = new URLSearchParams();
+    if (qRegion !== "all") nq.set("region", qRegion);
+    if (qType   !== "all") nq.set("type",   qType);
+    const qsStr = nq.toString();
+    history.replaceState(null, "", location.pathname + (qsStr ? "?" + qsStr : ""));
+  }
+
+  function render() {
+    const list = all.filter(p =>
+      (qRegion === "all" || p.region?.key === qRegion) &&
+      (qType   === "all" || p.type?.key   === qType)
+    );
+
+    countEl.textContent = list.length ? `· ${list.length} נכסים מוצגים` : "";
+    grid.innerHTML = "";
+    empty.hidden = list.length !== 0;
+
+    list.forEach((p, i) => grid.appendChild(window.shibumiUI.renderCard(p, i % 6)));
+    window.shibumiUI.initReveal();
+
+    regionChips.querySelectorAll(".chip").forEach(el => el.remove());
+    typeChips.querySelectorAll(".chip").forEach(el => el.remove());
+    buildChips(regionChips, Shibumi.REGIONS, "region", qRegion, (k) => { qRegion = k; syncURL(); render(); });
+    buildChips(typeChips,   Shibumi.TYPES,   "type",   qType,   (k) => { qType   = k; syncURL(); render(); });
+  }
+
+  render();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2000 @@
+/* Auto-generated from shibumi_properties/properties.json. Do not edit by hand. */
+window.SHIBUMI_DATA = [
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a0%d7%97%d7%9c%d7%94-%d7%9e%d7%a8%d7%92%d7%a9%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a2%d7%9e%d7%a7-%d7%99%d7%96%d7%a8%d7%a2%d7%90%d7%9c/",
+    "title": "נחלה מרגשת למכירה בעמק יזרעאל- לגור בלב הטבע",
+    "categories": [],
+    "price": "28,000,000 ש\"ח",
+    "details": {
+      "שטח הנחלה": "30 דונם ברצף הכולל בתוכו מטע זיתים מניב",
+      "שטח בנוי": "625 מ\"ר בנוי.\n360מ\"ר בית עיקרי,133מ\"ר בית נוסף,\n111מ\"ר מבנה אירוח ועוד שטחים נרחבים לאחסון"
+    },
+    "features": [],
+    "description": "נחלה מדהימה למכירה בעמק יזרעאל, השוכנת בלב נופיו הפתוחים והמדהימים של האזור. הנחלה כוללת בית מרכזי מרשים, בית קטן נוסף ומבנה ייחודי המיועד לאירוח וסדנאות.\n\nהבית המרכזי נבנה בהשראת מבנים קולוניאליים עתיקים ומשלב חומרים יוקרתיים כמו בטון, פלדה, אבן ועץ. מבנהו מציע ארבעה אזורים עיקריים: בקומה העליונה חדרי שינה מעוצבים עם נוף פנורמי, ובקומה התחתונה חללים מרווחים ומוארים לאירוח, הכוללים מטבח מאובזר גדול, פינת אוכל מרשימה ופינת טלוויזיה. חלונות מרצפה עד תקרה מאפשרים חיבור מושלם לטבע, עם תצפית בלתי פוסקת לבריכה הנשפכת ולנוף עוצר הנשימה שבחוץ.\n\nהמבנה הנוסף נועד לסדנאות יוגה, אירוח שפים פרטיים ואירועים אינטימיים, בעוד הבית הקטן, ששופץ בקפידה כחלק מהקומפלקס, טובל בירוק, מציע פרטיות מלאה ואווירה קסומה.\n\nנחלה זו מציעה חוויה יוצאת דופן של מגורים בטבע, תוך המשכיות מושלמת בין הפנים לחוץ.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2024/11/19-1.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/2-2.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/19.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/31.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-09.35.42-2.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/5-2.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/22.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/25.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-09.35.42.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/8-1.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-09.53.16.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-09.35.42-1.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/37.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-09.35.43.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/50.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/53.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/43.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/35.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-09.40.26.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-09.40.26-1.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/44.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-09.40.26-2.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/33.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/49.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/28.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/52.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/29.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/20.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/1-4.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/2-5.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/3-1.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/64.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/65.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/70.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/1-3.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/2-3.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/74.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\1-3.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\1-4.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\19-1.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\19.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\2-2.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\2-3.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\2-5.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\20.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\22.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\25.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\28.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\29.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\3-1.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\31.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\33.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\35.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\37.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\43.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\44.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\49.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\5-2.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\50.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\52.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\53.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\64.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\65.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\70.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\74.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\8-1.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\whatsapp-image-2024-11-26-at-09.35.42-1.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\whatsapp-image-2024-11-26-at-09.35.42-2.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\whatsapp-image-2024-11-26-at-09.35.42.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\whatsapp-image-2024-11-26-at-09.35.43.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\whatsapp-image-2024-11-26-at-09.40.26-1.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\whatsapp-image-2024-11-26-at-09.40.26-2.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\whatsapp-image-2024-11-26-at-09.40.26.jpeg",
+      "shibumi_properties\\images\\נחלה_מרגשת_למכירה_בעמק_יזרעאל-_לגור_בלב_הטבע\\whatsapp-image-2024-11-26-at-09.53.16.jpeg"
+    ],
+    "image_count": 38
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a0%d7%97%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9b%d7%a4%d7%a8-%d7%95%d7%99%d7%aa%d7%a7%d7%99%d7%9f-%d7%91%d7%99%d7%aa-%d7%9e%d7%93%d7%94%d7%99%d7%9d-%d7%9e%d7%95%d7%9c-%d7%a0/",
+    "title": "נחלה למכירה בכפר ויתקין בית מדהים מול נוף גבוה רואה ים",
+    "categories": [],
+    "price": "P.0.R",
+    "details": {
+      "חלקה א'": "3,800 מ\"ר",
+      "גודל הבית": "580 מ\"ר"
+    },
+    "features": [],
+    "description": "נחלה נדירה על גבעה עם נוף פתוח לים ולגלים מעל צמרות העצים,הנחלה כוללת וילה ברמה הגבוהה ביותר בנוי 580 מ\"ר על מגרש 3.8 דונם, הבית תוכנן בקווים נקיים ומודרניים המחולק לשני אזורים, האזור הציבורי ויחידת הורים עם מפתחי ענק מרצפה עד תקרה המחברים את החוץ לפנים ומפלס חדרי הילדים אשר תוכנן עם נגיעות חמות המשלבות עץ ואוירה משפחתית כולל 4 סוויטות ילדים עם יציאות פרטיות לחצר, חלל משפחה גדול חדר קולנוע ושטחי אחסון.\n\nהחלל הציבורי פתוח וכולל מטבח עם אי ענק, אזור אירוח נרחב ומפתחים עצומים לכיוון הבריכה החצר והים.\n\nלנחלה בריכה גדולה עם רצפה מתכוננת שיכולה להפוך להיות משטח ולשמור על חימום המים בחורף.בנוסף קיים חלל עבודה עצמאי עם נוף פתוח לכל האזור והים.הנחלה מהוונת עם זכויות לעוד 2 בתים.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-12-at-15.51.44.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-12-at-15.51.42.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-12-at-15.51.43.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-12-at-15.51.40.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-12.46.58.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-12.49.15.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-12.46.57.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-12-at-15.51.41.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/dsc03356-photos-for-web-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/dsc03346-photos-for-web-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/dsc03354-photos-for-web-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-12.47.38.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-12-at-15.51.45-1.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-12-at-15.51.46.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-12-at-15.51.44-1.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-12-at-15.51.45.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/dsc03360-photos-for-web-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/dsc03358-photos-for-web-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/dsc03366-photos-for-web-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/dsc03377-photos-for-web-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/whatsapp-image-2024-11-26-at-12.48.28.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/dsc03376-photos-for-web-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2024/11/dsc03344-photos-for-web-2-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\dsc03344-photos-for-web-2-1.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\dsc03346-photos-for-web-2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\dsc03354-photos-for-web-2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\dsc03356-photos-for-web-2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\dsc03358-photos-for-web-2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\dsc03360-photos-for-web-2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\dsc03366-photos-for-web-2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\dsc03376-photos-for-web-2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\dsc03377-photos-for-web-2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-12-at-15.51.40.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-12-at-15.51.41.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-12-at-15.51.42.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-12-at-15.51.43.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-12-at-15.51.44-1.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-12-at-15.51.44.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-12-at-15.51.45-1.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-12-at-15.51.45.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-12-at-15.51.46.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-26-at-12.46.57.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-26-at-12.46.58.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-26-at-12.47.38.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-26-at-12.48.28.jpeg",
+      "shibumi_properties\\images\\נחלה_למכירה_בכפר_ויתקין_בית_מדהים_מול_נוף_גבוה_רואה_ים\\whatsapp-image-2024-11-26-at-12.49.15.jpeg"
+    ],
+    "image_count": 24
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a0%d7%97%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9e%d7%9b%d7%9e%d7%95%d7%a8%d7%aa-%d7%9c%d7%99%d7%93-%d7%94%d7%99%d7%9d-%d7%a2%d7%9d-%d7%97%d7%95%d7%a8%d7%a9%d7%aa-%d7%90%d7%a7/",
+    "title": "נחלה למכירה במכמורת ליד הים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח נחלה": "3,000 מ\"ר",
+      "שטח בנוי": "200 מ\"ר+יחידת אירוח"
+    },
+    "features": [],
+    "description": "נחלה מדהימה למכירה במכמורת במיקום פנימי ושקט. על שטח של כ 3 דונם כולל בית ישן עם של כ 200 מ\"ר עם הרבה אופי, ויחידת אירוח נפרדת באחד המקומות היפים במכמורת והליכה קצרה לים. בבניית בית חדש על הנחלה ניתן יהיה לקבל תוצאה מדהימה עם נוף של ירוק וים.\n\nמה שמאד ייחודית לנחלה היא חורשה רחבה של עצי אקליפטוס וותיקים והשילוב של החיים מוקפים בטבע ליד הים.\n\nמי שירכוש את הנחלה, יקבל אותה מהוונת לבניית 3 בתים ואם אפשרויות פיצול.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2021/12/3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2021/12/4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2021/12/1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2021/12/5.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2021/12/2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נחלה_למכירה_במכמורת_ליד_הים\\1.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_במכמורת_ליד_הים\\2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_במכמורת_ליד_הים\\3.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_במכמורת_ליד_הים\\4.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_במכמורת_ליד_הים\\5.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_במכמורת_ליד_הים\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 6
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%94%d7%a9%d7%9b%d7%a8%d7%94-%d7%91%d7%a2%d7%9e%d7%99%d7%a7%d7%9d-%d7%91%d7%99%d7%aa-%d7%a0%d7%95%d7%a4%d7%a9-%d7%97%d7%9c%d7%95%d7%9e%d7%99/",
+    "title": "להשכרה לטווח ארוך בעמיקם בית נופש חלומי",
+    "categories": [],
+    "price": "35,000 ש\"ח",
+    "details": {
+      "שטח": "1,000 מ\"ר",
+      "שטח בנוי": "386 מ\"ר"
+    },
+    "features": [],
+    "description": "להשכרה לטווח ארוך במושב עמיקם – בית נופש חלומי!במיקום גבוה עם נוף עוצר נשימה לשמורת יער ונוף הררי פתוח, מוצע להשכרה בית נופש ייחודי ופרטי:",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2025/01/11.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/12.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/13.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/5.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/6.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/7.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/8.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/9.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/10.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/01/14.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\1.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\10.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\11.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\12.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\13.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\14.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\2.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\4.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\5.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\6.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\7.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\8.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\9.jpg",
+      "shibumi_properties\\images\\להשכרה_לטווח_ארוך_בעמיקם_בית_נופש_חלומי\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 14
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%a9%d7%a7-%d7%a2%d7%96%d7%a8-%d7%9e%d7%95%d7%9c-%d7%a0%d7%95%d7%a3-%d7%a4%d7%aa%d7%95%d7%97-%d7%91%d7%91%d7%a0%d7%99-%d7%a6%d7%99%d7%95%d7%9f/",
+    "title": "למכירה משק עזר מול נוף פתוח בבני ציון",
+    "categories": [],
+    "price": "P.0.R",
+    "details": {
+      "משק עזר": "3,500 מ\"ר",
+      "בנוי": "בית על חצי דונם כ200מ\"ר\nבית סבתא כ-120 מ\"ר +מחסן כ400 ש\"ר"
+    },
+    "features": [],
+    "description": "משק עזר ממוקם גבוה בגודל חלקה של 3.5 דונם אשר מתוכו פיצלו חצי דונם ובנו בית יפה של כ200 מ\"ר הבנוי ב 2 קומות. שאר המשק, 3 דונם, קיים בית סבתא שמור ובנוסף מבנה חקלאי של כ 400 מ\"ר הממוקם גבוה ומאפשר לבנות במקומו בית גדול עם בריכת שחייה ולהשקיף לנוף פתוח.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2023/02/3-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/7.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/10.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/2-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/5.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/8.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/6.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/9.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/11.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2023/02/20230110_111316-rotated.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\1.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\10.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\11.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\2-1.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\2.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\20230110_111316-rotated.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\3-1.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\3.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\4.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\5.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\6.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\7.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\8.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\9.jpg",
+      "shibumi_properties\\images\\למכירה_משק_עזר_מול_נוף_פתוח_בבני_ציון\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 15
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%99%d7%aa-%d7%9e%d7%94%d7%9e%d7%9d-%d7%91%d7%a1%d7%91%d7%99%d7%91%d7%aa-%d7%97%d7%95%d7%a3-%d7%91%d7%99%d7%aa-%d7%99%d7%a0%d7%90%d7%99/",
+    "title": "למכירה בית מהמם בסביבת חוף בית ינאי",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח": "717 מ\"ר",
+      "שטח בנוי": "280 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2023/06/20.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/6.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/18.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/21.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/11.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/3.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/16.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/5.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/8.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/2.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2023/06/9.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\11.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\16.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\18.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\2.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\20.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\21.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\3.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\5.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\6.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\8.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\9.jpeg",
+      "shibumi_properties\\images\\למכירה_בית_מהמם_בסביבת_חוף_בית_ינאי\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 12
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a0%d7%97%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9e%d7%95%d7%a9%d7%91-%d7%a4%d7%a1%d7%98%d7%95%d7%a8%d7%9c%d7%99-%d7%91%d7%a9%d7%a8%d7%95/",
+    "title": "נחלה מדהימה למכירה/ השכרה במושב פסטורלי בשרון",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח נחלה": "7,833 מ\"ר",
+      "בנוי": "2 בתים וחוות סוסים"
+    },
+    "features": [],
+    "description": "נחלה מדהימה למכירה/ השכרה במושב פסטורלי בשרון, עם חלקה א של כ- 8 דונם, עם חזית רחבה, במיקום מעולה, כולל 2 בתים וחוות סוסים.\n\nהבית המרכזי בתכנון כפרי אלגנטי וחם, עם חללי אירוח נרחבים, הרבה אור ומפתחים לכיוון הגינה וחוות הסוסים. בנוסף, מסומן מגרש בחזית החלקה המיועד לבית ה-3 בפוטנציאל עתידי, או לפרצלציה, סה\"כ המתחם יכול להיות מושלם למתחם משפחתי, הכולל כ 8 חדרי שינה, חללי אירוח, חוות סוסים ולמי שמעוניין ניתן להוסיף במיקום מושלם בריכת שחייה.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/08/4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/9.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/10-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/12.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/7.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/25.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/19.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/17.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/08/8.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\1.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\10-1.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\12.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\17.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\19.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\2.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\25.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\3.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\4.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\7.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\8.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\9.jpg",
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_השכרה_במושב_פסטורלי_בשרון\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 13
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%93%d7%99%d7%a8%d7%94-%d7%a2%d7%9c-%d7%94%d7%99%d7%9d-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "דירה על הים למכירה בתל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "קו ראשון לים בתל אביב! בבניין יוקרתי ברחוב הירקון/ הרברט סמואל, דירה יוקרתית ומפנקת 200 מ\"ר בנוי עם מרפסת ענקית המשקיפה לנוף מרשים, פתוח לים וצמרות בנייני העיר למרחקים. מחיר מבוקש 30 מליון",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/01/tlv--scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/1-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\דירה_על_הים_למכירה_בתל_אביב\\1-1.jpg",
+      "shibumi_properties\\images\\דירה_על_הים_למכירה_בתל_אביב\\tlv--scaled.jpg",
+      "shibumi_properties\\images\\דירה_על_הים_למכירה_בתל_אביב\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 3
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%95%d7%99%d7%9c%d7%94-%d7%99%d7%95%d7%a7%d7%a8%d7%aa%d7%99%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%a7%d7%a8%d7%95%d7%91-%d7%9c%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91-%d7%a2%d7%9c-%d7%92%d7%91/",
+    "title": "וילה יוקרתית וייחודית למכירה קרוב לתל אביב מוקפת טבע מול נוף פתוח",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מגרש": "3,500 מ\"ר על גבעה מול נוף פתוח",
+      "שטח בנוי": "מעל 500 מ\"ר"
+    },
+    "features": [],
+    "description": "וילה  – אחוזה משפחתית מדהימה ונדירה המשלבת יוקרה וטבע במיקום מדהים.\n\nאם אתם מחפשים ומעוניינים לגור במקום קרוב למרכז העניינים בבית חלומות המאפשר לכם להתנתק מהכל עם שקט, יוקרה ושלווה, מוקף טבע על גבעה מול נוף פתוח – נכס זה עשוי להיות הזדמנות נדירה עבורכם ומשפחתכם.\n\nהבית שבנוי מעל 500 מ\"ר היושב על מגרש – משק עזר של 3,500 מ\"ר, תוכנן ונבנה ללא פשרות תוך מתן תשומת לב לפרטים הכי קטנים שהביא לתוצאה של בית משפחתי שהוא יצירת אומנות של ממש.\n\nהוילה ממוקמת במיקום הטוב ביותר במושב איכותי ויוקרתי קרוב לצירים הראשיים המאפשר גישה מהירה לכביש 4 ולכביש תל אביב – ירושלים. כרבע שעה למרכז תל אביב.\n\nהבית נבנה ברמה הגבוהה ביותר בשילוב אלמנטים של עבודות יד של אומנים של טיח מיוחד, אדמה, ברזל ועץ המשולבים פנים וחוץ.ניכר אלמנטים בסגנון סנטה פה ואלמנטים הנותנים תחושה של סיני. שילובים הנותנים חיבור לאדמה וקלילות של חופש מול טבע, המון אוויר, אור ומים עם בריכת השחייה שתוכננה על מנת לתת תחושה של מעיין טבעי מול הנוף. בנוסף אלמנט של אש עם קמין פנימי וחוץ.\n\nהושקע המון בתכנון ושילוב החומרים והאלמנטים על מנת להגיע לתוצאה של בית יוקרתי הנותן תחושה ואנרגיה של חום ופשטות אסטטית ברמה הגבוהה ביותר.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2020/01/alb_4070-cr-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/cr2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/unnamed-file-2-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/unnamed-file-1-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-9.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-36.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-37.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-15.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-11.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-28.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/1-3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-29.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-30.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-20.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-21.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-22.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-18.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-17.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-31.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-33.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/meshek-hezer2-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-5.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-6.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-8.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-25.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-27.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-26.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-32.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/1-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-12.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/1-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/1-4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/1-6.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/2-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/1-5-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-39.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-13.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/unnamed-file-14.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/2-.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\1-1.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\1-2.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\1-3.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\1-4.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\1-5-scaled.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\1-6.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\1.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\2-.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\2-1.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\2.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\alb_4070-cr-scaled.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\cr2.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\meshek-hezer2-scaled.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-1-scaled.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-11.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-12.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-13.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-14.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-15.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-17.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-18.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-2-scaled.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-20.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-21.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-22.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-25.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-26.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-27.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-28.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-29.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-3.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-30.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-31.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-32.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-33.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-36.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-37.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-39.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-4.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-5.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-6.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-8.jpg",
+      "shibumi_properties\\images\\וילה_יוקרתית_וייחודית_למכירה_קרוב_לתל_אביב_מוקפת_טבע_מול_נוף_פתוח\\unnamed-file-9.jpg"
+    ],
+    "image_count": 43
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%a2%d7%9c-%d7%94%d7%99%d7%9d-%d7%9c%d7%94%d7%a9%d7%9b%d7%a8%d7%94-%d7%91%d7%99%d7%a4%d7%95-copy/",
+    "title": "פנטהאוז עם נוף מלא לים להשכרה ביפו תל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "4.5 חדרים, בריכת אינפיניטי מחוממת במרפסת ומרפסת נוספת, מאסטר גדול עם חדר ארונות, מטבח ארמני גדול ומפואר.\n\nהפנטהאוז מאובזר באופן מלא, בסטנדרט גבוה כולל ריהוט יוקרתי ומכשירי חשמל, מקרר נסתר sub zero.\n\nבניין בוטיק במיקום מושלם, במרחק דקת הליכה מחוף ים, שפע מקומות בילוי ותרבות.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/03/1-3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/03/1-5.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/03/1-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/03/1-4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/3-scaled-pljn69n3qo5gm72z8ek64z9l7jh0qjv18vqsag7718.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\פנטהאוז_עם_נוף_מלא_לים_להשכרה_ביפו_תל_אביב\\1-1.jpg",
+      "shibumi_properties\\images\\פנטהאוז_עם_נוף_מלא_לים_להשכרה_ביפו_תל_אביב\\1-3.jpg",
+      "shibumi_properties\\images\\פנטהאוז_עם_נוף_מלא_לים_להשכרה_ביפו_תל_אביב\\1-4.jpg",
+      "shibumi_properties\\images\\פנטהאוז_עם_נוף_מלא_לים_להשכרה_ביפו_תל_אביב\\1-5.jpg",
+      "shibumi_properties\\images\\פנטהאוז_עם_נוף_מלא_לים_להשכרה_ביפו_תל_אביב\\3-scaled-pljn69n3qo5gm72z8ek64z9l7jh0qjv18vqsag7718.jpg"
+    ],
+    "image_count": 5
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a4%d7%a0%d7%98%d7%94%d7%90%d7%95%d7%96-%d7%93%d7%95%d7%a4%d7%9c%d7%a7%d7%a1-%d7%9e%d7%a2%d7%95%d7%a6%d7%91-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%99%d7%a4%d7%95/",
+    "title": "פנטהאוז דופלקס מעוצב למכירה ביפו",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "פנטהאוז דופלקס מעוצב למכירה ביפו בקרבת שוק הפשפשים והשעון וצופה לעיר העתיקה ולים. דירת גג גדולה בת 4 חדרים כולל מאסטר מפנק וסלון רחב עם תקרות גבוהות במיוחד. בבניין יפיפה הבנוי בסטנדרט בנייה ועיצוב גבוהים ברחוב עם קסם יפואי. נוף משכר של ים ומבנים היסטוריים משגעים נשקף ממרפסות הדירה.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/02/jaffa-g2b257361f_1920.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\פנטהאוז_דופלקס_מעוצב_למכירה_ביפו\\jaffa-g2b257361f_1920.jpg",
+      "shibumi_properties\\images\\פנטהאוז_דופלקס_מעוצב_למכירה_ביפו\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a4%d7%a0%d7%98%d7%94%d7%90%d7%95%d7%96-%d7%99%d7%95%d7%a7%d7%a8%d7%aa%d7%99-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "פנטהאוז יוקרתי למכירה בתל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "מרחב אירוח יפיפה וגדול אשר לכל אורכו ומשני צידיו חלונות זכוכית לנוף תל אביבי מהמם. ברמת גימור גבוהה מאוד. מגיע מרוהט קומפלט כולל בריכה שנבנתה זה עתה במרפסת. סוויטת מאסטר מפנקת עם חדר רחצה בעל קירות זכוכית",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/03/tel-aviv-g85c156f46_1920.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\פנטהאוז_יוקרתי_למכירה_בתל_אביב\\tel-aviv-g85c156f46_1920.jpg",
+      "shibumi_properties\\images\\פנטהאוז_יוקרתי_למכירה_בתל_אביב\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%93%d7%99%d7%a8%d7%aa-%d7%92%d7%9f-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9c%d7%91-%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "דירת גן למכירה בלב תל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "לפתוח את דלת הבית ולצאת אל העיר!פרויקט המגורים  ממוקם בדיוקבלב ליבה של תל אביב, במרחק הליכהלכל מקום והכי קרוב לכל מה שקורה.חוף הים והטיילת, בתי הקפה המבוקשיםביותר, מוסדות תרבות ואמנות מובילים,הכל ממש מסביבכם – הכל ליד הבית.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/02/beach-g44f60a5cc_1920.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\דירת_גן_למכירה_בלב_תל_אביב\\beach-g44f60a5cc_1920.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_בלב_תל_אביב\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a0%d7%97%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a9%d7%93%d7%94-%d7%95%d7%95%d7%a8%d7%91%d7%95%d7%a8%d7%92-2/",
+    "title": "נחלה למכירה בשדה וורבורג",
+    "categories": [],
+    "price": "31,000,000 ש\"ח",
+    "details": {
+      "חלקה א'": "7,000 מ\"ר",
+      "שטח מגרש": "27,000 מ\"ר"
+    },
+    "features": [],
+    "description": "נחלה למכירה בשדה וורבורג – במיקום מצוין מול נוף פנורמי פתוח. כולל וילה מפוארת בסגנון מודרני קלאסי במפלס אחד!.  עיצוב המאופיין בחללים פתוחים וגדולים. סוויטת הורים גדולה, ועוד 5 חדרי שינה, יחידה נוספת הכוללת שלושה חדרים עם כניסה נפרדת. גינה מושקעת סביב בריכת שחייה מול הנוף.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Meshek-for-sale-in-Sde-Varburg-A-4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Meshek-for-sale-in-Sde-Varburg-A-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Meshek-for-sale-in-Sde-Varburg-A-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Meshek-for-sale-in-Sde-Varburg-A-3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/rs.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/rs-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נחלה_למכירה_בשדה_וורבורג\\Meshek-for-sale-in-Sde-Varburg-A-1.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בשדה_וורבורג\\Meshek-for-sale-in-Sde-Varburg-A-2.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בשדה_וורבורג\\Meshek-for-sale-in-Sde-Varburg-A-3.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בשדה_וורבורג\\Meshek-for-sale-in-Sde-Varburg-A-4.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בשדה_וורבורג\\rs-1.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בשדה_וורבורג\\rs.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_בשדה_וורבורג\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 7
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%aab/",
+    "title": "בית למכירה בחופית",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מגרש": "1,000 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Mikhamoret-Beach.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\בית_למכירה_בחופית\\Mikhamoret-Beach.jpg",
+      "shibumi_properties\\images\\בית_למכירה_בחופית\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a0%d7%97%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9e%d7%95%d7%a9%d7%91-%d7%91%d7%a0%d7%99-%d7%a6%d7%99%d7%95%d7%9f/",
+    "title": "נחלה למכירה במושב בני ציון",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח נחלה": "15-17 דונם ברצף",
+      "שטח בנוי": "מ\"ר"
+    },
+    "features": [],
+    "description": "חלקות א ברצף 15 דונם ומעלה, חזיתות רחבות המאפשרות ניצול ומימוש מלוא פוטנציאל הבניה.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2020/09/2-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/09/1-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נחלה_למכירה_במושב_בני_ציון\\1-1.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_במושב_בני_ציון\\2-1.jpg",
+      "shibumi_properties\\images\\נחלה_למכירה_במושב_בני_ציון\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 3
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%95%d7%99%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "וילה למכירה בתל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "וילה למכירה בתל אביב בלב שכונת נווה צדק הציורית והרומנטית, מדובר בוילה יוקרתית בת 4 קומות ותקרה בגובה15 מ. כזאת שלא רואים כל יום!\n\nהבית מעוצב אדריכלית חוץ ופנים בסגנון סוהו ניו-יורקי באופן מרשים ביותר.\n\nאת כל הקומות מלווות מרפסות אינטימיות ויפיפיות עטורות בצמחייה המייצרת פרטיות ותחושת טבעית.\n\nבבית, מאסטר מופתי ומהודר וכן שני מאסטרים נוספים מעוצבים באופן מדויק ומיוחד.\n\nקיימת מעלית העוברת בין כל הקומות, חדר כושר, מטבח ברמה גבוהה במיוחד עם אי גדול ומרשים, קמין מפואר וגופי תאורה מיוחדים המעניקים לבית עוד מיימד של עיצוב וחן.\n\nהבית מיוחד במינו! הכניסה דרך הדלת הגדולה והעוצמתית, לוקחת לחוויה של עיצוב ויופי, פאר והדר ולבית שופע באווירה ניו יורקית חמה.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/02/unnamed-file-1.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\וילה_למכירה_בתל_אביב\\unnamed-file-1.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%90%d7%a8%d7%a1%d7%95%d7%a3-%d7%93%d7%95%d7%a4%d7%9c%d7%a7%d7%a1-%d7%9e%d7%93%d7%94%d7%99%d7%9d-%d7%91%d7%99%d7%95%d7%aa%d7%a8-%d7%a7%d7%95-%d7%a8%d7%90/",
+    "title": "למכירה בארסוף דופלקס מדהים ביותר קו ראשון לים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מרפסת": "מרפסת רחבה פתוח לים",
+      "שטח בנוי": "500 מ\"ר"
+    },
+    "features": [],
+    "description": "קו ראשון לים  אחת היחידות היפות ביותר בפרויקט, דופלקס של כ 500 מ\"ר בנוי עם מפתח רחב פתוח לכיוון הים,\n\nמעוצב וברמת גמר הגבוהה ביותר, כל קומה יוצאת למרפסת גדולה לכיוון הים.\n\nוהנו הפרויקט האחרון מסוגו שקיבל אישור למגורים על המצוק קו ראשון לים בישראל",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2017/03/harsuf2.png",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/7.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/05/2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/5.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/8.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/9.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/arsuf.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\1.jpg",
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\2.jpg",
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\3.jpg",
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\4.jpg",
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\5.jpg",
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\7.jpg",
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\8.jpg",
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\9.jpg",
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\arsuf.jpg",
+      "shibumi_properties\\images\\למכירה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\harsuf2.png"
+    ],
+    "image_count": 10
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%93%d7%95%d7%a0%d7%9d-%d7%a7%d7%95-%d7%a8%d7%90%d7%a9%d7%95%d7%9f-%d7%9c%d7%99%d7%9d/",
+    "title": "למכירה דונם קו ראשון לים בבית ינאי – לא אקטואלי",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מגרש": "1,000 מ\"ר"
+    },
+    "features": [],
+    "description": "דונם עם בית ישן קטן על המצוק למכירה בבית ינאי. בתמונה רואים את השקיעה מהמרפסת הצמודה לבית.\n\nמושלם למי שמחפש בית נופש על הים בישראל. ניתן לשפץ את הקיים וליצור בית מדהים פתוח לים.\n\nמהבית ניתן בהליכה קצרה לרדת לאחד החופים היפים בארץ לאורך המצוק של בית ינאי.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/03/for-sale-in-beit-yanay-1ממ.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_דונם_קו_ראשון_לים_בבית_ינאי_–_לא_אקטואלי\\for-sale-in-beit-yanay-1ממ.jpg",
+      "shibumi_properties\\images\\למכירה_דונם_קו_ראשון_לים_בבית_ינאי_–_לא_אקטואלי\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%95%d7%99%d7%9c%d7%94-%d7%91%d7%91%d7%aa-%d7%97%d7%9f-2/",
+    "title": "למכירה וילה בבת חן",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח": "דונם ומעלה",
+      "למכירה בגוש חפר וסביבת הים מבחר נכסים למכירה, לפרטים צרו קשר": ""
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2019/03/1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2019/03/3-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_וילה_בבת_חן\\1.jpg",
+      "shibumi_properties\\images\\למכירה_וילה_בבת_חן\\3-scaled.jpg",
+      "shibumi_properties\\images\\למכירה_וילה_בבת_חן\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 3
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a8%d7%a9%d7%a4%d7%95%d7%9f/",
+    "title": "משק למכירה ברשפון",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "חלקה א'": "8,000 מ\"ר",
+      "שטח מגרש": "27,000 מ\"ר",
+      "שטח בנוי": "460 מ\"ר"
+    },
+    "features": [],
+    "description": "במיקום מצויין במושב רשפון, פנימי ושקט, מוצעת למכירה נחלה יפיפיה ומושקעת הכולל וילה של 360 מ\"ר ועוד 100 מ\"ר אזורי שרות במפלס אחד! הוילה מעוצב בסגנון כפרי יוקרתי עם תיקרות גבוהות של 8 מ', אי גדול במטבח , ריצופי טרקוטה מיוחדים ופרקטים איכותיים, טריסי עץ ועוד פרטי גמר הנותנים אווירה של אחוזה טוסקנית אמיתית. הבית יושב על 10 דונם עם בריכת שחייה גדולה של 90 מ\"ר מוקפת גינה מדהימה עם עצי נוי בוגרים וזית עתיקים. בהמשך הגינה יש בוסתן של 6 דונם עם מגוון עצי פרי. בחזית הבית חניה נוחה ל 12 מכוניות.אדריכל – עודד לביא",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/01/IMG_3418.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/01/IMG_3413.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/01/IMG_3403.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/01/IMG_3401.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/01/IMG_3383.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/01/IMG_3382.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/01/IMG_3365.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/01/IMG_3381.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/01/IMG_3378.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\IMG_3365.jpg",
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\IMG_3378.jpg",
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\IMG_3381.jpg",
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\IMG_3382.jpg",
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\IMG_3383.jpg",
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\IMG_3401.jpg",
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\IMG_3403.jpg",
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\IMG_3413.jpg",
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\IMG_3418.jpg",
+      "shibumi_properties\\images\\משק_למכירה_ברשפון\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 10
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%93%d7%99%d7%a8%d7%95%d7%aa-%d7%99%d7%95%d7%a7%d7%a8%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%a7%d7%95-%d7%a8%d7%90%d7%a9%d7%95%d7%9f-%d7%9c%d7%99%d7%9d-%d7%91%d7%90%d7%a8%d7%a1%d7%95%d7%a3/",
+    "title": "דירות יוקרה למכירה קו ראשון לים בארסוף",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח בנוי": "מ\"ר"
+    },
+    "features": [],
+    "description": "למכירה קו ראשון לים בארסוף – במיקום הטוב ביותר, נבנה בניין הדירות הייחודי והיוקרתי ביותר לאורך החוף בישראל. הבניין נבנה ברמה הגבוהה ביותר הכולל בטון חשוף לבן, תוכנן על ידי אסף גוטסמן וזכה בפרס אדריכלות יוקרתי. בבניין 10 יחידות בלבד שלכל אחת מרפסות ומפתחי ענק  לכיוון הים. הדירה המוצעת למכירה כוללת את מפרטי הגמר הגבוהים ביותר.\n\nיש לנו מספר נכסים למכירה ואו להשכרה בפרויקט עצמו , ניתן ליצור קשר",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurious-beachfront-appartment-for-sale-Arsuf-Israel-U-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/05/2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\דירות_יוקרה_למכירה_קו_ראשון_לים_בארסוף\\1.jpg",
+      "shibumi_properties\\images\\דירות_יוקרה_למכירה_קו_ראשון_לים_בארסוף\\2.jpg",
+      "shibumi_properties\\images\\דירות_יוקרה_למכירה_קו_ראשון_לים_בארסוף\\3.jpg",
+      "shibumi_properties\\images\\דירות_יוקרה_למכירה_קו_ראשון_לים_בארסוף\\Luxurious-beachfront-appartment-for-sale-Arsuf-Israel-U-2.jpg",
+      "shibumi_properties\\images\\דירות_יוקרה_למכירה_קו_ראשון_לים_בארסוף\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 5
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%9e%d7%94%d7%97%d7%9c%d7%95%d7%9e%d7%95%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%aa-%d7%a6%d7%95%d7%a4%d7%94-%d7%9c%d7%99%d7%9d/",
+    "title": "למכירה בחופית וילת יוקרה אדריכלית וייחודית מסוגה",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מגרש": "1,400 מ\"ר צמוד לחורשה ירוקה",
+      "שטח בנוי": "כ-400 מ\"ר"
+    },
+    "features": [],
+    "description": "באחד המיקומים הגבוהים והיפים בחופית, מוצעת למכירה וילה אדריכלית יוצאת דופן, המשלבת תכנון מודרני, חומרים טבעיים ונוף פתוח עד הים. בית שתוכנן לפרטי פרטים, לחוויית מגורים של ריזורט פרטי – מושלם לאירוח, למשפחה ולחיים ברמה הגבוהה ביותר.\n\nנתונים כלליים: כ־400 מ\"ר בנוי, מגרש ענק כ־1,400 מ\"ר, צמוד לחורשת אקליפטוסים טבעית, פרטיות מלאה, מרחק הליכה קצר לים ולשמורת נחל אלכסנדר\n\nהקומה הציבורית- לב הבית:קומת הכניסה כוללת חלל ציבורי מרשים במיוחד – חלל פתוח, גבוה ומואר, בנוי בטון חשוף בעיצוב אדריכלי דרמטי, עם ויטרינות ענק משני כיוונים המחברות את הפנים אל החוץ.\n\nמטבח Bultaup יוקרתי, אי ענק של חברת Boffi, אידיאלי לאירוח, בישול וחוויית שף בבית. החלל נפתח למרפסת מקורה גדולה ולחצר האחורית, בה, בריכת שחייה באורך כ־20 מטר, תריס חשמלי לבריכה ודק טיק איכותי.\n\nהגינה מטופחת עם עצי נוי ועצי פרי, מטבח חוץ מקצועי, חדר רחצה חיצוני מלא (שירותים ומקלחת)\n\nאגף הילדים:שלוש סוויטות ילדים גדולות, כל אחת כוללת: חדר רחצה פרטי, תקרות גבוהות, גלריה אישית ביניהן חלל משפחה מרכזי למשחקים / טלוויזיה, עם יציאה ישירה לחצר ולבריכה.\n\nקומת הורים – לופט פרטי:יחידת הורים מרהיבה בסגנון לופט, מוקפת ויטרינות מהרצפה עד התקרה, מרפסת היקפית עצומה כ־200 מ\"ר, נוף פתוח על כל היישוב ועד הים, מושלם לשקיעות, פרטיות וחוויית סוויטת מלון\n\nחללים נוספים: חדר עבודה בקומת הכניסה, מרתף מואר עם חצר אנגלית, ממ\"ד מלא.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2025/10/21-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/2-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/25-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/24-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/23.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/25.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/27.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/28.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/29.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/210.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/26.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/22-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/211.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/24.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/2-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/321.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/331.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/311.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/36.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/332.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/323.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/341.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/343.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/340.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/338.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/337.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/336.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/335.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/317.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/39.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/313.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/318.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/2jpg.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/319.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/310.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/327.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/333.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/22-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/23-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/33.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/322.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/3-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/34.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/3-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/324.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/325.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/328.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/334.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/342.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/16-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/1-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/44.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/4-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2025/10/42.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\1-1.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\16-1.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\2-1.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\2-2.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\21-2.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\210.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\211.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\22-1.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\22-2.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\23-1.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\23.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\24-1.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\24.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\25-1.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\25.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\26.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\27.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\28.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\29.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\2jpg.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\3-1.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\3-2.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\310.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\311.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\313.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\317.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\318.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\319.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\321.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\322.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\323.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\324.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\325.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\327.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\328.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\33.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\331.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\332.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\333.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\334.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\335.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\336.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\337.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\338.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\34.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\340.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\341.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\342.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\343.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\36.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\39.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\4-1.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\42.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\44.jpg",
+      "shibumi_properties\\images\\למכירה_בחופית_וילת_יוקרה_אדריכלית_וייחודית_מסוגה\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 55
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%92%d7%93%d7%9c%d7%99-%d7%99%d7%95%d7%a7%d7%a8%d7%94-%d7%91%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94/",
+    "title": "מגדלי יוקרה בתל אביב למכירה",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "אם אתם מעוניינים לרכוש דירה להשקעה או פנטהאוז באחד ממגדלי היוקרה בתל אביב וברמות הכי מטורפות, זו עשויה להיות הזדמנות ייחודית ונדירה עבורכם.\n\nמגוון דירות 2 ,3 ,4 ,5 חדרים ופנטהאוזים מפוארים שתוכננו בקפידה, לחוויית מגורים מעוצבת ברמה הגבוהה ביותר, עם מרפסות שמש רחבות ידיים הצופות לנופיה המרהיבים של העיר ואל חוף ימה של תל אביב.\n\nהפרוייקט מתאים לצרכי מגורים ולצרכי השקעה. עם הון ראשוני מינימלי בלבד ובתנאי תשלום נוחים במיוחד ניתן לרכוש דירה בפרוייקט ולהנות מתשואה שתתגבש לאורך חיי הבניה של הפרוייקט ולאחריו.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/02/1-.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/unnamed-file-4.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\מגדלי_יוקרה_בתל_אביב_למכירה\\1-.jpg",
+      "shibumi_properties\\images\\מגדלי_יוקרה_בתל_אביב_למכירה\\unnamed-file-4.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%95%d7%99%d7%9c%d7%94-%d7%99%d7%95%d7%a7%d7%a8%d7%aa%d7%99%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "וילה יוקרתית למכירה בתל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/02/5-1.jpeg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\וילה_יוקרתית_למכירה_בתל_אביב\\5-1.jpeg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%93%d7%99%d7%a8%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91-%d7%91%d7%91%d7%a0%d7%99%d7%99%d7%9f-%d7%91%d7%95%d7%98%d7%99%d7%a7/",
+    "title": "דירה למכירה בלב תל אביב – בוטיק",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/02/079b0591-6f17-4b9a-8fc7-53c4d5dcbb1c.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\דירה_למכירה_בלב_תל_אביב_–_בוטיק\\079b0591-6f17-4b9a-8fc7-53c4d5dcbb1c.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a4%d7%a8%d7%95%d7%99%d7%a7%d7%98-%d7%99%d7%95%d7%a7%d7%a8%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "פרויקט יוקרה למכירה בתל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/02/unnamed-file-3.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\פרויקט_יוקרה_למכירה_בתל_אביב\\unnamed-file-3.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%93%d7%99%d7%a8%d7%aa-%d7%99%d7%95%d7%a7%d7%a8%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "דירת יוקרה למכירה בתל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "דירה מיוחדת במינה ברמת גימור מהגבוהות שיש מאובזרת במיטב המותגים היוקרתיים המתאימה ליחיד או לזוג המחפשים לייף סטייל מטורף בקומה גובהה בשדרות רוטשילד מבוקש 12 מליון",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/02/5-3-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\דירת_יוקרה_למכירה_בתל_אביב\\5-3-scaled.jpg",
+      "shibumi_properties\\images\\דירת_יוקרה_למכירה_בתל_אביב\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a0%d7%9b%d7%a1-%d7%99%d7%95%d7%a7%d7%a8%d7%aa%d7%99-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "נכס יוקרתי למכירה בתל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "דירה ענקית ויפיפיה עם נוף מהפנט במגדל מושקע בצפון הישן והטוב של תל אביב,",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/01/unnamed-file.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/076d4b0e-67ae-41f0-9cb2-865e1d422ffa.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/20220208_110551-scaled.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נכס_יוקרתי_למכירה_בתל_אביב\\076d4b0e-67ae-41f0-9cb2-865e1d422ffa.jpg",
+      "shibumi_properties\\images\\נכס_יוקרתי_למכירה_בתל_אביב\\20220208_110551-scaled.jpg",
+      "shibumi_properties\\images\\נכס_יוקרתי_למכירה_בתל_אביב\\unnamed-file.jpg"
+    ],
+    "image_count": 3
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%93%d7%99%d7%a8%d7%aa-%d7%92%d7%9f-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%99%d7%a4%d7%95-%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "דירת גן למכירה ביפו תל אביב",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "דירות יוקרה אופנתיות על גבעת אנדרומדה ביפו העתיקה מול הים. נוף פנורמי לעבר הים ולעיר העתיקה נשקף ממרפסות הדירות. סביבת חיים מיוחדת עם ריחות הים והשווקים ברחובותיה הקסומים של יפו העתיקה.\n\nלרשות הדיירים מבחר עשיר של שירותים הכולל ברכת שחיה, ספא בריאות וכושר, מועדון דיירים, בית קפה וחברת ניהול ואבטחה.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/02/2-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/1-3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/3-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/4-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/5-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/6-3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/7-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/8-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/9-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2022/02/10.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\1-3.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\10.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\2-2.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\3-1.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\4-1.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\5-2.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\6-3.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\7-2.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\8-1.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\9-1.jpg",
+      "shibumi_properties\\images\\דירת_גן_למכירה_ביפו_תל_אביב\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 11
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%95%d7%99%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%aa/",
+    "title": "וילה למכירה בחופית",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "חדרים": "5",
+      "שטח מגרש": "780 מ\"ר",
+      "שטח בנוי": "180 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2018/11/hofit.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\וילה_למכירה_בחופית\\hofit.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בחופית\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%95%d7%99%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%aa-2/",
+    "title": "וילה למכירה בחופית",
+    "categories": [],
+    "price": "10,100,000 ש\"ח",
+    "details": {
+      "מספר חדרים": "6",
+      "שטח מגרש": "870 מ\"ר",
+      "שטח בנוי": "250 מ\"ר"
+    },
+    "features": [],
+    "description": "בית מושקע בסגנון מודרני משקיף לים  לבית אזורי אירוח נרחבים  פנים וחוץ, יחידה נפרדת.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/02/img-20171109-wa0018.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\וילה_למכירה_בחופית\\img-20171109-wa0018.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בחופית\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%91%d7%99%d7%aa-%d7%99%d7%a0%d7%90%d7%99-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%a7%d7%95-%d7%a8%d7%90%d7%a9%d7%95%d7%9f-%d7%9c%d7%99%d7%9d-2/",
+    "title": "בבית ינאי קו ראשון לים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מגרש": "872 מ\"ר"
+    },
+    "features": [],
+    "description": "בית על הים –  קו ראשון לים בבית ינאי. כולל וילה יפהפיה, מושלמת גם כבית נופש בנוי כ 255 מ\"ר עם ירידה לים ממש ליד הבית.\n\nבית מקסים כולל 3 חדרי שינה וגלריה קומה שנייה עם נוף לים שניתן להפוך לחדר שינה מדהימה. חדר משפחה וסלון מול הים, ממוקם באזור הטוב ביותר לאורך מצוק בית ינאי. ליראות את השקיעות ,לישון עם הגלים. בנוסף יש מבנה עזר כ 65 מ\"ר.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/04/SH33.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\בבית_ינאי_קו_ראשון_לים\\SH33.jpg",
+      "shibumi_properties\\images\\בבית_ינאי_קו_ראשון_לים\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%a2%d7%9c-%d7%94%d7%99%d7%9d-%d7%9c%d7%94%d7%a9%d7%9b%d7%a8%d7%94-%d7%91%d7%99%d7%a4%d7%95/",
+    "title": "בית על הים להשכרה ביפו",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/03/2.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2022/03/3.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2022/03/1.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2022/03/4.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2022/03/5.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2022/03/6.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/3-scaled-pljn69n3qo5gm72z8ek64z9l7jh0qjv18vqsag7718.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\בית_על_הים_להשכרה_ביפו\\1.jpeg",
+      "shibumi_properties\\images\\בית_על_הים_להשכרה_ביפו\\2.jpeg",
+      "shibumi_properties\\images\\בית_על_הים_להשכרה_ביפו\\3-scaled-pljn69n3qo5gm72z8ek64z9l7jh0qjv18vqsag7718.jpg",
+      "shibumi_properties\\images\\בית_על_הים_להשכרה_ביפו\\3.jpeg",
+      "shibumi_properties\\images\\בית_על_הים_להשכרה_ביפו\\4.jpeg",
+      "shibumi_properties\\images\\בית_על_הים_להשכרה_ביפו\\5.jpeg",
+      "shibumi_properties\\images\\בית_על_הים_להשכרה_ביפו\\6.jpeg"
+    ],
+    "image_count": 7
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%99%d7%aa-%d7%91%d7%a6%d7%95%d7%a7%d7%99-%d7%99%d7%9d-%d7%a2%d7%9d-%d7%a0%d7%95%d7%a3-%d7%a4%d7%aa%d7%95%d7%97-%d7%9c%d7%99%d7%9d-copy/",
+    "title": "למכירה בצוקי ים נוף פתוח לים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "חדרים": "5",
+      "שטח מגרש": "670 מ\"ר"
+    },
+    "features": [],
+    "description": "המגרש הכי גדול בצוקי ים. 670 מ\"ר קו ראשון למצוק ונוף פתוח לים.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2017/12/zuky-yam.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2017/12/tzoki-yam22.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_בצוקי_ים_נוף_פתוח_לים\\tzoki-yam22.jpg",
+      "shibumi_properties\\images\\למכירה_בצוקי_ים_נוף_פתוח_לים\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg",
+      "shibumi_properties\\images\\למכירה_בצוקי_ים_נוף_פתוח_לים\\zuky-yam.jpg"
+    ],
+    "image_count": 3
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9b%d7%a4%d7%a8-%d7%95%d7%99%d7%aa%d7%a7%d7%99%d7%9f/",
+    "title": "בקרוב יעלה נכס חדש למכירה בכפר ויתקין",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח": "500 מ\"ר",
+      "שטח בנוי": ""
+    },
+    "features": [],
+    "description": "ההרחבה של כפר ויתקין נחשבת לאחת ההרחבות המוצלחות והמבוקשות ביותר בסביבה שנהנות מאיכות חיים המשלבת שמורת טבע וים.\n\nמהבית ניתן ללכת ברגל לקאנטרי קלאב השכונתי עם בריכת שחייה ומגרשי טניס, לבית הספר ולחוגים לים ולצאת לטיולי אופניים בשמורת נחל אלכסנדר.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2019/01/micnoret-house.jpg12.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2015/03/meshek-for-sale-in-berotaim-S-1ccc.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\בקרוב_יעלה_נכס_חדש_למכירה_בכפר_ויתקין\\meshek-for-sale-in-berotaim-S-1ccc.jpg",
+      "shibumi_properties\\images\\בקרוב_יעלה_נכס_חדש_למכירה_בכפר_ויתקין\\micnoret-house.jpg12.jpg",
+      "shibumi_properties\\images\\בקרוב_יעלה_נכס_חדש_למכירה_בכפר_ויתקין\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 3
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%99%d7%aa-%d7%91%d7%a6%d7%95%d7%a7%d7%99-%d7%99%d7%9d-%d7%a2%d7%9d-%d7%a0%d7%95%d7%a3-%d7%a4%d7%aa%d7%95%d7%97-%d7%9c%d7%99%d7%9d/",
+    "title": "למכירה בית בצוקי ים עם נוף פתוח לים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "חדרים": "6",
+      "שטח מגרש": "500 מ\"ר",
+      "שטח בנוי": "215  מ\"ר"
+    },
+    "features": [],
+    "description": "לראות את השקיעות!! בצוקי ים. הכי קרוב לקו החוף. נוף פתוח לים בית על חצי דונם",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2018/06/unnamed-file-4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2018/06/unnamed-file.png",
+      "https://shibumi.co.il/wp-content/uploads/2018/06/unnamed-file-3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2018/06/unnamed-file-5.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_בית_בצוקי_ים_עם_נוף_פתוח_לים\\unnamed-file-3.jpg",
+      "shibumi_properties\\images\\למכירה_בית_בצוקי_ים_עם_נוף_פתוח_לים\\unnamed-file-4.jpg",
+      "shibumi_properties\\images\\למכירה_בית_בצוקי_ים_עם_נוף_פתוח_לים\\unnamed-file-5.jpg",
+      "shibumi_properties\\images\\למכירה_בית_בצוקי_ים_עם_נוף_פתוח_לים\\unnamed-file.png"
+    ],
+    "image_count": 4
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9e%d7%9b%d7%9e%d7%95%d7%a8%d7%aa/",
+    "title": "בית למכירה במכמורת",
+    "categories": [],
+    "price": "POR",
+    "details": {
+      "שטח מגרש": "750 מ\"ר"
+    },
+    "features": [],
+    "description": "הזדמנות לאיכות חיים ליד הים- התמונה המוצגת הינה חלק מהוואי הסביבה בה מוצעים חוגי שייט לילדים ומבוגרים הבית 180 מ\"ר בנוי.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/222.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\בית_למכירה_במכמורת\\222.jpg",
+      "shibumi_properties\\images\\בית_למכירה_במכמורת\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%a2%d7%9d-%d7%96%d7%9b%d7%95%d7%99%d7%95%d7%aa-%d7%9e%d7%9c%d7%90%d7%95%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a2%d7%9e%d7%a7-%d7%97%d7%a4%d7%a8/",
+    "title": "משק עם זכויות מלאות למכירה בעמק חפר",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח ברצף": "25,000 מ\"ר",
+      "שטח בנוי": "150 מ\"ר"
+    },
+    "features": [],
+    "description": "נחלות למכירה בעמק חפר – למי שמחפש לקנות נחלה עם חלקה א' גדולה בין 10 – 28 דונם ברצף בחלקה א', יש לנו עבורכם מספר הצעות מעניינות מאד במחירים הנעים בין 5.5 – 7 מיליון ש\"ח.\n\nמי שירכוש נחלה, יקבל אותה לאחר תשלום דמי רכישה לרמ\"י, כלומר היא תהיה מהוונת עם מלוא זכויות הבנייה הקיימות והפוטנציאל העתידי שיכלול אפשרות לבנות 3 בתים נפרדים ואפשרויות פיצול ללא צורך לשלם יותר לרשות מקרקעי ישראל.\n\nשילוב מענייו מאד של רכישת נכס לצרכי מגורים ואיכות חיים במושב איכותי והשקעה מעולה אם אפשרויות פיצול ויצירת תשואות לעתיד.\n\nמעניין מאד גם למי שמעוניין לשלב מגורים במושב והקמת מבנה פל\"ח עד 500 מ\"ר (פעילות לא חקלאית) להעברת הפעילות העסקית.\n\nנשמח להפגש, להראות את החלופות השונות ולתת את ההסברים לכל הקשור לרכישת נחלה ומימוש הפוטנציאל שיש.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2020/06/img-20200522-wa0011.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/06/img-20200522-wa0010.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_עם_זכויות_מלאות_למכירה_בעמק_חפר\\img-20200522-wa0010.jpg",
+      "shibumi_properties\\images\\משק_עם_זכויות_מלאות_למכירה_בעמק_חפר\\img-20200522-wa0011.jpg",
+      "shibumi_properties\\images\\משק_עם_זכויות_מלאות_למכירה_בעמק_חפר\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 3
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a4%d7%a0%d7%98%d7%94%d7%90%d7%95%d7%96-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a2%d7%99%d7%9f-%d7%94%d7%99%d7%9d/",
+    "title": "פנטהאוז למכירה בעין הים",
+    "categories": [],
+    "price": "4,500,000ש\"ח",
+    "details": {
+      "בנוי": "180 מ\"ר"
+    },
+    "features": [],
+    "description": "פנטהאוז למכירה בעין הים, שכונה איכותית צמודה למכמורת ולחופי ים בתוליים. בבניין חדר כושר ומוסדות לימוד במרחק הליכה. פנטהאוז מושקע עם נוף מהמם של ים שקיעות ובריזה. מרפסת 118 מ\". 3 חדרים וסוויטת הורים",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2018/11/img-20181114-wa0016.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2018/11/img-20181114-wa0014.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2018/11/img-20181114-wa0018.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2018/11/img-20181114-wa0021.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\פנטהאוז_למכירה_בעין_הים\\img-20181114-wa0014.jpg",
+      "shibumi_properties\\images\\פנטהאוז_למכירה_בעין_הים\\img-20181114-wa0016.jpg",
+      "shibumi_properties\\images\\פנטהאוז_למכירה_בעין_הים\\img-20181114-wa0018.jpg",
+      "shibumi_properties\\images\\פנטהאוז_למכירה_בעין_הים\\img-20181114-wa0021.jpg"
+    ],
+    "image_count": 4
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%91%d7%99%d7%aa%d7%9f-%d7%90%d7%94%d7%a8%d7%95%d7%9f/",
+    "title": "משק / נחלה למכירה בעמק חפר – נמכר",
+    "categories": [],
+    "price": "8,300,000 ש\"ח",
+    "details": {
+      "חלקה א": "3,650 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/img-20170307-wa0007.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2015/03/bitan1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2015/03/bitan2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2015/03/bitan3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_נחלה_למכירה_בעמק_חפר_–_נמכר\\bitan1.jpg",
+      "shibumi_properties\\images\\משק_נחלה_למכירה_בעמק_חפר_–_נמכר\\bitan2.jpg",
+      "shibumi_properties\\images\\משק_נחלה_למכירה_בעמק_חפר_–_נמכר\\bitan3.jpg",
+      "shibumi_properties\\images\\משק_נחלה_למכירה_בעמק_חפר_–_נמכר\\img-20170307-wa0007.jpg",
+      "shibumi_properties\\images\\משק_נחלה_למכירה_בעמק_חפר_–_נמכר\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 5
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a0%d7%97%d7%9c%d7%94-%d7%99%d7%a8%d7%95%d7%a7%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%92%d7%91%d7%a2%d7%aa-%d7%a9%d7%a4%d7%99%d7%a8%d7%90/",
+    "title": "נחלה ירוקה למכירה בגבעת שפירא – כרגע לא אקטואלי. נעדכן בהמשך.",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח נחלה": "2000 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2018/04/img-20180416-wa0012.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2018/04/img-20180416-wa0013.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2018/04/img-20180416-wa0015.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נחלה_ירוקה_למכירה_בגבעת_שפירא_–_כרגע_לא_אקטואלי._נעדכן_בהמשך\\img-20180416-wa0012.jpg",
+      "shibumi_properties\\images\\נחלה_ירוקה_למכירה_בגבעת_שפירא_–_כרגע_לא_אקטואלי._נעדכן_בהמשך\\img-20180416-wa0013.jpg",
+      "shibumi_properties\\images\\נחלה_ירוקה_למכירה_בגבעת_שפירא_–_כרגע_לא_אקטואלי._נעדכן_בהמשך\\img-20180416-wa0015.jpg",
+      "shibumi_properties\\images\\נחלה_ירוקה_למכירה_בגבעת_שפירא_–_כרגע_לא_אקטואלי._נעדכן_בהמשך\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 4
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a4%d7%a0%d7%98%d7%94%d7%90%d7%95%d7%96-%d7%a2%d7%9d-%d7%a0%d7%95%d7%a3-%d7%90%d7%95%d7%a8%d7%91%d7%a0%d7%99/",
+    "title": "פנטהאוז בתל אביב עם נוף אורבני",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2017/03/7.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2017/10/tlv-t10.png",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\פנטהאוז_בתל_אביב_עם_נוף_אורבני\\7.jpg",
+      "shibumi_properties\\images\\פנטהאוז_בתל_אביב_עם_נוף_אורבני\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%95%d7%99%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a8%d7%9e%d7%95%d7%aa-%d7%94%d7%a9%d7%91%d7%99%d7%9d-2/",
+    "title": "וילה למכירה ברמות השבים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "סויטות": "6",
+      "שטח מגרש": "3,000 מ\"ר",
+      "שטח בנוי": "550  מ\"ר"
+    },
+    "features": [],
+    "description": "550 מ\"ר בנוי6 סוויטות על מגרש של 3 דונם,נכס להתפנק ובפרטיות מלאה לכל הגרים בו..",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2013/12/rishpon-r-3.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\וילה_למכירה_ברמות_השבים\\rishpon-r-3.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%95%d7%99%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9e%d7%95%d7%a9%d7%91-%d7%91%d7%92%d7%9c%d7%99%d7%9c-%d7%94%d7%a2%d7%9c%d7%99%d7%95%d7%9f/",
+    "title": "וילה למכירה במושב בגליל העליון",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "חדרים": "9",
+      "שטח מגרש": "1353 מ\"ר"
+    },
+    "features": [],
+    "description": "למכירה במושב לבון בגליל העליון וילה יוקרתית . עם נוף פתוח עד מפרץ חיפה. 400 מ\"ר על מגרש 1,353 מ\"ר. סוויטת הורים בקומת הכניסה וחדר שינה נוסף. בריכת שחייה.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2019/01/img-20190303-wa0042.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2019/01/img-20190303-wa0032.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2019/01/img-20190303-wa0020.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2019/01/img-20190303-wa0021.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2019/01/img-20190303-wa0025.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2019/01/img-20190303-wa0029.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2019/01/img-20190303-wa0035.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2019/01/img-20190303-wa0041.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\וילה_למכירה_במושב_בגליל_העליון\\img-20190303-wa0020.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_במושב_בגליל_העליון\\img-20190303-wa0021.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_במושב_בגליל_העליון\\img-20190303-wa0025.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_במושב_בגליל_העליון\\img-20190303-wa0029.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_במושב_בגליל_העליון\\img-20190303-wa0032.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_במושב_בגליל_העליון\\img-20190303-wa0035.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_במושב_בגליל_העליון\\img-20190303-wa0041.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_במושב_בגליל_העליון\\img-20190303-wa0042.jpg"
+    ],
+    "image_count": 8
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%91%d7%90%d7%a8%d7%95%d7%aa%d7%99%d7%99%d7%9d/",
+    "title": "משק למכירה בעמק חפר",
+    "categories": [],
+    "price": "השקעה מעולה!!",
+    "details": {
+      "שטח מגרש": "28,000 מ\"ר",
+      "שטח בנוי": "150 מ\"ר"
+    },
+    "features": [],
+    "description": "נחלות למכירה בעמק חפר – למי שמחפש לקנות נחלה עם חלקה א' גדולה בין 10 – 28 דונם ברצף בחלקה א', יש לנו עבורכם מספר הצעות מעניינות.\n\nמי שירכוש נחלה, יקבל אותה לאחר תשלום דמי רכישה לרמ\"י, כלומר היא תהיה מהוונת עם מלוא זכויות הבנייה הקיימות והפוטנציאל העתידי שיכלול אפשרות לבנות 3 בתים נפרדים ואפשרויות פיצול ללא צורך לשלם יותר לרשות מקרקעי ישראל.\n\nשילוב מענייו מאד של רכישת נכס לצרכי מגורים ואיכות חיים במושב איכותי והשקעה מעולה אם אפשרויות פיצול ויצירת תשואות לעתיד.\n\nמעניין מאד גם למי שמעוניין לשלב מגורים במושב והקמת מבנה פל\"ח עד 500 מ\"ר (פעילות לא חקלאית) להעברת הפעילות העסקית.\n\nנשמח להפגש, להראות את החלופות השונות ולתת את ההסברים לכל הקשור לרכישת נחלה ומימוש הפוטנציאל שיש.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/01/QQQ.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\QQQ.jpg",
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%aa-2/",
+    "title": "למכירה בעמק חפר ובסביבת הים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח": "500 מ\"ר",
+      "שטח בנוי": "300 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/07/9.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2019/03/2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_בעמק_חפר_ובסביבת_הים\\2.jpg",
+      "shibumi_properties\\images\\למכירה_בעמק_חפר_ובסביבת_הים\\9.jpg",
+      "shibumi_properties\\images\\למכירה_בעמק_חפר_ובסביבת_הים\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 3
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%93%d7%95%d7%a4%d7%9c%d7%a7%d7%a1-%d7%9c%d7%99%d7%93-%d7%94%d7%99%d7%9d-%d7%91%d7%a0%d7%aa%d7%a0%d7%99%d7%94-2/",
+    "title": "דופלקס ליד הים בנתניה",
+    "categories": [],
+    "price": "5,500,000 ש\"ח",
+    "details": {
+      "שטח": "120 מ\"ר",
+      "חדרים": "4.5"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2013/04/mg_8838-copy.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/04/mg_9054-copy.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/04/mg_9116-copy.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/04/mg_9151-copy.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\דופלקס_ליד_הים_בנתניה\\mg_8838-copy.jpg",
+      "shibumi_properties\\images\\דופלקס_ליד_הים_בנתניה\\mg_9054-copy.jpg",
+      "shibumi_properties\\images\\דופלקס_ליד_הים_בנתניה\\mg_9116-copy.jpg",
+      "shibumi_properties\\images\\דופלקס_ליד_הים_בנתניה\\mg_9151-copy.jpg"
+    ],
+    "image_count": 4
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%95%d7%99%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%91%d7%a6%d7%a8%d7%94/",
+    "title": "וילה למכירה בבצרה",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "חדרים": "8",
+      "שטח מגרש": "500 מ\"ר",
+      "שטח בנוי": "400 מ\"ר"
+    },
+    "features": [],
+    "description": "וילה למכירה בבצרה – במיקום הטוב ביותר, מוקף בשטח ירוק. הבית בנוי ב 3 מפלסים עם מעלית פנימית. במפלס הכניסה סלון, פינת משפחה ומטבח מושקע עם אי ענק עם יציאות לפרגולה מקורה לאורך בריכת הגלישה הפונה לנוף. בנוסף חדר משפחה TV. בקומה העליונה יחידת הורים וחדר עבודה עטוף פתחים לכיוון הנוף. במפלס התחתון 3 סוויטות ענקיות עם מרפסות צמודות , חדר קולנוע מקצועי וממ\"ד גדול במיוחד. הבית בעיצוב מודרני עם מפרט גמר מהגבוהים ביותר.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-9.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-7.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-8.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-13.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-5.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-12.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-6.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-10.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2016/02/Luxurios-Villa-for-sale-in-Bazra-11.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-1.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-10.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-11.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-12.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-13.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-2.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-3.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-4.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-5.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-6.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-7.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-8.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\Luxurios-Villa-for-sale-in-Bazra-9.jpg",
+      "shibumi_properties\\images\\וילה_למכירה_בבצרה\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 14
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%97%d7%91%d7%a6%d7%9c%d7%aa-%d7%94%d7%a9%d7%a8%d7%95%d7%9f/",
+    "title": "בית למכירה בחבצלת השרון",
+    "categories": [],
+    "price": "",
+    "details": {
+      "P.O.R": "",
+      "שטח בנוי": "270 מ\"ר",
+      "שטח המגרש": "400 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/02/photo-3.png"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\בית_למכירה_בחבצלת_השרון\\photo-3.png"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a8%d7%a9%d7%a4%d7%95%d7%9f-m/",
+    "title": "משק למכירה ברשפון",
+    "categories": [],
+    "price": "P.O.R ש\"ח",
+    "details": {
+      "חלקה א'": "10,000 מ\"ר",
+      "שטח מגרש": "30,000 מ\"ר"
+    },
+    "features": [],
+    "description": "נחלה הכי ייחודית ברשפון, חזית רחבה לנוף . דסקרטי , נשמח לתת פרטים לאחר יציקת קשר",
+    "image_urls": [],
+    "local_images": [],
+    "image_count": 0
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a2%d7%9e%d7%a7-%d7%97%d7%a4%d7%a8/",
+    "title": "משק למכירה בעמק חפר",
+    "categories": [],
+    "price": "6,200,000 ש\"ח",
+    "details": {
+      "חלקה א'": "16,500 מ\"ר",
+      "שטח מגרש": "28,000 מ\"ר",
+      "שטח בנוי": "250 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/meshek-farm-for-sale-in-gan-yeoshiya.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\meshek-farm-for-sale-in-gan-yeoshiya.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%a0%d7%97%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9e%d7%9b%d7%9e%d7%95%d7%a8%d7%aa-%d7%a7%d7%a8%d7%95%d7%91-%d7%9c%d7%99%d7%9d/",
+    "title": "משק למכירה במכמורת – נמכר",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מגרש": "3000 מ\"ר"
+    },
+    "features": [],
+    "description": "הזדמנות לאיכות חיים ליד הים- התמונה המוצגת הינה חלק מהוואי הסביבה בה מוצעים חוגי שייט לילדים ומבוגרים .",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/111.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_במכמורת_–_נמכר\\111.jpg",
+      "shibumi_properties\\images\\משק_למכירה_במכמורת_–_נמכר\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a2%d7%9e%d7%a7-%d7%97%d7%a4%d7%a8-2/",
+    "title": "משק למכירה בעמק חפר",
+    "categories": [],
+    "price": "",
+    "details": {
+      "P.O.R": "",
+      "שטח מגרש": "24,000 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/111-3.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\111-3.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%97%d7%95%d7%a4%d7%99%d7%aa-%d7%a6%d7%9e%d7%95%d7%93-%d7%9c%d7%a9%d7%9e%d7%95%d7%a8%d7%94-%d7%a2%d7%9d-%d7%a0%d7%95%d7%a3-%d7%9c%d7%99/",
+    "title": "בית למכירה בחופית",
+    "categories": [],
+    "price": "",
+    "details": {
+      "פ.ם.ר": "התקשרו!",
+      "שטח מגרש": "1,000 מ\"ר"
+    },
+    "features": [],
+    "description": "בית ישן עם אופי, פוטנציאל לשיפוץ כ 180 מ\"ר צמוד לשטח ירוק ונוף לים.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/NAHAL.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\בית_למכירה_בחופית\\NAHAL.jpg",
+      "shibumi_properties\\images\\בית_למכירה_בחופית\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a2%d7%9e%d7%a7-%d7%97%d7%a4%d7%a8-4/",
+    "title": "משק למכירה בעמק חפר",
+    "categories": [],
+    "price": "6,000,000 ש\"ח",
+    "details": {
+      "שטח מגרש": "28,000 מ\"ר"
+    },
+    "features": [],
+    "description": "במיקום מרכזי במושב, גישה מהירה לכביש 6, אפשרות לבניה עד 3 יחידות",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/meshek-for-sale-in-berotaim-S-1ccc.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\meshek-for-sale-in-berotaim-S-1ccc.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a2%d7%9e%d7%a7-%d7%97%d7%a4%d7%a8-5/",
+    "title": "משק למכירה בעמק חפר",
+    "categories": [],
+    "price": "7,500,000 ש\"ח",
+    "details": {
+      "חלקה א'": "10,000 מ\"ר",
+      "שטח מגרש": "26,000 מ\"ר",
+      "שטח בנוי": "220 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/111-2.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\111-2.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%a0%d7%97%d7%9c%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%9e%d7%a9%d7%9e%d7%a8%d7%aa-%d7%91%d7%9c%d7%91-%d7%94%d7%a9%d7%a8%d7%95%d7%9f/",
+    "title": "משק למכירה במשמרת – בלב השרון",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "סה\"כ שטח": "25,000 מ\"ר",
+      "חלקה א": "19,000 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2016/03/meshek-farm-for-sale-in-mishmeret-G-1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_במשמרת_–_בלב_השרון\\meshek-farm-for-sale-in-mishmeret-G-1.jpg",
+      "shibumi_properties\\images\\משק_למכירה_במשמרת_–_בלב_השרון\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a2%d7%9e%d7%a7-%d7%97%d7%a4%d7%a8-6/",
+    "title": "משק למכירה בעמק חפר",
+    "categories": [],
+    "price": "6,000,000 ש\"ח",
+    "details": {
+      "חלקה א": "10,000 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/meshek-farm-for-sale-in-herev-laet.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\meshek-farm-for-sale-in-herev-laet.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%a2%d7%9e%d7%a7-%d7%97%d7%a4%d7%a8-%d7%a7%d7%a8%d7%95%d7%91-%d7%9c%d7%99%d7%9d/",
+    "title": "משק למכירה בעמק חפר",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "חלקה א'": "4,000 מ\"ר",
+      "שטח בנוי": "410 מ\"ר"
+    },
+    "features": [],
+    "description": "נחלה למכירה בעמק חפר,  במיקום טוב ,2 חזיתות ,2 בתים מרחק הליכה קצרה לים!",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2015/03/20160421_085431cccc.jpg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\20160421_085431cccc.jpg",
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 2
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%91%d7%99%d7%aa-%d7%a2%d7%9d-%d7%a0%d7%95%d7%a3-%d7%9c%d7%99%d7%9d-%d7%91%d7%a6%d7%95%d7%a7%d7%99-%d7%99%d7%9d/",
+    "title": "בית עם נוף לים בצוקי ים",
+    "categories": [],
+    "price": "7,500,000 ש\"ח",
+    "details": {
+      "חדרים": "6",
+      "שטח מגרש": "500 מ\"ר",
+      "שטח בנוי": "200 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2017/06/img-20170614-wa0035.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2017/06/img-20170614-wa0038.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2017/06/img-20170614-wa0039.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\בית_עם_נוף_לים_בצוקי_ים\\img-20170614-wa0035.jpg",
+      "shibumi_properties\\images\\בית_עם_נוף_לים_בצוקי_ים\\img-20170614-wa0038.jpg",
+      "shibumi_properties\\images\\בית_עם_נוף_לים_בצוקי_ים\\img-20170614-wa0039.jpg"
+    ],
+    "image_count": 3
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%95%d7%99%d7%9c%d7%94-%d7%9e%d7%95%d7%a9%d7%a7%d7%a2%d7%aa-%d7%91%d7%9e%d7%95%d7%a9%d7%91-%d7%91%d7%9e%d7%a8%d7%9b%d7%96/",
+    "title": "למכירה וילה מושקעת במושב במרכז",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח": "1,200 מ\"ר",
+      "שטח בנוי": ""
+    },
+    "features": [],
+    "description": "הבית בנוי במפלס  אחד ונבנה ברמה מאוד גבוה עם ירידה לפרטים שמייצרים חלל ומפתחים גדולים.\n\nבבית קיימים ___ חדרים וכוללים יחידת הורים מפנקת וחלל משפחה גדול",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2024/07/18.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/07/13.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/07/8.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/07/1.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/07/4.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/07/6.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/07/9.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/07/11.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/07/16.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/2024/07/17.jpeg",
+      "https://shibumi.co.il/wp-content/uploads/bfi_thumb/unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\1.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\11.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\13.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\16.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\17.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\18.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\4.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\6.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\8.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\9.jpeg",
+      "shibumi_properties\\images\\למכירה_וילה_מושקעת_במושב_במרכז\\unnamed-file-plihuhpgbxhy5i5rsszf1wxgeyj4dcht12ohmo51lo.jpg"
+    ],
+    "image_count": 11
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%a0%d7%97%d7%9c%d7%94-%d7%a2%d7%9d-%d7%97%d7%95%d7%95%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%97%d7%95%d7%a3-%d7%94%d7%a9%d7%a8%d7%95%d7%9f/",
+    "title": "נחלה עם חווה למכירה בחוף השרון",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2022/08/4.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נחלה_עם_חווה_למכירה_בחוף_השרון\\4.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%90%d7%97%d7%95%d7%96%d7%94-%d7%99%d7%99%d7%97%d7%95%d7%93%d7%99%d7%aa-%d7%9e%d7%91%d7%95%d7%93%d7%93%d7%aa-%d7%a2%d7%9c-%d7%92%d7%91%d7%a2%d7%94-%d7%a2%d7%9d-%d7%a0%d7%95%d7%a3-%d7%9c%d7%99%d7%9d/",
+    "title": "נחלה מדהימה למכירה במכמורת- בבלעדיות",
+    "categories": [],
+    "price": "",
+    "details": {},
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2021/12/3.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\נחלה_מדהימה_למכירה_במכמורת-_בבלעדיות\\3.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%91%d7%a0%d7%99-%d7%a6%d7%99%d7%95%d7%9f/",
+    "title": "משק למכירה במושב בשרון",
+    "categories": [],
+    "price": "18,000,000 ש\"ח",
+    "details": {
+      "חלקה א'": "18,000 מ\"ר",
+      "שטח בנוי": "250 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2014/03/20160414_123700CCC.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_במושב_בשרון\\20160414_123700CCC.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9e%d7%a9%d7%a7-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%91%d7%a2%d7%9e%d7%a7-%d7%97%d7%a4%d7%a8-7/",
+    "title": "משק למכירה בעמק חפר",
+    "categories": [],
+    "price": "10.000.000 ש\"ח",
+    "details": {
+      "שטח מגרש": "14,000 מ\"ר"
+    },
+    "features": [],
+    "description": "",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2014/01/aaaaa.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\משק_למכירה_בעמק_חפר\\aaaaa.jpg"
+    ],
+    "image_count": 1
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%90%d7%97%d7%95%d7%96%d7%94-%d7%9e%d7%93%d7%94%d7%99%d7%9e%d7%94-%d7%9c%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%a7%d7%a8%d7%95%d7%91-%d7%9c%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91/",
+    "title": "אחוזה מדהימה למכירה קרוב לתל אביב",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "חדרים": "10",
+      "שטח מגרש": "3,500 מ\"ר",
+      "שטח בנוי": ""
+    },
+    "features": [],
+    "description": "אחוזה מדהימה ביופיה עם בריכת שחייה ענקית, מגרש כדורסל, מטבח חיצוני, בית מושלם שיכול לשמש כמתחם משפחתי להתרחק מהכל ולהתחבר לטבע רק כרבע שעה ממרכז העיר.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2013/07/unnamed-file-2-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/01/1-4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/meshek-ezer-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/meshek-hezer2-scaled.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/meshek-hezer1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/unnamed-file-1-scaled.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\אחוזה_מדהימה_למכירה_קרוב_לתל_אביב\\1-4.jpg",
+      "shibumi_properties\\images\\אחוזה_מדהימה_למכירה_קרוב_לתל_אביב\\meshek-ezer-scaled.jpg",
+      "shibumi_properties\\images\\אחוזה_מדהימה_למכירה_קרוב_לתל_אביב\\meshek-hezer1.jpg",
+      "shibumi_properties\\images\\אחוזה_מדהימה_למכירה_קרוב_לתל_אביב\\meshek-hezer2-scaled.jpg",
+      "shibumi_properties\\images\\אחוזה_מדהימה_למכירה_קרוב_לתל_אביב\\unnamed-file-1-scaled.jpg",
+      "shibumi_properties\\images\\אחוזה_מדהימה_למכירה_קרוב_לתל_אביב\\unnamed-file-2-scaled.jpg"
+    ],
+    "image_count": 6
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%94%d7%a9%d7%9b%d7%a8%d7%94-%d7%91%d7%90%d7%a8%d7%a1%d7%95%d7%a3-%d7%93%d7%95%d7%a4%d7%9c%d7%a7%d7%a1-%d7%9e%d7%93%d7%94%d7%99%d7%9d-%d7%91%d7%99%d7%95%d7%aa%d7%a8-%d7%a7%d7%95-%d7%a8%d7%90/",
+    "title": "להשכרה בארסוף דופלקס מדהים ביותר קו ראשון לים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מרפסת": "מרפסת רחבה פתוח לים",
+      "שטח בנוי": "500 מ\"ר"
+    },
+    "features": [],
+    "description": "קו ראשון לים  אחת היחידות היפות ביותר בפרויקט, דופלקס של כ 500 מ\"ר בנוי עם מפתח רחב פתוח לכיוון הים,\n\nמעוצב וברמת גמר הגבוהה ביותר, כל קומה יוצאת למרפסת גדולה לכיוון הים.\n\nוהנו הפרויקט האחרון מסוגו שקיבל אישור למגורים על המצוק קו ראשון לים בישראל",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2017/03/harsuf2.png",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/7.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/5.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/4.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/8.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2020/05/9.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/harsuf22222.png"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\3.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\4.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\5.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\7.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\8.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\9.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\harsuf2.png",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_מדהים_ביותר_קו_ראשון_לים\\harsuf22222.png"
+    ],
+    "image_count": 8
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%94%d7%a9%d7%9b%d7%a8%d7%94-%d7%91%d7%90%d7%a8%d7%a1%d7%95%d7%a3-%d7%93%d7%95%d7%a4%d7%9c%d7%a7%d7%a1-%d7%99%d7%95%d7%a7%d7%a8%d7%aa%d7%99-%d7%a7%d7%95-%d7%a8%d7%90%d7%a9%d7%95%d7%9f-%d7%9c/",
+    "title": "להשכרה בארסוף דופלקס יוקרתי קו ראשון לים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מרפסת": "מ\"ר",
+      "שטח בנוי": "400 מ\"ר"
+    },
+    "features": [],
+    "description": "הזדמנות לגור בפרוייקט הכי יוקרתי בפרוייקט שנבנה על המצוק ליד הים. הדירה נבנתה ברמה הגבוהה ביותר, עם חללים ומפתחים ענקיים לכיוון הים, כל קומה יוצאת למרפסת גדולה לכיוון הים. תקופת השכירות לפחות שנתיים.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2013/07/arsuf.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/unnamed-file.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/harsuf11111.png",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/1.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/07/3.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2017/07/cnisa.png",
+      "https://shibumi.co.il/wp-content/uploads/2017/07/megurim.png"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_יוקרתי_קו_ראשון_לים\\1.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_יוקרתי_קו_ראשון_לים\\3.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_יוקרתי_קו_ראשון_לים\\arsuf.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_יוקרתי_קו_ראשון_לים\\cnisa.png",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_יוקרתי_קו_ראשון_לים\\harsuf11111.png",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_יוקרתי_קו_ראשון_לים\\megurim.png",
+      "shibumi_properties\\images\\להשכרה_בארסוף_דופלקס_יוקרתי_קו_ראשון_לים\\unnamed-file.jpg"
+    ],
+    "image_count": 7
+  },
+  {
+    "url": "https://shibumi.co.il/הנכסים-שלנו/%d7%9c%d7%94%d7%a9%d7%9b%d7%a8%d7%94-%d7%91%d7%90%d7%a8%d7%a1%d7%95%d7%a3-%d7%a7%d7%95-%d7%a8%d7%90%d7%a9%d7%95%d7%9f-%d7%9c%d7%99%d7%9d/",
+    "title": "להשכרה בארסוף קו ראשון לים",
+    "categories": [],
+    "price": "P.O.R",
+    "details": {
+      "שטח מרפסת": "300 מ\"ר",
+      "שטח בנוי": "700 מ\"ר"
+    },
+    "features": [],
+    "description": "קו ראשון לים  כ 700 מ\"ר ומרפסות נוף פתוח לים ולשקיעות. בנוי ברמה הכי גבוהה.",
+    "image_urls": [
+      "https://shibumi.co.il/wp-content/uploads/2013/05/2.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/05/h_aprt_016.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/05/h_aprt_113.jpg",
+      "https://shibumi.co.il/wp-content/uploads/2013/05/h_aprt_014.jpg"
+    ],
+    "local_images": [
+      "shibumi_properties\\images\\להשכרה_בארסוף_קו_ראשון_לים\\2.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_קו_ראשון_לים\\h_aprt_014.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_קו_ראשון_לים\\h_aprt_016.jpg",
+      "shibumi_properties\\images\\להשכרה_בארסוף_קו_ראשון_לים\\h_aprt_113.jpg"
+    ],
+    "image_count": 4
+  }
+];

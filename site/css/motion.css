@@ -1,0 +1,48 @@
+/* =========================================================
+   SHIBUMI · Motion · v7
+   Matches Hay Real Estate style: subtle fade-in-up + smooth transitions.
+   No decorative animations. All respect prefers-reduced-motion.
+   ========================================================= */
+
+/* Scroll reveal — only hides if JS confirmed it's active (html.js-ready).
+   If JS fails or stalls, content is visible by default (accessibility/robustness). */
+html.js-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 760ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 760ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--delay, 0) * 80ms);
+  will-change: opacity, transform;
+}
+html.js-ready [data-reveal].is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Safety fallback: after 3.5s, ensure anything still hidden becomes visible */
+html.reveal-fallback [data-reveal]:not(.is-in) {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Fade-in-up keyframe (legacy class-based, for hero text) */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.30s; }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.60s; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .animate-fade-in-up { animation: none !important; opacity: 1 !important; }
+  .hero-bg img { animation: none !important; transform: none !important; }
+  .wheel { animation: none !important; }
+  .hero-badge__dot { animation: none !important; }
+}

@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>נכס · שיבומי נדל״ן</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="./css/base.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+
+<header class="navbar scrolled" role="banner">
+  <div class="container navbar-container">
+    <a class="logo" href="./index.html" aria-label="שיבומי נדל״ן · עמוד הבית">
+      <span class="logo-text">SHIBUMI</span>
+      <span class="logo-subtext">נדל״ן · מאז 1997</span>
+    </a>
+    <nav class="nav-links" aria-label="תפריט ראשי">
+      <a href="./index.html">ראשי</a>
+      <a href="./properties.html" class="active">נכסים</a>
+      <a href="./about.html">אודות</a>
+      <a href="./contact.html">יצירת קשר</a>
+      <a class="nav__fav" href="./favorites.html" aria-label="המועדפים שלי" style="display:inline-flex;align-items:center;gap:6px;color:var(--text-primary);padding:8px 4px;position:relative">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span data-fav-count hidden style="min-width:18px;height:18px;padding:0 5px;background:var(--accent-clay);color:#fff;border-radius:9px;font-size:.7rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;line-height:1"></span>
+      </a>
+      <a class="btn btn-gold-ghost" href="tel:972507330090">050-733-0090</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="פתח תפריט" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+      </svg>
+    </button>
+  </div>
+</header>
+<div class="nav-backdrop" aria-hidden="true"></div>
+
+<main id="main" class="property-details-page">
+  <div class="container">
+    <a class="btn btn-outline back-btn" href="./properties.html">
+      <span aria-hidden="true">→</span> חזרה לכל הנכסים
+    </a>
+
+    <div id="content"></div>
+  </div>
+</main>
+
+<!-- Lightbox -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="גלריית תמונות">
+  <button class="lb__close" aria-label="סגור">סגור ×</button>
+  <button class="lb__nav lb__nav--prev" aria-label="הקודם">›</button>
+  <img class="lb__img" alt="" />
+  <button class="lb__nav lb__nav--next" aria-label="הבא">‹</button>
+  <div class="lb__count"></div>
+</div>
+
+<footer class="footer" role="contentinfo">
+  <div class="container footer-container">
+    <div>
+      <a class="logo" href="./index.html">
+        <span class="logo-text">SHIBUMI</span>
+        <span class="logo-subtext">נדל״ן · מאז 1997</span>
+      </a>
+      <p class="footer-desc">חברת בוטיק לייעוץ ושיווק נכסי יוקרה בישראל.</p>
+    </div>
+    <div>
+      <h4 class="footer-heading">ניווט</h4>
+      <ul class="footer-links">
+        <li><a href="./index.html">עמוד הבית</a></li>
+        <li><a href="./properties.html">נכסים</a></li>
+        <li><a href="./about.html">אודות</a></li>
+        <li><a href="./contact.html">יצירת קשר</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">יצירת קשר</h4>
+      <ul class="contact-info">
+        <li>טלפון: <a href="tel:972507330090" style="color:inherit">050-733-0090</a></li>
+        <li>WhatsApp: <a href="https://wa.me/972507330090" target="_blank" rel="noopener" style="color:inherit">50-733-0090</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© <span id="year">2026</span> שיבומי נדל״ן. כל הזכויות שמורות.</div>
+    <div class="footer-bottom-links">
+      <a href="./accessibility.html">הצהרת נגישות</a>
+      <a href="./admin/index.html">כניסת מנהל</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/config.js"></script>
+<script src="./js/properties-data.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/site.js"></script>
+<script>
+(async function () {
+  const esc = window.shibumiUI.esc;
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const qs = new URLSearchParams(location.search);
+  const id = qs.get("id");
+  const content = document.getElementById("content");
+
+  const all = await Shibumi.loadAllProperties();
+  const p = all.find(x => x.id === id);
+
+  if (!p) {
+    content.innerHTML = `
+      <div style="padding:80px 0;text-align:center">
+        <h2 style="margin-bottom:14px">הנכס לא נמצא</h2>
+        <p style="color:var(--text-secondary);margin-bottom:24px">ייתכן שהקישור השתנה.</p>
+        <a class="btn btn-primary" href="./properties.html">לכל הנכסים</a>
+      </div>`;
+    return;
+  }
+
+  Shibumi.recordView(p.id);
+
+  const cover = p.cover || (p.images[0] || "");
+  const tagText =
+    p.status === "sold"   ? "נמכר"   :
+    p.status === "rented" ? "הושכר"  :
+    (p.type?.label || "נכס");
+
+  const bedrooms = p.details?.["חדרי שינה"] || p.details?.["חדרים"] || "";
+  const size     = p.details?.["שטח"] || p.details?.["גודל"] || "";
+  const plot     = p.details?.["מגרש"] || p.details?.["שטח מגרש"] || "";
+
+  const isFav = window.shibumiUI.Favorites.has(p.id);
+  content.innerHTML = `
+    <div class="property-header" data-reveal>
+      <div>
+        <span class="property-badge">${esc(tagText)}</span>
+        <h1 class="h2-title" style="margin-bottom:10px">${esc(p.title)}</h1>
+        <div class="property-location-large">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M12 22s-8-7.58-8-13a8 8 0 0 1 16 0c0 5.42-8 13-8 13z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+          ${esc(p.region?.label || "")}
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:14px">
+        <div class="property-price-large">${esc(p.price)}</div>
+        <div style="display:flex;gap:10px">
+          <button type="button" class="share-btn" id="shareBtn" aria-label="שיתוף נכס">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/>
+            </svg>
+            שיתוף
+          </button>
+          <button type="button" class="share-btn${isFav ? ' is-active' : ''}" id="favBtnDetail"
+                  aria-pressed="${isFav}"
+                  style="${isFav ? 'color:var(--accent-clay);border-color:var(--accent-clay)' : ''}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span id="favBtnLabel">${isFav ? 'במועדפים' : 'שמור'}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="property-gallery" data-reveal style="--delay:1">
+      <div class="main-image">
+        ${cover
+          ? `<img id="mainImg" src="${esc(cover)}" alt="${esc(p.title)}" />`
+          : `<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-muted)">אין תמונה</div>`}
+      </div>
+      ${p.images.length > 1 ? `
+        <div class="thumbnails" id="thumbs">
+          ${p.images.map((src, i) => `
+            <button type="button" class="thumbnail${i === 0 ? " active" : ""}" data-idx="${i}" aria-label="תמונה ${i+1}">
+              <img src="${esc(src)}" alt="" loading="lazy" />
+            </button>
+          `).join("")}
+        </div>` : ""}
+    </div>
+
+    <div class="property-content">
+      <div>
+        <h2 class="section-subtitle">פרטי הנכס</h2>
+        <div class="specs-grid" data-reveal>
+          <div class="spec-item glass-panel">
+            <div style="color:var(--accent-gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase">אזור</div>
+            <div class="spec-value">${esc(p.region?.label || "—")}</div>
+          </div>
+          <div class="spec-item glass-panel">
+            <div style="color:var(--accent-gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase">סוג</div>
+            <div class="spec-value">${esc(p.type?.label || "—")}</div>
+          </div>
+          <div class="spec-item glass-panel">
+            <div style="color:var(--accent-gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase">תמונות</div>
+            <div class="spec-value">${p.images.length}</div>
+          </div>
+          ${bedrooms ? `<div class="spec-item glass-panel">
+            <div style="color:var(--accent-gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase">חדרים</div>
+            <div class="spec-value">${esc(bedrooms)}</div>
+          </div>` : ""}
+          ${size ? `<div class="spec-item glass-panel">
+            <div style="color:var(--accent-gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase">שטח</div>
+            <div class="spec-value">${esc(size)}</div>
+          </div>` : ""}
+          ${plot ? `<div class="spec-item glass-panel">
+            <div style="color:var(--accent-gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase">מגרש</div>
+            <div class="spec-value">${esc(plot)}</div>
+          </div>` : ""}
+        </div>
+
+        ${p.description ? `
+          <div style="margin-top:48px" data-reveal>
+            <h2 class="section-subtitle">תיאור הנכס</h2>
+            <div class="property-description">
+              ${p.description.split(/\n\s*\n/).map(para => `<p>${esc(para)}</p>`).join("")}
+            </div>
+          </div>` : ""}
+
+        ${p.features?.length ? `
+          <div style="margin-top:48px" data-reveal>
+            <h2 class="section-subtitle">מאפיינים</h2>
+            <ul style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;list-style:none">
+              ${p.features.map(f => `
+                <li style="padding:10px 14px;border:1px solid var(--border-subtle);border-radius:var(--radius-sm);color:var(--text-secondary);font-size:.92rem">
+                  <span style="color:var(--accent-gold);margin-left:8px">✓</span>${esc(f)}
+                </li>`).join("")}
+            </ul>
+          </div>` : ""}
+      </div>
+
+      <aside class="contact-card glass-panel" data-reveal style="--delay:1">
+        <h3>מעוניינים בנכס?</h3>
+        <p>השאירו פרטים ונחזור אליכם עם פרטים נוספים בהקדם.</p>
+
+        <div class="agent-info">
+          <span class="agent-avatar" aria-hidden="true">מ</span>
+          <div>
+            <h4>מייקל ישראלשטם</h4>
+            <p>מייסד · שיבומי נדל״ן</p>
+          </div>
+        </div>
+
+        <a class="btn btn-primary full-width" href="tel:972507330090">
+          התקשרו · 050-733-0090
+        </a>
+        <a class="btn btn-outline full-width" style="margin-top:12px"
+           href="https://wa.me/972507330090?text=${encodeURIComponent('שלום, מעוניין/ת בנכס: ' + p.title)}"
+           target="_blank" rel="noopener">
+          WhatsApp
+        </a>
+        <a class="btn btn-gold-ghost full-width" style="margin-top:12px" href="./contact.html">
+          טופס יצירת קשר
+        </a>
+      </aside>
+    </div>
+  `;
+
+  document.title = `${p.title} · שיבומי נדל״ן`;
+
+  // Thumbnails
+  const mainImg = document.getElementById("mainImg");
+  const thumbs  = document.getElementById("thumbs");
+  if (thumbs && mainImg) {
+    thumbs.addEventListener("click", (e) => {
+      const btn = e.target.closest(".thumbnail");
+      if (!btn) return;
+      const idx = parseInt(btn.dataset.idx, 10);
+      mainImg.src = p.images[idx];
+      thumbs.querySelectorAll(".thumbnail").forEach(t => t.classList.remove("active"));
+      btn.classList.add("active");
+    });
+  }
+
+  // Lightbox
+  const lb = document.getElementById("lightbox");
+  const lbImg = lb.querySelector(".lb__img");
+  const lbCount = lb.querySelector(".lb__count");
+  let lbIdx = 0;
+  function openLB(i) {
+    if (!p.images.length) return;
+    lbIdx = i;
+    lbImg.src = p.images[lbIdx];
+    lbCount.textContent = `${lbIdx+1} / ${p.images.length}`;
+    lb.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeLB() { lb.classList.remove("is-open"); document.body.style.overflow = ""; }
+  function navLB(d) {
+    lbIdx = (lbIdx + d + p.images.length) % p.images.length;
+    lbImg.src = p.images[lbIdx];
+    lbCount.textContent = `${lbIdx+1} / ${p.images.length}`;
+  }
+  mainImg?.addEventListener("click", () => openLB(thumbs ? parseInt(thumbs.querySelector(".thumbnail.active")?.dataset.idx || "0", 10) : 0));
+  mainImg?.style && (mainImg.style.cursor = "zoom-in");
+  lb.querySelector(".lb__close").addEventListener("click", closeLB);
+  lb.querySelector(".lb__nav--prev").addEventListener("click", () => navLB(+1));
+  lb.querySelector(".lb__nav--next").addEventListener("click", () => navLB(-1));
+  lb.addEventListener("click", (e) => { if (e.target === lb) closeLB(); });
+  document.addEventListener("keydown", (e) => {
+    if (!lb.classList.contains("is-open")) return;
+    if (e.key === "Escape") closeLB();
+    if (e.key === "ArrowLeft") navLB(-1);
+    if (e.key === "ArrowRight") navLB(+1);
+  });
+
+  // Share + Favorite buttons
+  document.getElementById("shareBtn")?.addEventListener("click", () => {
+    window.shibumiUI.shareLink(p.title + " · שיבומי נדל״ן", location.href);
+  });
+  const favDetailBtn = document.getElementById("favBtnDetail");
+  favDetailBtn?.addEventListener("click", () => {
+    const nowActive = window.shibumiUI.Favorites.toggle(p.id);
+    favDetailBtn.classList.toggle("is-active", nowActive);
+    favDetailBtn.setAttribute("aria-pressed", String(nowActive));
+    favDetailBtn.style.color = nowActive ? "var(--accent-clay)" : "";
+    favDetailBtn.style.borderColor = nowActive ? "var(--accent-clay)" : "";
+    const svg = favDetailBtn.querySelector("svg");
+    if (svg) svg.setAttribute("fill", nowActive ? "currentColor" : "none");
+    document.getElementById("favBtnLabel").textContent = nowActive ? "במועדפים" : "שמור";
+    window.shibumiUI.showToast(nowActive ? "נוסף למועדפים ♥" : "הוסר מהמועדפים");
+    window.shibumiUI.updateFavCount();
+  });
+
+  window.shibumiUI.initReveal();
+})();
+</script>
+
+</body>
+</html>
