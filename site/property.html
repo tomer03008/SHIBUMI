@@ -223,10 +223,10 @@
         ${p.features?.length ? `
           <div style="margin-top:48px" data-reveal>
             <h2 class="section-subtitle">מאפיינים</h2>
-            <ul style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;list-style:none">
+            <ul class="property-features-grid">
               ${p.features.map(f => `
-                <li style="padding:10px 14px;border:1px solid var(--border-subtle);border-radius:var(--radius-sm);color:var(--text-secondary);font-size:.92rem">
-                  <span style="color:var(--accent-gold);margin-left:8px">✓</span>${esc(f)}
+                <li>
+                  <span class="property-features-grid__mark" aria-hidden="true">✓</span>${esc(f)}
                 </li>`).join("")}
             </ul>
           </div>` : ""}
