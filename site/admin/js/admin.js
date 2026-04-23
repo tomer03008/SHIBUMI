@@ -6,8 +6,8 @@
  * swap the auth calls with API calls and leave the UI identical.
  *
  * Default credentials (user MUST change on first login):
- *   username: shibumi_admin
- *   password: Sh!bumi_Nadlan_1997#Luxury
+ *   username: ShibumiEstate_Admin
+ *   password: Sb#8mL4$pK9wN@xT6yR!Z2
  *
  * Password policy enforced on CHANGE:
  *   - min 12 chars
@@ -16,8 +16,8 @@
  */
 
 const ADMIN_DEFAULTS = {
-  username: "shibumi_admin",
-  password: "Sh!bumi_Nadlan_1997#Luxury",
+  username: "ShibumiEstate_Admin",
+  password: "Sb#8mL4$pK9wN@xT6yR!Z2",
 };
 
 const AUTH_KEY   = "shibumi:admin:credentials";

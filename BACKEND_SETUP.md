@@ -93,9 +93,9 @@
 
 ## פרטי כניסה למערכת ניהול
 
-- **כתובת:** `site/admin/index.html` (או `https://הדומיין/admin/` באתר חי)
-- **שם משתמש:** `shibumi_admin`
-- **סיסמה התחלתית:** `Sh!bumi_Nadlan_1997#Luxury`
+- **כתובת:** `site/admin/index.html` או `site/admin/login.html` (באתר חי: `https://…/admin/` או `https://…/admin/login`)
+- **שם משתמש:** `ShibumiEstate_Admin`
+- **סיסמה התחלתית:** `Sb#8mL4$pK9wN@xT6yR!Z2`
 
 **חובה לשנות סיסמה** אחרי הכניסה הראשונה דרך "שינוי סיסמה".
 
