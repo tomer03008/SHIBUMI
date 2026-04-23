@@ -1,4 +1,4 @@
-/* Shibumi · site.js · v8
+/* Shibumi · site.js · v9
  * Everything connects here:
  *   - Nav, hero, reveal, featured grid, counters, region counts, hero search
  *   - Accessibility: font-size, contrast, grayscale, underline, cursor, motion, reset
@@ -12,6 +12,29 @@
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
   }[c]));
   const pad = (n) => String(n).padStart(2, "0");
+
+  /** Split "28,000,000 ש״ח" into amount (LTR) + currency for stable card layout */
+  function formatPropertyPriceHtml(raw) {
+    const s = String(raw ?? "").trim();
+    if (!s) {
+      return `<span class="property-price__plain">${esc("מחיר בפנייה")}</span>`;
+    }
+    const compact = s.replace(/\s+/g, " ").trim();
+    const porKey = compact.replace(/[^a-z0-9]/gi, "").toLowerCase();
+    if (porKey === "por" || porKey === "p0r") {
+      return `<span class="property-price__plain">${esc(s)}</span>`;
+    }
+    const m = compact.match(/^([\d,.\s\u00A0\u202F]+)\s+(ש[^\s]*ח|NIS|₪)\s*$/i);
+    if (m) {
+      const amount = m[1].trim();
+      const cur = m[2].trim();
+      return (
+        `<span class="property-price__amount" dir="ltr" lang="en">${esc(amount)}</span>` +
+        `<span class="property-price__currency">${esc(cur)}</span>`
+      );
+    }
+    return `<span class="property-price__plain">${esc(s)}</span>`;
+  }
 
   /* =====================================================
      STORAGE HELPERS
@@ -193,7 +216,7 @@
         </div>
       </div>
       <div class="property-info">
-        <div class="property-price">${esc(p.price || "מחיר בפנייה")}</div>
+        <div class="property-price">${formatPropertyPriceHtml(p.price)}</div>
         <h3 class="property-title">${esc(p.title)}</h3>
         <div class="property-location">${esc(p.region?.label || "")}</div>
         <div class="property-specs">
@@ -678,7 +701,7 @@
   }
 
   window.shibumiUI = {
-    renderCard, initReveal, esc, pad,
+    renderCard, initReveal, esc, pad, formatPropertyPriceHtml,
     Favorites, Recent, showToast, shareLink, updateFavCount,
   };
 })();

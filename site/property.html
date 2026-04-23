@@ -99,6 +99,7 @@
 <script>
 (async function () {
   const esc = window.shibumiUI.esc;
+  const formatPropertyPriceHtml = window.shibumiUI.formatPropertyPriceHtml;
   document.getElementById("year").textContent = new Date().getFullYear();
 
   const qs = new URLSearchParams(location.search);
@@ -145,7 +146,7 @@
         </div>
       </div>
       <div style="display:flex;flex-direction:column;align-items:flex-end;gap:14px">
-        <div class="property-price-large">${esc(p.price)}</div>
+        <div class="property-price-large">${formatPropertyPriceHtml(p.price)}</div>
         <div style="display:flex;gap:10px">
           <button type="button" class="share-btn" id="shareBtn" aria-label="שיתוף נכס">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
