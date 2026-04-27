@@ -771,10 +771,10 @@ main { min-height: 100vh; }
 }
 /* מחיר בכרטיס: גודל נוזלי לפי רוחב הכרטיס — בלי גלילה, בלי שבירת ספרות */
 .property-card .property-price__amount {
-  font-size: clamp(0.5rem, 0.12rem + 6.8cqi, 1.62rem);
+  font-size: clamp(0.76rem, 0.3rem + 7.2cqi, 1.62rem);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.035em;
   line-height: 1.06;
   direction: ltr;
   unicode-bidi: isolate;
@@ -783,7 +783,7 @@ main { min-height: 100vh; }
 }
 @supports not (font-size: 1cqi) {
   .property-card .property-price__amount {
-    font-size: clamp(0.52rem, 0.22rem + 2.8vw, 1.62rem);
+    font-size: clamp(0.78rem, 0.34rem + 3.2vw, 1.62rem);
   }
 }
 .property-price__amount {
@@ -807,7 +807,7 @@ main { min-height: 100vh; }
   flex-shrink: 0;
 }
 .property-card .property-price__plain {
-  font-size: clamp(0.52rem, 0.14rem + 6.2cqi, 1.62rem);
+  font-size: clamp(0.76rem, 0.28rem + 6.6cqi, 1.62rem);
   font-weight: 700;
   line-height: 1.15;
   display: block;
@@ -816,7 +816,7 @@ main { min-height: 100vh; }
 }
 @supports not (font-size: 1cqi) {
   .property-card .property-price__plain {
-    font-size: clamp(0.55rem, 0.24rem + 2.6vw, 1.62rem);
+    font-size: clamp(0.78rem, 0.32rem + 3vw, 1.62rem);
   }
 }
 .property-price__plain {
@@ -1671,10 +1671,10 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
   font-weight: 700;
 }
 .property-price-large .property-price__amount {
-  font-size: clamp(0.62rem, 0.26rem + 3.6cqi, 2.3rem);
+  font-size: clamp(0.95rem, 0.42rem + 4.8cqi, 2.3rem);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.035em;
   line-height: 1.05;
   direction: ltr;
   unicode-bidi: isolate;
@@ -1684,7 +1684,7 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
 }
 @supports not (font-size: 1cqi) {
   .property-price-large .property-price__amount {
-    font-size: clamp(0.85rem, 0.42rem + 1.8vw, 2.3rem);
+    font-size: clamp(1rem, 0.5rem + 2.4vw, 2.3rem);
   }
 }
 .property-price-large .property-price__currency {
@@ -1697,7 +1697,7 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
   flex-shrink: 0;
 }
 .property-price-large .property-price__plain {
-  font-size: clamp(0.65rem, 0.28rem + 3.4cqi, 2.3rem);
+  font-size: clamp(0.92rem, 0.4rem + 4.5cqi, 2.3rem);
   line-height: 1.1;
   text-align: end;
   white-space: nowrap;
@@ -1705,7 +1705,7 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
 }
 @supports not (font-size: 1cqi) {
   .property-price-large .property-price__plain {
-    font-size: clamp(0.85rem, 0.42rem + 1.8vw, 2.3rem);
+    font-size: clamp(1rem, 0.5rem + 2.4vw, 2.3rem);
   }
 }
 
