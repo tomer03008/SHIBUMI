@@ -460,19 +460,23 @@
   }
 
   function initA11y() {
-    // Build the FAB
+    if (document.getElementById("a11yFab")) return;
+
+    // Build the FAB — פינה שמאלית-תחתונה פיזית (תקן 5568 / נוהג ישראלי), תווית גלויה
     const fab = document.createElement("button");
     fab.type = "button";
+    fab.id = "a11yFab";
     fab.className = "a11y-fab";
-    fab.setAttribute("aria-label", "פתיחת תפריט נגישות");
+    fab.setAttribute("aria-label", "פתיחת תפריט נגישות — התאמות תצוגה");
     fab.setAttribute("aria-expanded", "false");
     fab.setAttribute("aria-controls", "a11yPanel");
+    fab.setAttribute("title", "נגישות (Ctrl+F10)");
     fab.innerHTML = `
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <circle cx="12" cy="4" r="2"/>
+      <svg class="a11y-fab__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <circle cx="12" cy="4" r="2.2"/>
         <path d="M4.5 8.5h15M9 8.5v12M15 8.5v12M9 14h6"/>
-        <path stroke="currentColor" stroke-width="1.8" fill="none" d="M4.5 8.5h15M9 8.5v12M15 8.5v12M9 14h6"/>
       </svg>
+      <span class="a11y-fab__text">נגישות</span>
     `;
 
     // Build the Panel
@@ -482,6 +486,7 @@
     panel.setAttribute("role", "dialog");
     panel.setAttribute("aria-label", "תפריט נגישות");
     panel.setAttribute("aria-modal", "false");
+    panel.setAttribute("aria-hidden", "true");
     panel.innerHTML = `
       <div class="a11y-panel__header">
         <h2 class="a11y-panel__title">נגישות</h2>
@@ -543,6 +548,7 @@
       </div>
       <div class="a11y-panel__footer">
         <a href="./accessibility.html">הצהרת נגישות</a>
+        <a href="./contact.html">פנייה לרכז נגישות</a>
         <span style="color:var(--text-secondary)">תקן ישראלי 5568</span>
       </div>
     `;
@@ -550,7 +556,12 @@
     document.body.appendChild(fab);
     document.body.appendChild(panel);
 
-    let state = loadA11y();
+    let state;
+    try {
+      state = loadA11y();
+    } catch (_) {
+      state = { ...A11Y_DEFAULTS };
+    }
     applyA11y(state);
     syncUI();
 
@@ -581,25 +592,85 @@
       syncUI();
     }
 
+    let docClickCloser = null;
+    let globalEscCloser = null;
+
+    function focusablesInPanel() {
+      const sel =
+        'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled])';
+      return Array.from(panel.querySelectorAll(sel));
+    }
+
+    function onPanelKeydown(e) {
+      if (!panel.classList.contains("is-open") || e.key !== "Tab") return;
+      const list = focusablesInPanel();
+      if (list.length === 0) return;
+      if (list.length === 1) {
+        e.preventDefault();
+        return;
+      }
+      const first = list[0];
+      const last = list[list.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else if (document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+
     function open() {
       panel.classList.add("is-open");
+      panel.setAttribute("aria-hidden", "false");
+      panel.setAttribute("aria-modal", "true");
       fab.setAttribute("aria-expanded", "true");
+      fab.setAttribute("aria-label", "סגירת תפריט נגישות");
       const firstFocus = panel.querySelector(".a11y-panel__close");
       setTimeout(() => firstFocus?.focus(), 50);
+      panel.addEventListener("keydown", onPanelKeydown);
+      globalEscCloser = (e) => {
+        if (e.key === "Escape" && panel.classList.contains("is-open")) {
+          e.preventDefault();
+          close();
+        }
+      };
+      document.addEventListener("keydown", globalEscCloser, true);
+      docClickCloser = (ev) => {
+        if (!panel.classList.contains("is-open")) return;
+        const t = ev.target;
+        if (fab.contains(t) || panel.contains(t)) return;
+        close();
+      };
+      setTimeout(() => document.addEventListener("click", docClickCloser), 0);
     }
+
     function close() {
       panel.classList.remove("is-open");
+      panel.setAttribute("aria-hidden", "true");
+      panel.setAttribute("aria-modal", "false");
       fab.setAttribute("aria-expanded", "false");
+      fab.setAttribute("aria-label", "פתיחת תפריט נגישות — התאמות תצוגה");
+      panel.removeEventListener("keydown", onPanelKeydown);
+      if (globalEscCloser) {
+        document.removeEventListener("keydown", globalEscCloser, true);
+        globalEscCloser = null;
+      }
+      if (docClickCloser) {
+        document.removeEventListener("click", docClickCloser);
+        docClickCloser = null;
+      }
       fab.focus();
     }
 
-    fab.addEventListener("click", () => panel.classList.contains("is-open") ? close() : open());
-    panel.querySelector(".a11y-panel__close").addEventListener("click", close);
-
-    // ESC closes
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && panel.classList.contains("is-open")) close();
+    fab.addEventListener("click", (e) => {
+      e.stopPropagation();
+      panel.classList.contains("is-open") ? close() : open();
     });
+    panel.addEventListener("click", (e) => e.stopPropagation());
+    panel.querySelector(".a11y-panel__close").addEventListener("click", close);
 
     // Actions
     panel.querySelectorAll("[data-a11y-action]").forEach(btn => {
@@ -624,11 +695,12 @@
       });
     });
 
-    // Keyboard shortcut: Ctrl+F10 opens panel (per Israel standard convention)
+    // Ctrl+F10 — קיצור מקובל לתפריטי נגישות בישראל
     document.addEventListener("keydown", (e) => {
       if (e.ctrlKey && (e.key === "F10" || e.code === "F10")) {
         e.preventDefault();
-        open();
+        if (panel.classList.contains("is-open")) close();
+        else open();
       }
     });
   }
