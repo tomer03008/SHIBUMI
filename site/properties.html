@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>נכסים · שיבומי נדל״ן</title>
-  <meta name="description" content="כל הנכסים של שיבומי נדל״ן — נחלות, וילות, דירות ופנטהאוזים. סינון לפי אזור וסוג." />
+  <meta name="description" content="כל הנכסים של שיבומי נדל״ן — נחלות, וילות, דירות ופנטהאוזים. סינון לפי אזור, סוג, טווח מחיר ומיון." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="./css/base.css" />
@@ -49,16 +49,16 @@
         <span class="section-eyebrow">האוסף המלא</span>
         <h1 class="h2-title" style="margin-bottom:12px">נכסים</h1>
         <p class="body-large" style="max-width:620px">
-          אוסף הנכסים של שיבומי. הקלק לסינון לפי אזור, סוג, או גלישה חופשית.
+          אוסף הנכסים של שיבומי. סינון לפי אזור, סוג, טווח מחיר ומיון — בטלפון רשימות נפתחות קומפקטיות, במחשב גם לשוניות מהירות.
           <span id="count" style="color:var(--accent-gold);font-weight:600"></span>
         </p>
       </div>
     </div>
   </section>
 
-  <!-- FILTERS: compact native selects on phone; chips from md and up -->
+  <!-- FILTERS: mobile = compact selects; desktop = chips + same price/sort row -->
   <div class="filters-bar">
-    <div class="container">
+    <div class="container filters-layout">
       <div class="filters-compact" aria-label="סינון נכסים">
         <div class="filters-compact__field">
           <label class="filters-compact__label" for="regionSelect">אזור</label>
@@ -78,6 +78,22 @@
           <span class="filters__label">סוג</span>
         </div>
       </div>
+      <div class="filters-extras" aria-label="מחיר ומיון">
+        <div class="filters-extras__field">
+          <label class="filters-compact__label" for="priceMinSelect">מחיר מ</label>
+          <select id="priceMinSelect" class="filters-compact__select"></select>
+        </div>
+        <div class="filters-extras__field">
+          <label class="filters-compact__label" for="priceMaxSelect">עד מחיר</label>
+          <select id="priceMaxSelect" class="filters-compact__select"></select>
+        </div>
+        <div class="filters-extras__field filters-extras__field--sort">
+          <label class="filters-compact__label" for="sortSelect">מיון</label>
+          <select id="sortSelect" class="filters-compact__select"></select>
+        </div>
+        <button type="button" class="filters-extras__reset" id="resetFiltersBtn">איפוס סינונים</button>
+      </div>
+      <p class="filters-hint" id="priceFilterHint" hidden></p>
     </div>
   </div>
 
@@ -153,20 +169,115 @@
   const typeChips   = document.getElementById("typeChips");
   const regionSelect = document.getElementById("regionSelect");
   const typeSelect   = document.getElementById("typeSelect");
+  const priceMinSelect = document.getElementById("priceMinSelect");
+  const priceMaxSelect = document.getElementById("priceMaxSelect");
+  const sortSelect     = document.getElementById("sortSelect");
+  const resetFiltersBtn = document.getElementById("resetFiltersBtn");
+  const priceFilterHint = document.getElementById("priceFilterHint");
 
   const all = await Shibumi.loadPublicProperties();
+
+  const PRICE_MIN_OPTS = [
+    { v: "", label: "ללא מינימום" },
+    { v: "3000000", label: "מ־3 מ׳" },
+    { v: "5000000", label: "מ־5 מ׳" },
+    { v: "8000000", label: "מ־8 מ׳" },
+    { v: "10000000", label: "מ־10 מ׳" },
+    { v: "15000000", label: "מ־15 מ׳" },
+    { v: "20000000", label: "מ־20 מ׳" },
+    { v: "25000000", label: "מ־25 מ׳" },
+    { v: "30000000", label: "מ־30 מ׳" },
+  ];
+  const PRICE_MAX_OPTS = [
+    { v: "", label: "ללא הגבלה" },
+    { v: "5000000", label: "עד 5 מ׳" },
+    { v: "8000000", label: "עד 8 מ׳" },
+    { v: "10000000", label: "עד 10 מ׳" },
+    { v: "15000000", label: "עד 15 מ׳" },
+    { v: "20000000", label: "עד 20 מ׳" },
+    { v: "25000000", label: "עד 25 מ׳" },
+    { v: "30000000", label: "עד 30 מ׳" },
+    { v: "40000000", label: "עד 40 מ׳" },
+    { v: "50000000", label: "עד 50 מ׳" },
+    { v: "100000000", label: "עד 100 מ׳" },
+  ];
+  const SORT_OPTS = [
+    { v: "default", label: "כמו בקטלוג" },
+    { v: "price-asc", label: "מחיר: מהנמוך לגבוה" },
+    { v: "price-desc", label: "מחיר: מהגבוה לנמוך" },
+    { v: "title", label: "לפי שם (א–ת)" },
+  ];
+  const ALLOW_PMIN = new Set(PRICE_MIN_OPTS.map(o => o.v));
+  const ALLOW_PMAX = new Set(PRICE_MAX_OPTS.map(o => o.v));
+  const ALLOW_SORT = new Set(SORT_OPTS.map(o => o.v));
 
   const qs = new URLSearchParams(location.search);
   let qRegion = qs.get("region") || "all";
   let qType   = qs.get("type")   || "all";
+  let qPMin   = qs.get("pmin")   || "";
+  let qPMax   = qs.get("pmax")   || "";
+  let qSort   = qs.get("sort")   || "default";
   if (Shibumi.REGION_ALIASES?.[qRegion]) qRegion = Shibumi.REGION_ALIASES[qRegion];
 
+  function numOrNull(s) {
+    if (s == null || s === "") return null;
+    const n = parseInt(String(s), 10);
+    return Number.isFinite(n) && n > 0 ? n : null;
+  }
+
+  function passesPriceFilter(p, minN, maxN) {
+    if (minN == null && maxN == null) return true;
+    const n = p.priceNis;
+    if (n == null) return false;
+    if (minN != null && n < minN) return false;
+    if (maxN != null && n > maxN) return false;
+    return true;
+  }
+
+  function sortProperties(list, sortKey) {
+    const out = list.slice();
+    const tie = (a, b) => (a.sourceIndex | 0) - (b.sourceIndex | 0);
+    if (sortKey === "price-asc") {
+      out.sort((a, b) => {
+        const an = a.priceNis, bn = b.priceNis;
+        if (an == null && bn == null) return tie(a, b);
+        if (an == null) return 1;
+        if (bn == null) return -1;
+        if (an !== bn) return an - bn;
+        return tie(a, b);
+      });
+    } else if (sortKey === "price-desc") {
+      out.sort((a, b) => {
+        const an = a.priceNis, bn = b.priceNis;
+        if (an == null && bn == null) return tie(a, b);
+        if (an == null) return 1;
+        if (bn == null) return -1;
+        if (an !== bn) return bn - an;
+        return tie(a, b);
+      });
+    } else if (sortKey === "title") {
+      out.sort((a, b) => String(a.title || "").localeCompare(String(b.title || ""), "he"));
+    } else {
+      out.sort(tie);
+    }
+    return out;
+  }
+
   function clampFilters() {
+    let changed = false;
     const regionOk = qRegion === "all" || all.some(p => p.region?.key === qRegion);
     const typeOk   = qType   === "all" || all.some(p => p.type?.key   === qType);
-    let changed = false;
     if (!regionOk) { qRegion = "all"; changed = true; }
     if (!typeOk)   { qType   = "all"; changed = true; }
+    if (!ALLOW_PMIN.has(qPMin)) { qPMin = ""; changed = true; }
+    if (!ALLOW_PMAX.has(qPMax)) { qPMax = ""; changed = true; }
+    if (!ALLOW_SORT.has(qSort)) { qSort = "default"; changed = true; }
+    const minN = numOrNull(qPMin);
+    const maxN = numOrNull(qPMax);
+    if (minN != null && maxN != null && minN > maxN) {
+      const t = qPMin; qPMin = qPMax; qPMax = t;
+      changed = true;
+    }
     return changed;
   }
 
@@ -210,9 +321,26 @@
     const nq = new URLSearchParams();
     if (qRegion !== "all") nq.set("region", qRegion);
     if (qType   !== "all") nq.set("type",   qType);
+    if (qPMin) nq.set("pmin", qPMin);
+    if (qPMax) nq.set("pmax", qPMax);
+    if (qSort && qSort !== "default") nq.set("sort", qSort);
     const qsStr = nq.toString();
     history.replaceState(null, "", location.pathname + (qsStr ? "?" + qsStr : ""));
   }
+
+  function fillMilestoneSelect(selectEl, opts) {
+    selectEl.innerHTML = "";
+    opts.forEach(({ v, label }) => {
+      const o = document.createElement("option");
+      o.value = v;
+      o.textContent = label;
+      selectEl.appendChild(o);
+    });
+  }
+
+  fillMilestoneSelect(priceMinSelect, PRICE_MIN_OPTS);
+  fillMilestoneSelect(priceMaxSelect, PRICE_MAX_OPTS);
+  fillMilestoneSelect(sortSelect, SORT_OPTS);
 
   regionSelect.addEventListener("change", () => {
     qRegion = regionSelect.value;
@@ -224,20 +352,60 @@
     syncURL();
     render();
   });
+  priceMinSelect.addEventListener("change", () => {
+    qPMin = priceMinSelect.value;
+    syncURL();
+    render();
+  });
+  priceMaxSelect.addEventListener("change", () => {
+    qPMax = priceMaxSelect.value;
+    syncURL();
+    render();
+  });
+  sortSelect.addEventListener("change", () => {
+    qSort = sortSelect.value;
+    syncURL();
+    render();
+  });
+  resetFiltersBtn.addEventListener("click", () => {
+    qRegion = "all";
+    qType = "all";
+    qPMin = "";
+    qPMax = "";
+    qSort = "default";
+    syncURL();
+    render();
+  });
 
   function render() {
     if (clampFilters()) syncURL();
 
-    const list = all.filter(p =>
+    const minN = numOrNull(qPMin);
+    const maxN = numOrNull(qPMax);
+    const usingPrice = minN != null || maxN != null;
+
+    const baseList = all.filter(p =>
       (qRegion === "all" || p.region?.key === qRegion) &&
       (qType   === "all" || p.type?.key   === qType)
     );
+    const list = baseList.filter(p => passesPriceFilter(p, minN, maxN));
+    const sorted = sortProperties(list, qSort);
 
-    countEl.textContent = list.length ? `· ${list.length} נכסים מוצגים` : "";
+    if (priceFilterHint) {
+      if (usingPrice && baseList.length > list.length) {
+        priceFilterHint.textContent =
+          "נכסים ללא מחיר מספרי (למשל „מחיר בפנייה”) לא נכללים כשמסננים לפי מחיר.";
+        priceFilterHint.hidden = false;
+      } else {
+        priceFilterHint.hidden = true;
+      }
+    }
+
+    countEl.textContent = sorted.length ? `· ${sorted.length} נכסים מוצגים` : "";
     grid.innerHTML = "";
-    empty.hidden = list.length !== 0;
+    empty.hidden = sorted.length !== 0;
 
-    list.forEach((p, i) => grid.appendChild(window.shibumiUI.renderCard(p, i % 6)));
+    sorted.forEach((p, i) => grid.appendChild(window.shibumiUI.renderCard(p, i % 6)));
     window.shibumiUI.initReveal();
 
     regionChips.querySelectorAll(".chip").forEach(el => el.remove());
@@ -249,6 +417,9 @@
     fillSelect(typeSelect, "כל הסוגים", Shibumi.TYPES, "type");
     regionSelect.value = qRegion;
     typeSelect.value = qType;
+    priceMinSelect.value = qPMin;
+    priceMaxSelect.value = qPMax;
+    sortSelect.value = qSort;
   }
 
   render();

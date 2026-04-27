@@ -135,6 +135,31 @@ function priceDisplay(raw) {
   return s;
 }
 
+/** מחיר בשקלים למיון וסינון; null כשאין מספר אמין (P.O.R, ריק, טקסט חופשי) */
+function parsePriceNisRaw(raw) {
+  if (raw == null) return null;
+  const s0 = String(raw).trim();
+  if (!s0) return null;
+  const por = s0.replace(/[\s.\u2019\u0027]/g, "").toLowerCase();
+  if (/^p\.?o\.?r$|^por$|^p0r$/.test(por)) return null;
+  if (/מחיר\s*בפנייה|^בפנייה$/i.test(s0)) return null;
+  const s = s0.replace(/\u00A0|\u202F/g, " ").replace(/ש["״']?ח|nis|₪/gi, "").trim();
+  const m = s.match(/(\d{1,3}(?:,\d{3})+|\d{1,3}(?:\.\d{3})+|\d{4,})/);
+  if (m) {
+    let numStr = m[1];
+    if (numStr.includes(",")) numStr = numStr.replace(/,/g, "");
+    else if (/\.\d{3}/.test(numStr)) numStr = numStr.replace(/\./g, "");
+    const n = parseInt(numStr, 10);
+    return Number.isFinite(n) && n >= 10_000 ? n : null;
+  }
+  const digits = s.replace(/[^\d]/g, "");
+  if (digits.length >= 5) {
+    const n = parseInt(digits, 10);
+    return Number.isFinite(n) && n >= 10_000 ? n : null;
+  }
+  return null;
+}
+
 const STATUS_SET = new Set(["active", "sold", "rented", "inactive"]);
 const CUSTOM_KEY = "shibumi:admin:customProperties";
 
@@ -178,6 +203,12 @@ function mergeListingFields(p, o) {
       m.imageCount = urls.length;
     }
   }
+  if (Object.prototype.hasOwnProperty.call(o, "price")) {
+    const raw = String(o.price ?? "").trim();
+    m.priceRaw = raw;
+    m.price = priceDisplay(raw);
+    m.priceNis = parsePriceNisRaw(raw);
+  }
   return m;
 }
 
@@ -219,6 +250,7 @@ function enrich(prop, index) {
     type,
     price: priceDisplay(prop.price),
     priceRaw: prop.price || "",
+    priceNis: parsePriceNisRaw(prop.price || ""),
     details: prop.details || {},
     features: prop.features || [],
     description: prop.description || "",

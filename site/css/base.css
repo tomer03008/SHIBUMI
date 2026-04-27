@@ -1274,9 +1274,51 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
   padding: 16px 0;
 }
 
+.filters-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 /* Mobile: one row of native selects — fast, accessible, minimal height */
 .filters-compact {
   display: none;
+}
+
+/* מחיר / מיון — משותף למובייל ולדסקטופ */
+.filters-extras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 12px;
+  align-items: end;
+}
+.filters-extras__field { min-width: 0; }
+.filters-extras__field--sort {
+  grid-column: 1 / -1;
+}
+.filters-extras__reset {
+  grid-column: 1 / -1;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px dashed var(--border-medium);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+.filters-extras__reset:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+.filters-hint {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
 }
 .filters-compact__field {
   display: flex;
@@ -1374,6 +1416,9 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
 .chip[hidden] { display: none; }
 
 @media (max-width: 767px) {
+  .filters-layout {
+    gap: 10px;
+  }
   .filters-compact {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1391,6 +1436,29 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
 @media (min-width: 768px) {
   .filters-compact {
     display: none !important;
+  }
+  .filters-layout {
+    gap: 14px;
+  }
+  .filters-extras {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 12px 20px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-subtle);
+  }
+  .filters-extras__field--sort {
+    flex: 1 1 220px;
+    min-width: 180px;
+    grid-column: auto;
+  }
+  .filters-extras__reset {
+    grid-column: auto;
+    flex: 0 0 auto;
+    min-height: 40px;
+    margin-inline-start: auto;
+    align-self: flex-end;
   }
 }
 
