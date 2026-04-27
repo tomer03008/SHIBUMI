@@ -648,21 +648,20 @@ main { min-height: 100vh; }
   .property-info { padding: 14px 12px 16px; }
   .property-price { margin-bottom: 6px; }
   .property-price__amount {
-    font-size: clamp(0.62rem, 1.85vw + 0.42rem, 0.95rem);
+    font-size: clamp(0.58rem, 2.1vw + 0.38rem, 0.92rem);
     letter-spacing: -0.02em;
-    word-break: break-all;
-    overflow-wrap: anywhere;
+    white-space: nowrap;
   }
   .property-price__currency {
     font-size: max(0.48rem, 0.48em);
     letter-spacing: 0.04em;
+    white-space: nowrap;
     flex-shrink: 0;
   }
   .property-price__plain {
-    font-size: clamp(0.72rem, 2vw + 0.4rem, 0.95rem);
+    font-size: clamp(0.68rem, 1.9vw + 0.38rem, 0.92rem);
     line-height: 1.28;
-    word-break: break-word;
-    overflow-wrap: anywhere;
+    white-space: nowrap;
   }
   .property-title {
     font-size: 0.82rem;
@@ -773,16 +772,26 @@ main { min-height: 100vh; }
 .property-price {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: baseline;
   gap: 4px 8px;
   margin-bottom: 8px;
   min-width: 0;
   width: 100%;
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
   color: var(--accent-gold);
   font-family: var(--font-heading);
+}
+.property-price::-webkit-scrollbar {
+  height: 4px;
+}
+.property-price::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 4px;
 }
 .property-price__amount {
   font-size: 1.65rem;
@@ -792,9 +801,8 @@ main { min-height: 100vh; }
   line-height: 1.06;
   direction: ltr;
   unicode-bidi: isolate;
-  max-width: 100%;
-  overflow-wrap: anywhere;
-  word-break: break-all;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .property-price__currency {
   font-size: 0.58em;
@@ -802,15 +810,17 @@ main { min-height: 100vh; }
   letter-spacing: 0.06em;
   line-height: 1;
   opacity: 0.9;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .property-price__plain {
   font-size: 1.65rem;
   font-weight: 700;
   line-height: 1.15;
   display: block;
-  max-width: 100%;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  max-width: none;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .property-title {
   font-size: 1.2rem;
@@ -1640,10 +1650,17 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
 }
 .property-price-large {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 2px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 6px 10px;
   min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
   color: var(--accent-gold);
   font-family: var(--font-heading);
   font-weight: 700;
@@ -1657,6 +1674,8 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
   direction: ltr;
   unicode-bidi: isolate;
   text-align: left;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .property-price-large .property-price__currency {
   font-size: 0.5em;
@@ -1664,11 +1683,15 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
   letter-spacing: 0.08em;
   line-height: 1;
   opacity: 0.92;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .property-price-large .property-price__plain {
   font-size: 2.3rem;
   line-height: 1.1;
   text-align: end;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .property-gallery { margin-bottom: 56px; }
@@ -1803,8 +1826,8 @@ a.contact-detail-item:hover .contact-detail-value { color: var(--accent-gold); }
   .spec-item { padding: 16px 10px; }
   .spec-value { font-size: 1.35rem; margin: 6px 0 2px; }
   .spec-label { font-size: 0.78rem; }
-  .property-price-large .property-price__amount { font-size: 1.65rem; }
-  .property-price-large .property-price__plain { font-size: 1.65rem; }
+  .property-price-large .property-price__amount { font-size: clamp(1rem, 4.2vw + 0.5rem, 1.65rem); }
+  .property-price-large .property-price__plain { font-size: clamp(1rem, 4.2vw + 0.5rem, 1.65rem); }
   .main-image {
     height: 44vh;
     min-height: 240px;
