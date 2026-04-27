@@ -56,10 +56,20 @@
     </div>
   </section>
 
-  <!-- FILTERS -->
+  <!-- FILTERS: compact native selects on phone; chips from md and up -->
   <div class="filters-bar">
     <div class="container">
-      <div class="filters">
+      <div class="filters-compact" aria-label="סינון נכסים">
+        <div class="filters-compact__field">
+          <label class="filters-compact__label" for="regionSelect">אזור</label>
+          <select id="regionSelect" class="filters-compact__select"></select>
+        </div>
+        <div class="filters-compact__field">
+          <label class="filters-compact__label" for="typeSelect">סוג נכס</label>
+          <select id="typeSelect" class="filters-compact__select"></select>
+        </div>
+      </div>
+      <div class="filters filters-chips">
         <div class="filters__group" id="regionChips">
           <span class="filters__label">אזור</span>
         </div>
@@ -141,6 +151,8 @@
   const empty      = document.getElementById("empty");
   const regionChips = document.getElementById("regionChips");
   const typeChips   = document.getElementById("typeChips");
+  const regionSelect = document.getElementById("regionSelect");
+  const typeSelect   = document.getElementById("typeSelect");
 
   const all = await Shibumi.loadPublicProperties();
 
@@ -148,6 +160,31 @@
   let qRegion = qs.get("region") || "all";
   let qType   = qs.get("type")   || "all";
   if (Shibumi.REGION_ALIASES?.[qRegion]) qRegion = Shibumi.REGION_ALIASES[qRegion];
+
+  function clampFilters() {
+    const regionOk = qRegion === "all" || all.some(p => p.region?.key === qRegion);
+    const typeOk   = qType   === "all" || all.some(p => p.type?.key   === qType);
+    let changed = false;
+    if (!regionOk) { qRegion = "all"; changed = true; }
+    if (!typeOk)   { qType   = "all"; changed = true; }
+    return changed;
+  }
+
+  function fillSelect(selectEl, allLabel, DEFS, prop) {
+    selectEl.innerHTML = "";
+    const allOpt = document.createElement("option");
+    allOpt.value = "all";
+    allOpt.textContent = `${allLabel} (${all.length})`;
+    selectEl.appendChild(allOpt);
+    DEFS.forEach(def => {
+      const count = all.filter(p => p[prop]?.key === def.key).length;
+      if (!count) return;
+      const o = document.createElement("option");
+      o.value = def.key;
+      o.textContent = `${def.label} (${count})`;
+      selectEl.appendChild(o);
+    });
+  }
 
   function buildChips(container, DEFS, prop, activeKey, onPick) {
     const allChip = document.createElement("button");
@@ -177,7 +214,20 @@
     history.replaceState(null, "", location.pathname + (qsStr ? "?" + qsStr : ""));
   }
 
+  regionSelect.addEventListener("change", () => {
+    qRegion = regionSelect.value;
+    syncURL();
+    render();
+  });
+  typeSelect.addEventListener("change", () => {
+    qType = typeSelect.value;
+    syncURL();
+    render();
+  });
+
   function render() {
+    if (clampFilters()) syncURL();
+
     const list = all.filter(p =>
       (qRegion === "all" || p.region?.key === qRegion) &&
       (qType   === "all" || p.type?.key   === qType)
@@ -194,6 +244,11 @@
     typeChips.querySelectorAll(".chip").forEach(el => el.remove());
     buildChips(regionChips, Shibumi.REGIONS, "region", qRegion, (k) => { qRegion = k; syncURL(); render(); });
     buildChips(typeChips,   Shibumi.TYPES,   "type",   qType,   (k) => { qType   = k; syncURL(); render(); });
+
+    fillSelect(regionSelect, "כל האזורים", Shibumi.REGIONS, "region");
+    fillSelect(typeSelect, "כל הסוגים", Shibumi.TYPES, "type");
+    regionSelect.value = qRegion;
+    typeSelect.value = qType;
   }
 
   render();
