@@ -562,8 +562,6 @@
     } catch (_) {
       state = { ...A11Y_DEFAULTS };
     }
-    applyA11y(state);
-    syncUI();
 
     const fontLabels = { normal: "רגיל", lg: "גדול", xl: "גדול מאוד", xxl: "ענקי" };
     const fontOrder  = ["normal", "lg", "xl", "xxl"];
@@ -591,6 +589,9 @@
       saveA11y(state);
       syncUI();
     }
+
+    applyA11y(state);
+    syncUI();
 
     let docClickCloser = null;
     let globalEscCloser = null;
