@@ -49,7 +49,7 @@
         <span class="section-eyebrow">האוסף המלא</span>
         <h1 class="h2-title" style="margin-bottom:12px">נכסים</h1>
         <p class="body-large" style="max-width:620px">
-          אוסף הנכסים של שיבומי. סינון לפי אזור, סוג, טווח מחיר ומיון — בטלפון רשימות נפתחות קומפקטיות, במחשב גם לשוניות מהירות.
+          אוסף הנכסים של שיבומי. סינון לפי אזור וסוג; מחיר בשקלים (הקלדה) ומיון — בטלפון אזור/סוג בשורה אחת, שאר הסינון מתחת ל־„מחיר · מיון”.
           <span id="count" style="color:var(--accent-gold);font-weight:600"></span>
         </p>
       </div>
@@ -78,22 +78,30 @@
           <span class="filters__label">סוג</span>
         </div>
       </div>
-      <div class="filters-extras" aria-label="מחיר ומיון">
-        <div class="filters-extras__field">
-          <label class="filters-compact__label" for="priceMinSelect">מחיר מ</label>
-          <select id="priceMinSelect" class="filters-compact__select"></select>
+      <details class="filters-drawer" id="filtersDrawer" aria-label="מחיר מיון ואיפוס">
+        <summary class="filters-drawer__summary">
+          <span class="filters-drawer__summary-text">מחיר · מיון ואיפוס</span>
+          <span class="filters-drawer__icon" aria-hidden="true"></span>
+        </summary>
+        <div class="filters-drawer__panel">
+          <div class="filters-extras" aria-label="מחיר ומיון">
+            <div class="filters-extras__field">
+              <label class="filters-compact__label" for="priceMinInput">מחיר מ (₪)</label>
+              <input type="text" class="filters-compact__input" id="priceMinInput" inputmode="numeric" autocomplete="off" placeholder="למשל 5000000" dir="ltr" lang="en" />
+            </div>
+            <div class="filters-extras__field">
+              <label class="filters-compact__label" for="priceMaxInput">עד מחיר (₪)</label>
+              <input type="text" class="filters-compact__input" id="priceMaxInput" inputmode="numeric" autocomplete="off" placeholder="למשל 15000000" dir="ltr" lang="en" />
+            </div>
+            <div class="filters-extras__field filters-extras__field--sort">
+              <label class="filters-compact__label" for="sortSelect">מיון</label>
+              <select id="sortSelect" class="filters-compact__select"></select>
+            </div>
+            <button type="button" class="filters-extras__reset" id="resetFiltersBtn">איפוס סינונים</button>
+          </div>
+          <p class="filters-hint" id="priceFilterHint" hidden></p>
         </div>
-        <div class="filters-extras__field">
-          <label class="filters-compact__label" for="priceMaxSelect">עד מחיר</label>
-          <select id="priceMaxSelect" class="filters-compact__select"></select>
-        </div>
-        <div class="filters-extras__field filters-extras__field--sort">
-          <label class="filters-compact__label" for="sortSelect">מיון</label>
-          <select id="sortSelect" class="filters-compact__select"></select>
-        </div>
-        <button type="button" class="filters-extras__reset" id="resetFiltersBtn">איפוס סינונים</button>
-      </div>
-      <p class="filters-hint" id="priceFilterHint" hidden></p>
+      </details>
     </div>
   </div>
 
@@ -169,47 +177,23 @@
   const typeChips   = document.getElementById("typeChips");
   const regionSelect = document.getElementById("regionSelect");
   const typeSelect   = document.getElementById("typeSelect");
-  const priceMinSelect = document.getElementById("priceMinSelect");
-  const priceMaxSelect = document.getElementById("priceMaxSelect");
+  const priceMinInput = document.getElementById("priceMinInput");
+  const priceMaxInput = document.getElementById("priceMaxInput");
   const sortSelect     = document.getElementById("sortSelect");
   const resetFiltersBtn = document.getElementById("resetFiltersBtn");
   const priceFilterHint = document.getElementById("priceFilterHint");
+  const filtersDrawer = document.getElementById("filtersDrawer");
 
   const all = await Shibumi.loadPublicProperties();
 
-  const PRICE_MIN_OPTS = [
-    { v: "", label: "ללא מינימום" },
-    { v: "3000000", label: "מ־3 מ׳" },
-    { v: "5000000", label: "מ־5 מ׳" },
-    { v: "8000000", label: "מ־8 מ׳" },
-    { v: "10000000", label: "מ־10 מ׳" },
-    { v: "15000000", label: "מ־15 מ׳" },
-    { v: "20000000", label: "מ־20 מ׳" },
-    { v: "25000000", label: "מ־25 מ׳" },
-    { v: "30000000", label: "מ־30 מ׳" },
-  ];
-  const PRICE_MAX_OPTS = [
-    { v: "", label: "ללא הגבלה" },
-    { v: "5000000", label: "עד 5 מ׳" },
-    { v: "8000000", label: "עד 8 מ׳" },
-    { v: "10000000", label: "עד 10 מ׳" },
-    { v: "15000000", label: "עד 15 מ׳" },
-    { v: "20000000", label: "עד 20 מ׳" },
-    { v: "25000000", label: "עד 25 מ׳" },
-    { v: "30000000", label: "עד 30 מ׳" },
-    { v: "40000000", label: "עד 40 מ׳" },
-    { v: "50000000", label: "עד 50 מ׳" },
-    { v: "100000000", label: "עד 100 מ׳" },
-  ];
   const SORT_OPTS = [
     { v: "default", label: "כמו בקטלוג" },
     { v: "price-asc", label: "מחיר: מהנמוך לגבוה" },
     { v: "price-desc", label: "מחיר: מהגבוה לנמוך" },
     { v: "title", label: "לפי שם (א–ת)" },
   ];
-  const ALLOW_PMIN = new Set(PRICE_MIN_OPTS.map(o => o.v));
-  const ALLOW_PMAX = new Set(PRICE_MAX_OPTS.map(o => o.v));
   const ALLOW_SORT = new Set(SORT_OPTS.map(o => o.v));
+  const PRICE_CAP = 999999999;
 
   const qs = new URLSearchParams(location.search);
   let qRegion = qs.get("region") || "all";
@@ -223,6 +207,33 @@
     if (s == null || s === "") return null;
     const n = parseInt(String(s), 10);
     return Number.isFinite(n) && n > 0 ? n : null;
+  }
+
+  /** מחרוזת URL או שדה — רק ספרות, עד תקרה */
+  function normalizePriceToken(str) {
+    if (str == null) return "";
+    const d = String(str).replace(/[\s,\u00A0\u202F]/g, "").replace(/[^\d]/g, "");
+    if (!d) return "";
+    const n = parseInt(d, 10);
+    if (!Number.isFinite(n) || n < 1) return "";
+    return String(Math.min(n, PRICE_CAP));
+  }
+
+  function readPricesFromInputs() {
+    qPMin = normalizePriceToken(priceMinInput.value);
+    qPMax = normalizePriceToken(priceMaxInput.value);
+    const minN = numOrNull(qPMin);
+    const maxN = numOrNull(qPMax);
+    if (minN != null && maxN != null && minN > maxN) {
+      const t = qPMin;
+      qPMin = qPMax;
+      qPMax = t;
+    }
+  }
+
+  function syncDrawerForViewport() {
+    if (!filtersDrawer) return;
+    if (window.matchMedia("(min-width: 768px)").matches) filtersDrawer.open = true;
   }
 
   function passesPriceFilter(p, minN, maxN) {
@@ -269,13 +280,17 @@
     const typeOk   = qType   === "all" || all.some(p => p.type?.key   === qType);
     if (!regionOk) { qRegion = "all"; changed = true; }
     if (!typeOk)   { qType   = "all"; changed = true; }
-    if (!ALLOW_PMIN.has(qPMin)) { qPMin = ""; changed = true; }
-    if (!ALLOW_PMAX.has(qPMax)) { qPMax = ""; changed = true; }
+    const nMin = normalizePriceToken(qPMin);
+    const nMax = normalizePriceToken(qPMax);
+    if (nMin !== qPMin) { qPMin = nMin; changed = true; }
+    if (nMax !== qPMax) { qPMax = nMax; changed = true; }
     if (!ALLOW_SORT.has(qSort)) { qSort = "default"; changed = true; }
     const minN = numOrNull(qPMin);
     const maxN = numOrNull(qPMax);
     if (minN != null && maxN != null && minN > maxN) {
-      const t = qPMin; qPMin = qPMax; qPMax = t;
+      const t = qPMin;
+      qPMin = qPMax;
+      qPMax = t;
       changed = true;
     }
     return changed;
@@ -338,9 +353,9 @@
     });
   }
 
-  fillMilestoneSelect(priceMinSelect, PRICE_MIN_OPTS);
-  fillMilestoneSelect(priceMaxSelect, PRICE_MAX_OPTS);
   fillMilestoneSelect(sortSelect, SORT_OPTS);
+  syncDrawerForViewport();
+  window.addEventListener("resize", syncDrawerForViewport);
 
   regionSelect.addEventListener("change", () => {
     qRegion = regionSelect.value;
@@ -352,16 +367,22 @@
     syncURL();
     render();
   });
-  priceMinSelect.addEventListener("change", () => {
-    qPMin = priceMinSelect.value;
+  function commitPrices() {
+    readPricesFromInputs();
     syncURL();
     render();
-  });
-  priceMaxSelect.addEventListener("change", () => {
-    qPMax = priceMaxSelect.value;
-    syncURL();
-    render();
-  });
+  }
+
+  function onPriceInputKey(e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      commitPrices();
+    }
+  }
+  priceMinInput.addEventListener("blur", commitPrices);
+  priceMaxInput.addEventListener("blur", commitPrices);
+  priceMinInput.addEventListener("keydown", onPriceInputKey);
+  priceMaxInput.addEventListener("keydown", onPriceInputKey);
   sortSelect.addEventListener("change", () => {
     qSort = sortSelect.value;
     syncURL();
@@ -375,6 +396,12 @@
     qSort = "default";
     syncURL();
     render();
+  });
+
+  filtersDrawer?.addEventListener("toggle", () => {
+    if (filtersDrawer.open && window.innerWidth < 768) {
+      setTimeout(() => priceMinInput?.focus(), 80);
+    }
   });
 
   function render() {
@@ -417,8 +444,8 @@
     fillSelect(typeSelect, "כל הסוגים", Shibumi.TYPES, "type");
     regionSelect.value = qRegion;
     typeSelect.value = qType;
-    priceMinSelect.value = qPMin;
-    priceMaxSelect.value = qPMax;
+    priceMinInput.value = qPMin || "";
+    priceMaxInput.value = qPMax || "";
     sortSelect.value = qSort;
   }
 
